@@ -1,2 +1,192 @@
-aaa
-aaa
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nautilus</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery.js"></script>
+<script>
+
+$(document).ready(function() {
+/* search bar */
+  $('#Search_bar button').click(function() {
+    var $marginLefty = $(this).next();
+    $marginLefty.animate({marginLeft: parseInt($marginLefty.css('marginLeft'),10) == 0 ? $marginLefty.outerWidth() : 0});
+  });
+ /* search bar */
+  
+  
+    $("#Login_tab").hide();  
+	
+	$("#login").click(function(){
+		if($("#Login_tab").hasClass("closed"))
+		{
+		  $("#Login_tab").slideDown('fast');
+		  $("#imgbotao").attr("src", "images/menu/bt_amigodarevenda1.png");
+		  $("#Login_tab").removeClass("closed");
+		  $("#Login_tab").addClass("open");
+		}
+		else
+		{
+			$("#Login_tab").slideUp('fast');
+		  	$("#imgbotao").attr("src", "images/menu/bt_amigodarevenda0.png");
+			$("#Login_tab").removeClass("open");
+		  	$("#Login_tab").addClass("closed");
+		}  
+  
+	});
+});
+
+
+
+</script>
+</head>
+
+<body>
+	<div id="GeneralbgFooter">
+		<div id="bgCurves">
+			<div id="General">
+				<div id="Header">
+					<div id="Top_bar">
+							<div id="Login_field">
+								<div id="login_buttom"><a href="#" id="login"><img id="imgbotao" src="images/menu/bt_amigodarevenda0.png" width="242" height="53"/></a></div>
+								<div id="Login_tab" class="closed" >
+                           			<div id="Login_content">
+                                    	<div class="Bg_linput"><input type="text"  maxlength="23" name="Login" /></div><br />
+                                        <div class="Bg_linput"><input type="text"  maxlength="23" name="Senha"/></div><br />
+                                        <a href="#" class="Entrar_button"> <img src="images/menu/bt_entrarlogin.png" width="69" height="25" /></a>
+                                    </div>
+                                </div>                                
+							</div>
+                            <div id="Search_bar" class="slide" >
+                              <button><img src="images/menu/bt_busca.png" width="103" height="53" /></button>
+                              <div class="inner">
+                                                <div class="Search_tab">
+                                                    <input type="text"  maxlength="34" name="Busca"/> 
+                                                </div>
+                              </div>
+                            </div>           
+					</div>
+					<div id="Logo"><img src="images/logo_nautilus.png" width="278" height="119" /></div>
+					<div id="Menu">
+						<ul>
+							<li><a href="#"><img src="images/menu/bt_institucional.png" width="105" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_produtos.png" width="74" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_assistenciatecnica.png" width="112" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_downloads.png" width="85" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_cases.png" width="52" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_notícias.png" width="66" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_videos.png" width="61" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_atendimento.png" width="94" height="19" /></a></li>
+						</ul>   
+					</div>
+				
+				</div><!-- end header -->
+				<div id="Featured">
+				fREATURED
+
+
+				</div><!-- end freatured -->
+			
+				<div id="Content">
+                	<div id="Detail"><img src="images/fr_detail.png" width="1064" height="152" /></div>
+					<div id="Box_left">	
+						<div id="Noticias_box">	
+							<h1><img src="images/tit_noticias.png" width="169" height="54" /></h1>
+                            <br /><br />
+							<!--start box noticia -->
+							<div id="Item_noticias">
+								<div id="Photo"><img src="images/img_previewnoticias.png" width="71" height="72" /></div>
+								<div id="Text">
+								  <h2 class="Tit_noticia">Lorem Ipsum is simply</h2><br />
+								  <p class="Text_noticia">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
+										Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
+										1500s, when an unknown printer took a galley  <br />
+								  </p>
+								  <a href="#"><p class="Veja_mais">..Veja mais</p></a>
+								</div>
+							</div>
+							<!--end box noticia -->
+							<!--start box noticia -->
+							<div id="Item_noticias">
+								<div id="Photo"><img src="images/img_previewnoticias.png" width="71" height="72" /></div>
+								<div id="Text">
+								  <h2 class="Tit_noticia">Lorem Ipsum is simply</h2><br />
+								  <p class="Text_noticia">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
+										Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
+										1500s, when an unknown printer took a galley  <br />
+								  </p>
+								  <a href="#"><p class="Veja_mais">..Veja mais</p></a>
+								</div>
+							</div>
+							<!--end box noticia --> 
+							<!--start box noticia -->
+							<div id="Item_noticias">
+								<div id="Photo"><img src="images/img_previewnoticias.png" width="71" height="72" /></div>
+								<div id="Text">
+								  <h2 class="Tit_noticia">Lorem Ipsum is simply</h2><br />
+								  <p class="Text_noticia">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
+										Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
+										1500s, when an unknown printer took a galley  <br />
+								  </p>
+								  <a href="#"><p class="Veja_mais">..Veja mais</p></a>
+								</div>
+							</div>
+							<!--end box noticia -->     									
+						</div><!-- End box noticias -->
+                        
+                        <div id="Agenda_de_eventos">
+                       	  <h1><img src="images/tit_agendadeeventos.png" width="517" height="62" /></h1>
+                            
+                            <br /><br /><br /><br /><br /><br /><br /><br />
+                        </div>			
+				  </div><!-- end box left -->	       
+				  <div id="Box_right">
+					<div id="Videos_box">
+							<h1><img src="images/tit_videos.png"/></h1>
+                            <a href="#"><img src="images/bt_bigyoutube.jpg" width="384" height="188" /></a>
+					</div>   
+                    <div id="Depoimentos_box">
+                            <h1><img src="images/tit_depoimentos.png" width="385" height="56" /></h1><br />
+                            <p class="Dep_title">Julio César/ Gerente Motel Damy</p> 
+                            <p class="Dep_data">23 julho 2011</p>,
+                            <p class="Dep_text">"
+                                Lorem Ipsum is simply dummy
+                                text of the printing and
+                                typesetting. Lorem Ipsum has
+                                been the industry's standard
+                                dum."
+                            </p>                          
+                            <a href="#"></a>
+                            <br /><br /><br />
+                            <a href="#"><p class="Veja_mais">..Veja mais</p></a><br />
+                    </div>  
+                    <div id="Ondeencontrar_box">
+                            <h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1><br />
+                            <a href="#"></a>
+                            <p class="Text_noticia">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
+                                Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
+                                1500s, when an unknown printer took a galley  <br />
+                            </p>
+                            <a href="#"><p class="Veja_mais">..Veja mais</p></a><br />
+                    </div>                         
+			  	  </div>	
+                                 
+			  </div>                    																				  
+				</div><!-- end Content -->
+				<div id="clear"></div>
+				<div id="Footer">
+                	<div id="Footer_content">
+                        Nautilus © Todos os direitos reservados.<br />
+                        Rua da Bahia, 22 - Recreio Estoril Atibaia - SP - CEP 12944060 +55 11 4411.1488 
+                    </div>
+				</div><!-- end footer -->
+			</div><!-- ends general -->    
+		</div><!-- ends bgcurvers -->	
+	</div><!-- ends bggeneralfooter -->	
+</body>
+</html>
