@@ -1,9 +1,15 @@
 KwNautilus::Application.routes.draw do
   
-  
-  
-  
-  #get "home/index"
+  namespace(:institucional){
+    
+    resources :depoimentos
+    resources :revendas
+    resources :missao
+    resources :sobre
+    
+    root :to => "sobre#index"
+    
+  }
 
   root :to => "home#index"
   

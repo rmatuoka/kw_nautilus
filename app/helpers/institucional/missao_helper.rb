@@ -1,0 +1,2 @@
+module Institucional::MissaoHelper
+end
