@@ -104,10 +104,10 @@ body
 	#Logo
 	{
 		position:absolute;
-		left:-38px;
+		left:-89px;
+		top:12px;		
 		width:278px;
 		margin:auto;
-		border:1px solid yellow;
 	}	
 		#Top_bar
 		{
