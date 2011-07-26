@@ -244,13 +244,179 @@ body
 		#Menu li
 		{
 			display: inline;
-			margin-left:35px;
+			margin-left:10px;
 		}
-			#Menu li a
+		.item_align
+		{
+			padding-top:5px;
+			*padding-top:20px;
+			padding-left:105px;
+		}
+			.institucional
 			{
 			}
-			#Menu li a:hover
+			.institucional a
 			{
+				background-image:url(../images/menu/bt_institucional01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.institucional a:hover
+			{
+				background-image:url(../images/menu/bt_institucional01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.servicos a
+			{
+				background-image:url(../images/menu/bt_servicos01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.servicos a:hover
+			{
+				background-image:url(../images/menu/bt_servicos01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.produtos a
+			{
+				background-image:url(../images/menu/bt_produtos01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.produtos a:hover
+			{
+				background-image:url(../images/menu/bt_produtos01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.cases a
+			{
+				background-image:url(../images/menu/bt_cases01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.cases a:hover
+			{
+				background-image:url(../images/menu/bt_cases01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+
+			.downloads a
+			{
+				background-image:url(../images/menu/bt_downloads01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.downloads a:hover
+			{
+				background-image:url(../images/menu/bt_downloads01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.servicos a
+			{
+				background-image:url(../images/menu/bt_servicos01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.servicos a:hover
+			{
+				background-image:url(../images/menu/bt_servicos01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.noticias a
+			{
+				background-image:url(../images/menu/bt_noticias01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.noticias a:hover
+			{
+				background-image:url(../images/menu/bt_noticias01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.videos a
+			{
+				background-image:url(../images/menu/bt_videos01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.videos a:hover
+			{
+				background-image:url(../images/menu/bt_videos01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
+			}
+			.atendimento a
+			{
+				background-image:url(../images/menu/bt_atendimento01.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+				width:128px;
+				height:28px;
+				text-decoration:none;
+			}
+			.atendimento a:hover
+			{
+				background-image:url(../images/menu/bt_atendimento01.png);
+				background-repeat:no-repeat;
+				background-position:0px -36px;
+				width:128px;
+				height:28px;
+
 			}
 	#Featured /*Destaque*/
 	{
