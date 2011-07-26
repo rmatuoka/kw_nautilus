@@ -1,0 +1,26 @@
+<div id="Top_bar">
+		<div id="Login_field">
+			<div id="login_buttom">
+				<%= link_to image_tag("menu/bt_amigodarevenda0.png", :width=>"242",:height=>"53",:id=>"imgbotao"), '#', :id=>"login"%>
+			</div>
+			<div id="Login_tab" class="closed" >
+       			<div id="Login_content">
+                	<div class="Bg_linput"><input type="text"  maxlength="23" name="Login" /></div><br />
+                    <div class="Bg_linput"><input type="text"  maxlength="23" name="Senha"/></div><br />
+                    <a href="#" class="Entrar_button"> <img src="images/menu/bt_entrarlogin.png" width="69" height="25" /></a>
+                </div>
+            </div>                                
+		</div>
+        <div id="Search_bar" class="slide" >
+          <button><%= image_tag("menu/bt_busca.png", :width=>"103", :height=>"53")%></button>
+		  
+          <div class="inner" style="margin-left: 387px;">
+                            <div class="Search_tab">
+                                <input type="text"  maxlength="34" name="Busca"/> 
+                            </div>
+          </div>
+        </div>           
+</div>
+<div id="Logo">
+	<%= image_tag("logo_nautilus.png", :width=>"278", :height=> "119", :alt=>"Nautilus", :title=>"Nautilus")%>
+</div>

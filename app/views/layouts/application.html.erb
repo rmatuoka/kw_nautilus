@@ -1,14 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>KwNautilus</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nautilus - <%=yield :title%></title>
+<%= csrf_meta_tag %>
+<%=stylesheet_link_tag "internal"%>
+<%=javascript_include_tag "jquery"%>
+<%=javascript_include_tag "abas_nautilus"%>
+<%=yield :head%>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="GeneralbgFooter">
+		<div id="bgCurves">
+			<div id="General">
+				<div id="Header">
+					<%= render :file => "layouts/_topbarlogo.html.erb"%>
+					<div id="Menu">
+						<ul>
+							<li><a href="#"><img src="images/menu/bt_institucional.png" width="105" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_produtos.png" width="74" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_assistenciatecnica.png" width="112" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_downloads.png" width="85" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_cases.png" width="52" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_notícias.png" width="66" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_videos.png" width="61" height="19" /></a></li>
+							<li><a href="#"><img src="images/menu/bt_atendimento.png" width="94" height="19" /></a></li>
+						</ul>   
+					</div>
+				
+				</div><!-- end header -->				
+                    <%=yield%>
+				<div id="clear"></div>
+				<div id="Footer">
+                	<div id="Footer_content">
+                        <div id="Footer_text">
+                            Nautilus © Todos os direitos reservados.<br />
+                            Rua da Bahia, 22 - Recreio Estoril Atibaia - SP - CEP 12944060 +55 11 4411.1488 
+                        </div>    
+                    </div>
+				</div><!-- end footer -->
+			</div><!-- ends general -->    
+		</div><!-- ends bgcurvers -->	
+	</div><!-- ends bggeneralfooter -->	
 </body>
 </html>

@@ -2,41 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Nautilus</title>
+<title>Nautilus - Seja Bem vindo!</title>
+<%= csrf_meta_tag %>
 <%=stylesheet_link_tag "template"%>
 <%=javascript_include_tag "jquery"%>
-<script>
-
-$(document).ready(function() {
-/* search bar */
-  $('#Search_bar button').click(function() {
-    var $marginLefty = $(this).next();
-    $marginLefty.animate({marginLeft: parseInt($marginLefty.css('marginLeft'),10) == 0 ? $marginLefty.outerWidth() : 0});
-  });
- /* search bar */
-  
-  
-    $("#Login_tab").hide();  
-	
-	$("#login").click(function(){
-		if($("#Login_tab").hasClass("closed"))
-		{
-		  $("#Login_tab").slideDown('fast');
-		  $("#imgbotao").attr("src", "images/menu/bt_amigodarevenda1.png");
-		  $("#Login_tab").removeClass("closed");
-		  $("#Login_tab").addClass("open");
-		}
-		else
-		{
-			$("#Login_tab").slideUp('fast');
-		  	$("#imgbotao").attr("src", "images/menu/bt_amigodarevenda0.png");
-			$("#Login_tab").removeClass("open");
-		  	$("#Login_tab").addClass("closed");
-		}  
-  
-	});
-});
-</script>
+<%=javascript_include_tag "abas_nautilus"%>
 </head>
 
 <body>
@@ -44,28 +14,7 @@ $(document).ready(function() {
 		<div id="bgCurves">
 			<div id="General">
 				<div id="Header">
-					<div id="Top_bar">
-							<div id="Login_field">
-								<div id="login_buttom"><a href="#" id="login"><img id="imgbotao" src="images/menu/bt_amigodarevenda0.png" width="242" height="53"/></a></div>
-								<div id="Login_tab" class="closed" >
-                           			<div id="Login_content">
-                                    	<div class="Bg_linput"><input type="text"  maxlength="23" name="Login" /></div><br />
-                                        <div class="Bg_linput"><input type="text"  maxlength="23" name="Senha"/></div><br />
-                                        <a href="#" class="Entrar_button"> <img src="images/menu/bt_entrarlogin.png" width="69" height="25" /></a>
-                                    </div>
-                                </div>                                
-							</div>
-                            <div id="Search_bar" class="slide" >
-                              <button><%= image_tag("menu/bt_busca.png", :width=>"103", :height=>"53")%></button>
-							  
-                              <div class="inner" style="margin-left: 387px;">
-                                                <div class="Search_tab">
-                                                    <input type="text"  maxlength="34" name="Busca"/> 
-                                                </div>
-                              </div>
-                            </div>           
-					</div>
-					<div id="Logo"><img src="images/logo_nautilus.png" width="278" height="119" /></div>
+					<%= render :file => "layouts/_topbarlogo.html.erb"%>
 					<div id="Menu">
 						<ul>
 							<li><%=link_to image_tag("menu/bt_institucional.png", :width=>"105", :alt=>"Institucional", :height=>"19"),'#'%></li>
