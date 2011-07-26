@@ -71,9 +71,9 @@ body
 #GeneralbgFooter
 {
 	background-image:url(../images/bg_all_bot.jpg);
-	background-repeat:repeat-x;
+	/*background-repeat:repeat-x;*/
 	background-position:top center;		
-	background-position: bottom center;
+
 	position:relative;
 	width:100%;
 	margin:auto;
@@ -264,7 +264,7 @@ body
 			background-position:-5px 452px;
 			*background-position:-5px 452px; /*ie7*/
 			background-position /*\**/:-4px 452px\9; /*ie8*/
-			margin-top:0px;
+			margin-top:-10px;
 			position:relative;
 			display:inline-block;
 			width:100%;
@@ -293,11 +293,9 @@ body
 				float:left;
 				margin-left:10px;
 				width:260px;
-				min-height:368px;
-				height:auto;
 				margin-top:98px;
 				z-index:0;
-				background-color:#000;				
+	
 			}
 				#Menu_internal
 				{
@@ -306,8 +304,8 @@ body
 					color:#fff;
 					float:left;
 					width:277px;
-					min-height:368px;
-					height:auto;				
+					height:auto;
+		
 				}	
 					#Menu_internal ul
 					{	
@@ -354,28 +352,73 @@ body
 										background-repeat:no-repeat;
 										background-position:center center;			
 									}	
+				
+				#Image_internal{
+					width:277px;
+					z-index:1;
+					position:absolute;
+					margin-top:-250px;
+					}
 																																																		
 			#Box_right
 			{
-				float:left;
+				float:right;
 				width:680px;
-				min-height:452px;
-				height:auto;
 				margin-top:48px;
-				z-index:2;
-				background-color:#CCC;
+				z-index:0;
 			}
 				#Right_content
 				{
 					position:relative;
 					width:613px;
-					min-height:300px;
-					height:auto;
 					margin:auto;
-					background:#fff;
-					border:#999 01px dashed;
+					z-index:0;
 		
 				}
+				
+				#Right_content h1{
+					margin-top:-18px;
+					margin-left:-5px;
+					padding:0px;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:20px;
+					font-weight:normal;
+					color:#dd6417;
+					border-bottom:1px solid #dd6417;
+					padding-bottom:5px;
+					*margin-top:-22px;
+					*padding-bottom:5px;
+					*margin-left:-5px;
+					position:relative;
+					z-index:1;
+				}
+				
+				#Right_content h2{
+					margin-left:-5px;
+					padding:0px;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:18px;
+					font-weight:normal;
+					color:#0c4da2;
+					*margin-top:-20px;
+					*padding-bottom:5px;
+					*margin-left:-5px;
+					position:relative;
+					z-index:1;
+				}
+				
+				#Right_content p{
+					margin-top:10px;
+					margin-left:-5px;
+					padding:0px;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:13px;
+					font-weight:normal;
+					line-height:22px;
+					color:#808080;
+
+				}
+				
 				.Bc_text0
 				{
 					font-family:Verdana, Geneva, sans-serif;
@@ -415,10 +458,12 @@ body
 		width:100%;
 		min-height:132px;
 		margin:auto;
-		clear:both;	
+		clear:both;
+		
 	}	
 		#Footer_content
 		{
+			z-index:0;
 			background-image:url(../images/bg_footerinternal.png);
 			background-repeat:no-repeat;
 			background-position:center top;
