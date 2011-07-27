@@ -1,0 +1,53 @@
+<%content_for :title do%>
+	Meus Pedidos
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalrepre"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    <%=render :file => "layouts/_menuinternal.html.erb"%>
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Revendas e Representates</h1>
+	  <div id='repre_top'>
+	    <div id='repre_estado'>
+         <p>Selecione o Estado:</p>
+	      <select>
+	        <option>São Paulo</option>
+	      </select>
+		</div>
+		<div id='repre_cidade'>
+         <p>Selecione a Cidade:</p>
+	      <select>
+	        <option>Atibaia</option>
+	      </select>
+		</div>
+		<div id='repre_busca'>
+         <p>&nbsp;</p>
+	      <%= link_to image_tag("bt_busca_internal.png", :width=>"85",:height=>"29",:class=>"align_detail"), "#", :class=>"bt_textalign"%>
+		</div>
+		<div class="clear"></div>
+	  </div>
+	  <div id='repre_bottom'>
+	    <div id='resultado_busca_1'>
+		  <h1>ISOTRONIC INDUSTRIA E COMERCIO LTDA.</h1>
+		  <span>Local:</span>Atibaia / SP
+		</div>
+		<div id='resultado_busca_2'>
+		  <h1>ISOTRONIC INDUSTRIA E COMERCIO LTDA.</h1>
+		  <span>Local:</span>Atibaia / SP
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+</div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_revenda.png")%>
+</div>

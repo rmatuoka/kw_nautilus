@@ -8,17 +8,10 @@
 <div id='Content_bgrepeat'>
 <div id='Content'>
   <div id='Box_left'>
-    <div id="Menu_internal">
-      <ul>
-        <li><p class="bg_botao"><a href="#"><img src="images/menu/Menu_internal/img_circledetail.png" width="9" height="9" class="align_detail" /><span class="bt_textalign">Sobre a Nautilus</span></a></p></li>
-        <li><p class="bg_botao"><a href="#"><img src="images/menu/Menu_internal/img_circledetail.png" width="9" height="9" class="align_detail" /><span class="bt_textalign">Missão e Visão de Mercado</span></a></p></li>
-        <li><p class="bg_botao"><a href="#"><img src="images/menu/Menu_internal/img_circledetail.png" width="9" height="9" class="align_detail" /><span class="bt_textalign">Revendas e Representantes</span></a></p></li>
-        <li><p class="bg_botao"><a href="#"><img src="images/menu/Menu_internal/img_circledetail.png" width="9" height="9" class="align_detail" /><span class="bt_textalign">Depoimentois</span></a></p></li>
-      </ul> 
-    </div>
+    <%=render :file => "layouts/_menuinternal.html.erb"%>
   </div>
   <div id='Box_right'>
-    <img src='images/ico_title_internal.png'>
+    <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
 	  <h1>Missão e Visão de Mercado</h1>
 	  <h2>Nossa Missão</h2>
@@ -28,18 +21,15 @@
 - Comprometimento<br>
 - Solidariedade</p>
       <h2>Nossa História</h2>
-	  <p>A Nautilus iniciou suas atividades em maio de 1984, na cidade de São Paulo, com o objetivo inicial de produzir acessórios de piscinas, tais como aspirador de fundo de piscinas, em fibra de vidro prensada, peneiras e skimmer regulável. <br><br> 
- 
+	  <p>A Nautilus iniciou suas atividades em maio de 1984, na cidade de São Paulo, com o objetivo inicial de produzir acessórios de piscinas, tais como aspirador de fundo de piscinas, em fibra de vidro prensada, peneiras e skimmer regulável. <br><br>
 Em 1986, já sob a direção dos atuais sócios da empresa, a Nautilus iniciou o projeto de fabricação de filtros e bombas para piscinas. No início, os tanques dos filtros eram construídos em chapa de aço carbono ou em fibra de vidro. As bombas e a válvula multi-vias do filtro eram em ferro fundido.<br><br>
- 
 Buscando sempre o crescimento e expansão da empresa, em setembro de 1989, a Nautilus lançou o primeiro filtro rotomoldado produzido no Brasil, o modelo F350P, que marcou o início de uma nova era na fabricação de filtros, com tanques construídos em uma peça sem solda e sem qualquer tipo de emendas, muito mais resistentes, especialmente em relação à corrosão a que normalmente são submetidos os produtos de piscinas. A Nautilus sempre teve a mais completa linha de filtros rotomoldados. Ainda hoje é a fabricante do maior filtro rotomoldado no Brasil, o modelo F1150P.<br><br>        
- 
 Em abril de 1991, em razão da aquisição de sua máquina de rotomoldagem, o que requeria um espaço maior, a Nautilus mudou-se para Atibaia, no interior de São Paulo, onde se encontra instalada hoje.   </p>
 	</div>
   </div>
   
 </div>
 <div id='Image_internal'>
-  <img src='images/img_sobre.png'>
+  <%=image_tag("img_missao.png")%>
 </div>
 </div>

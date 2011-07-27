@@ -1,0 +1,41 @@
+#img_internal_revenda{
+	float:left;
+	margin-left:-32px;
+	margin-top:20px;
+	}
+	
+#img_internal_representante{
+    float:left;
+	margin-top:20px;
+	}
+
+#repre_estado{
+	float:left;
+	margin-right:10px;
+	}
+
+#repre_cidade{
+	float:left;
+	margin-right:10px;
+	}
+	
+#repre_busca{
+	float:left;
+	}
+
+select{
+	width:200px;
+	height:20px;
+	font-size:15px;
+	margin-left:-5px;
+	margin-top:5px;
+	}
+
+#resultado_busca_1{
+	border:1px solid red;
+	}
+
+#resultado_busca_2{
+	background-image:url(file:///U|/Rails/kw_nautilus/public/images/bg_busca_revenda.png);
+	border:1px solid black;
+	}

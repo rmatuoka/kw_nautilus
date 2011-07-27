@@ -355,9 +355,10 @@ body
 				
 				#Image_internal{
 					width:277px;
-					z-index:1;
+					z-index:10;
 					position:absolute;
 					margin-top:-250px;
+					margin-left:6px;
 					}
 																																																		
 			#Box_right
@@ -397,18 +398,19 @@ body
 					margin-left:-5px;
 					padding:0px;
 					font-family:Verdana, Geneva, sans-serif;
-					font-size:18px;
+					font-size:17px;
 					font-weight:normal;
 					color:#0c4da2;
 					*margin-top:-20px;
 					*padding-bottom:5px;
 					*margin-left:-5px;
 					position:relative;
+					margin-top:10px;
 					z-index:1;
 				}
 				
 				#Right_content p{
-					margin-top:10px;
+					margin-top:5px;
 					margin-left:-5px;
 					padding:0px;
 					font-family:Verdana, Geneva, sans-serif;
