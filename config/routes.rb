@@ -1,5 +1,17 @@
 KwNautilus::Application.routes.draw do
 
+  get "produtos/show"
+
+  get "linhas/index"
+
+  get "linhas/show"
+
+  get "obras/index"
+
+  get "obras/show"
+
+  get "cases/index"
+
   namespace(:institucional){
     resources :depoimentos
     resources :revendas
