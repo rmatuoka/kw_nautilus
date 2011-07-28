@@ -1,0 +1,11 @@
+#dep_anterior{
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	}
+
+#dep_proximo{
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	}

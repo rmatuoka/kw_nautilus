@@ -409,6 +409,21 @@ body
 					z-index:1;
 				}
 				
+				  #Right_content h2 span{
+					margin-left:-5px;
+					padding:0px;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:15px;
+					font-weight:normal;
+					color:#6390cb;
+					*margin-top:-20px;
+					*padding-bottom:5px;
+					*margin-left:-5px;
+					position:relative;
+					margin-top:10px;
+					z-index:1;
+				  }
+				
 				#Right_content p{
 					margin-top:5px;
 					margin-left:-5px;
