@@ -1,34 +1,21 @@
 KwNautilus::Application.routes.draw do
-  
-  get "servicos/index"
-
-  get "atendimento/new"
-
-  get "atendimento/index"
-
-  get "atendimento/show"
-
-  get "downloads/index"
-
-  get "videos/index"
-
-  get "videos/show"
-
-  get "noticias/index"
-
-  get "noticias/show"
 
   namespace(:institucional){
-    
     resources :depoimentos
     resources :revendas
     resources :missao
     resources :sobre
-    
     root :to => "sobre#index"
-    
-    
   }
+  resources :servicos
+
+  resources :atendimento
+
+  resources :downloads
+
+  resources :videos
+
+  resources :noticias  
 
   root :to => "home#index"
   
