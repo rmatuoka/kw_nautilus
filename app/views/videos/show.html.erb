@@ -1,2 +1,29 @@
-<h1>Videos#show</h1>
-<p>Find me in app/views/videos/show.html.erb</p>
+<%content_for :title do%>
+	Meus Pedidos
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "videos"%>
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Título do Video</h1>
+	  <p>Aqui você ficará por dentro de tudo que acontece na Nautilus e em seu meio de trabalho.</p>
+	  <div id='youtube'>
+	    <%=image_tag("img_youtube.png")%>
+	  </div>
+	  <div id='txt_video'>
+	    <p>Venha conhecer nossa área de videos. Visite agora mesmo nosso canal do YouTube.</p>
+	  </div>
+	</div>
+  </div>
+  </div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_videos.png")%>
+</div>

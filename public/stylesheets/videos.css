@@ -1,0 +1,21 @@
+#youtube{
+	float:left;
+	margin-right:20px;
+	margin-top:10px;
+	}
+	
+#txt_video{
+	float:left;
+	width:200px;
+	margin-top:10px;
+	}
+	
+#Image_internal
+  {
+    width:277px;
+	z-index:10;
+	position:absolute;
+	margin-top:-286px;
+	*margin-top:-550px;
+	margin-left:6px;
+  }

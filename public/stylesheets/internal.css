@@ -73,7 +73,6 @@ body
 	background-image:url(../images/bg_all_bot.jpg);
 	/*background-repeat:repeat-x;*/
 	background-position:top center;		
-
 	position:relative;
 	width:100%;
 	margin:auto;
@@ -84,7 +83,8 @@ body
 	height:100%;
 	background-image:url(../images/curves.png);
 	background-repeat:no-repeat;
-	background-position:top center;	
+	background-position:top center;
+		
 }
 
 #General
@@ -264,7 +264,7 @@ body
 			background-position:-5px 452px;
 			*background-position:-5px 452px; /*ie7*/
 			background-position /*\**/:-4px 452px\9; /*ie8*/
-			margin-top:-10px;
+			margin-top:0px;
 			position:relative;
 			display:inline-block;
 			width:100%;
@@ -358,6 +358,7 @@ body
 					z-index:10;
 					position:absolute;
 					margin-top:-250px;
+					
 					margin-left:6px;
 					}
 																																																		
@@ -466,6 +467,7 @@ body
 					color:#99999;					
 					color:#C60;
 				}
+				
 	#Footer
 	{
 		font-family:Verdana, Geneva, sans-serif;
