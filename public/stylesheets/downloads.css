@@ -1,0 +1,41 @@
+#efeito a{ 
+  display:block; 
+  font-weight:bold; 
+  color:#fff; 
+  padding:5px 10px; 
+  text-decoration:none; 
+  } 
+			
+#efeito a:hover{
+	} 
+	
+#efeito a.selected{
+	} 
+
+li{
+  margin-left:20px;
+	}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ li img { margin:230px 0 0 0; } }
+
+li img{
+	float:right;
+	margin-top:-23px;
+	}
+
+p{
+	white-space: nowrap;
+	}
+
+#Image_internal
+  {
+    width:277px;
+	z-index:10;
+	position:absolute;
+	margin-top:-420px;
+	*margin-top:-420px;
+	margin-left:6px;
+  }

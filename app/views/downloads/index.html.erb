@@ -1,2 +1,54 @@
-<h1>Downloads#index</h1>
-<p>Find me in app/views/downloads/index.html.erb</p>
+<%content_for :title do%>
+	Meus Pedidos
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalbig"%>
+<%=stylesheet_link_tag "downloads"%>
+<%=javascript_include_tag "jquery.accordion.js"%>
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Downloads</h1>
+	  <div id="efeito"> 
+        <a href="#"><h2>Folhetos <%=image_tag("seta_up.png")%></h2></a> 
+        <div>
+		  <ul>
+		    <li><p>Folheto Acessórios - Tamanho do arquivo: 2,59 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Aquecedor AC-290 - Tamanho do arquivo: 1,97 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Aquecedor Flex-60 - Tamanho do arquivo: 4,91 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Aquecedor Solar - Tamanho do arquivo: 2,79 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Aquecedores - Tamanho do arquivo: 2,92 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Filtros - Tamanho do arquivo: 2,41 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Filtros com Carrinho - Tamanho do arquivo: 2,15 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Gerador de Cloro - Aquaclor - Tamanho do arquivo: 1,89 Mb <%=image_tag("bt_download.png")%></p></li>
+			<li><p>Folheto Motobombas - Tamanho do arquivo: 1,82 Mb <%=image_tag("bt_download.png")%></p></li> 
+         </div> 
+          <a href="#"><h2>Manuais <%=image_tag("seta_down.png")%></h2></a> 
+        <div> 
+          <p>ponha aqui o conteúdo...</p> 
+        </div> 
+          <a href="#"><h2>VIstas Explodidas <%=image_tag("seta_down.png")%></h2></a> 
+        <div> 
+          <p>ponha aqui o conteúdo...</p> 
+        </div> 
+      </div>
+	      <script type="text/javascript"> 
+            $(function(){ 
+            $('#efeito').accordion({ 
+              autoheight:false 
+              }); 
+            }); 
+          </script>  
+	</div>
+  </div>
+</div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_download.png")%>
+</div>

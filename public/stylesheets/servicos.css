@@ -1,0 +1,9 @@
+#Image_internal
+  {
+    width:277px;
+	z-index:10;
+	position:absolute;
+	margin-top:-350px;
+	*margin-top:-550px;
+	margin-left:6px;
+  }
