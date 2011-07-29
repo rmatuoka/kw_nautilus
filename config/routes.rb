@@ -28,6 +28,10 @@ KwNautilus::Application.routes.draw do
   resources :videos
 
   resources :noticias  
+  
+  resources :cases
+  
+  resources :obras
 
   root :to => "home#index"
   

@@ -1,0 +1,25 @@
+@charset "utf-8";
+#img_internal_revenda
+	{
+	float:left;
+	margin-left:-32px;
+	margin-top:20px;
+	min-height:330px;
+	height:auto;
+	}
+#img_internal_representante
+	{
+    float:left;
+	margin-top:20px;
+	min-height:330px;
+	height:auto;
+	}	
+
+				
+#Image_internal_cases
+	{
+		width:277px;
+		z-index:10;
+		position:absolute;
+		margin-top:-440px;
+		margin-left:8px;

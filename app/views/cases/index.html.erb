@@ -1,2 +1,30 @@
-<h1>Cases#index</h1>
-<p>Find me in app/views/cases/index.html.erb</p>
+<%content_for :title do%>
+	Cases
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "cases"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Cases</h1>
+	  <p>Escolha abaixo a case que você gostaria de ver:</p>
+	  <div id='img_internal_revenda'>
+	  <%= link_to image_tag("img_casesdesucesso.png", :width=>"302",:height=>"308",:class=>"align_detail"), obras_index_path, :class=>"bt_textalign"%>
+	  </div>
+	  <div id='img_internal_representante'>
+	  <%= link_to image_tag("img_obrasprimas.png", :width=>"300",:height=>"307",:class=>"align_detail"), obras_index_path, :class=>"bt_textalign"%>
+	  </div>
+	</div>
+  </div>
+  
+</div>
+</div>
+<div id='Image_internal_cases'>
+  <%=image_tag("img_caseschild.png")%>
+</div>
