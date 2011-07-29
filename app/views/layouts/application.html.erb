@@ -6,6 +6,9 @@
 <%= csrf_meta_tag %>
 <%=stylesheet_link_tag "internal"%>
 <%=javascript_include_tag "jquery"%>
+<script>
+	jQuery.noConflict();
+</script>
 <%=javascript_include_tag "abas_nautilus"%>
 <%=yield :head%>
 </head>
