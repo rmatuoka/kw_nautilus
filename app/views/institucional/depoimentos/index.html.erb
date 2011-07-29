@@ -2,29 +2,58 @@
 	Meus Pedidos
 <%end%>
 <%content_for :head do %>
+  <%= javascript_include_tag "jquery.cycle.all.min" %>
   <%=stylesheet_link_tag "internaldepo"%>
+	<script>
+	jQuery(document).ready(function() {	
+		jQuery('#Box_depoimento').cycle({
+			fx: 'fade',
+			timeout: 10000,  
+			speed: 500,			
+			prev: "#dep_anterior",
+			next: "#dep_proximo",
+			autostop:      0,
+			pause: 0
+		});
+	});
+	</script>
 <%end%>
 <div id='Content_bgrepeat'>
-<div id='Content'>
-  <div id='Box_left'>
-    <%=render :file => "layouts/_menuinternal.html.erb"%>
-  </div>
-  <div id='Box_right'>
-    <%=image_tag("ico_title_internal.png")%>
-    <div id='Right_content'>
-	  <h1>Depoismentos</h1>
-	  <h2>Luiz Augusto Vanti / <span>&nbsp;Lorem Ipsum</span></h2>
-	  <p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
-      <div id='dep_anterior'>
-	    <%= link_to image_tag("bt_dep_anterior.png"), "#"%>
+	<div id='Content'>
+	  <div id='Box_left'>
+	    <%=render :file => "layouts/_menuinternal.html.erb"%>
 	  </div>
-	  <div id='dep_proximo'>
-	    <%= link_to image_tag("bt_dep_proximo.png"), "#"%>
-	  </div>
+	  <div id='Box_right'>
+	    <%=image_tag("ico_title_internal.png")%>
+	    <div id='Right_content'>
+				  <h1>Depoismentos</h1>		
+			<div id="Box_depoimento">
+				<div>
+					<h2>Luiz Augusto Vanti / <span>&nbsp;Lorem Ipsum</span></h2>
+					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
+				</div>
+				
+				<div>
+					<h2>Luiz Augusto Vanti 2/ <span>&nbsp;Lorem Ipsum</span></h2>
+					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. 	Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
+				</div>
+				
+				<div>
+					<h2>Luiz Augusto Vanti 3/ <span>&nbsp;Lorem Ipsum</span></h2>
+					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. 	Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
+						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
+				</div>								
+			</div>
+		</div>
+		<%= image_tag("bt_dep_anterior.png", :id=>'dep_anterior')%>
+		<%= image_tag("bt_dep_proximo.png",  :id=>'dep_proximo')%>	
+	  </div>  
 	</div>
-  </div>  
-</div>
 </div>
 <div id='Image_internal'>
   <%=image_tag("img_depoimentos.png")%>

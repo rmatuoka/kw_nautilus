@@ -1,2 +1,45 @@
-<h1>Obras#show</h1>
-<p>Find me in app/views/obras/show.html.erb</p>
+<%content_for :title do%>
+	Obras Primas
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "obras_primas_show"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Obras Primas</h1>
+	  <p>Escolha abaixo a obra que você gostaria de ver:</p>
+	  <div id='Galeria'>
+		<div id="Button_place">
+			<div id='Left_button'>
+				<%=image_tag("bt_left_button.png", :width=>"52",:height=>"117")%>
+			</div>
+		 	<div id='Image'>
+				  <div id='Photo'>
+					<%=image_tag("img_preview_image.jpg", :width=>"487",:height=>"365")%>	
+				  </div>
+		  	</div>
+			<div id='Right_button'>
+				<%=image_tag("bt_right_button.png", :width=>"52",:height=>"117")%>
+			</div>
+		</div>
+	  </div>
+
+	  </div>
+<div class="clear"></div>
+	</div>
+	
+  </div>
+	<div id='Image_internal_obras'>
+	  <%=image_tag("img_caseschild.png", :width=>"309",:height=>"441")%>
+	</div>  
+
+</div>
+
+</div>
+
