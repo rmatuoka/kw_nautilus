@@ -1,2 +1,38 @@
-<h1>Atendimento#new</h1>
-<p>Find me in app/views/atendimento/new.html.erb</p>
+<%content_for :title do%>
+	Meus Pedidos
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalbig"%>
+<%=stylesheet_link_tag "atendimento"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Atendimento</h1>
+	  <p>Envie-nos seu contato, dúvida, sugestões ou críticas através do formulário abaixo. Se preferir, entre em contato diretamente pelo telefone 55 11 4411-1488.</p>
+	  <div id='txt_form'>
+	  <p>Departamento:</p>
+	  <p>Nome:</p>
+	  <p>Telefone:</p>
+	  <p>E-mail:</p>
+	  <p>Empresa:</p>
+	  <p>Cidade:</p>
+	  <p>Estado:</p>
+	  <p>Mensagem:</p>
+	  </div>
+	  <div id='comp_form'>
+	  <select><option>Suporte</option></select>
+	  </div>
+	</div>
+  </div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_atendimento.png")%>
+</div>
+</div>

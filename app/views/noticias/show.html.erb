@@ -1,2 +1,38 @@
-<h1>Noticias#show</h1>
-<p>Find me in app/views/noticias/show.html.erb</p>
+<%content_for :title do%>
+	Meus Pedidos
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalbig"%>
+<%=stylesheet_link_tag "noticias"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Fique por dentro</h1>
+	  <h2>Fique por dentro de tudo que acontece na Nautilus e em seu mercado.</h2>
+	  <%=image_tag("img_show_noticia.png", :class=>"img_flutuante")%>
+	  <p>Dando início aos trabalhos de abertura das vendas, para todo o mercado nacional, dos aquecedores da linha Fasterm, realizamos no último dia 19/08, em nossa fábrica em Atibaia, o primeiro treinamento técnico-comercial voltado exclusivamente para essa linha de produtos.
+	  Dele participaram além de alguns colaboradores da Nautilus/Fasterm, uma equipe da empresa CONAB, composta de colaboradores dos departamentos técnicos e comercial.
+Durante o treinamento foram apresentados a todos não só o princípio de funcionamento dessa linha, mas todos os seus diferencias, tais como o da grande economia, do fato de ser um equipamento ecologicamente correto e o da sustentabilidade.
+Já em setembro será dada continuidade a esses treinamentos, visando capacitar o maior número de pessoas a atuar nesse mercado crescente e promissor de água quente.
+      <br>
+      <br>
+      <h3>Clique na foto para ampliar:</h3>
+      <ul>
+        <li><%=image_tag("img_galeria_noticia.png")%></li>
+        <li><%=image_tag("img_galeria_noticia.png")%></li>
+        <li><%=image_tag("img_galeria_noticia.png")%></li>
+      </ul>
+	</div>
+  </div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_noticias.png")%>
+</div>
+</div>

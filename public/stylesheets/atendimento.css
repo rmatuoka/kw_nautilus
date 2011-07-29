@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Image_internal{
+    width:277px;
+	z-index:10;
+	position:absolute;
+	margin-top:-350px;
+	margin-left:9px;
+	}
+	
+#txt_form{
+	float:left;
+	}
+	
+#comp_form{
+	float:left;
+	}

@@ -12,22 +12,14 @@
 #efeito a.selected{
 	} 
 
-li{
-  margin-left:20px;
-	}
 
-
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{ li img { margin:230px 0 0 0; } }
-
-li img{
+.com_fundo img{
 	float:right;
-	margin-top:-23px;
 	}
 
-p{
-	white-space: nowrap;
+.sem_fundo img{
+	float:right;
+
 	}
 
 #Image_internal
@@ -39,3 +31,16 @@ p{
 	*margin-top:-420px;
 	margin-left:6px;
   }
+
+.sem_fundo{
+	margin-left:20px;
+    padding-left:15px;
+	}
+
+.com_fundo{
+	background-image:url(../images/bg_item_download.png);
+	background-repeat:repeat-y;
+	margin-left:20px;
+    padding-left:15px;
+	}
+
