@@ -440,6 +440,84 @@ body
 		height:325px;
 		margin:auto;
 		background:#FFF;
+	}
+	#Featured #Featured_Box
+	{
+		z-index:2000;		
+	}
+	#Featured #Featured_Box .Featured_image
+	{
+		position:relative; 
+		width:960px; 
+		height:325px; 
+		margin:auto;
+	}
+	#Featured #Featured_glass
+	{
+		background-image:url(../images/bg_glass.png); 
+		background-repeat:no-repeat; 
+		background-position:top center;
+		width: 960px;
+		height: 325px;
+		z-index: 2500;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#Featured #Featured_navigation
+	{
+		position: absolute;
+		top: 78%;
+		left: 70%;
+		z-index: 3000;
+	}
+	#Featured #Featured_navigation .featured_navigation_numbers a
+	{
+		width:30px;
+		height:35px;
+		background:url(../images/bg_featured_nav_off.png);
+		background-position:center right;
+		background-repeat:no-repeat;
+		text-decoration:none;
+		text-align:center;
+		padding-top: 12px;
+		display:inline-block;
+		font-family:Verdana;
+		font-size:20px;
+		color: #333366;
+		margin-left:5px;
+		
+	}
+	#Featured #Featured_navigation .activeSlide
+	{
+		width:39px !important;
+		height:32px !important;
+		background:url(../images/bg_featured_nav_on.png) !important;
+		background-position:center right !important;
+		background-repeat:no-repeat !important;
+		text-decoration:none;
+		text-align:center;
+		padding-top: 13px;
+		display:inline-block;
+		font-family:Verdana !important;
+		font-size:20px !important;
+		color: #cc6600 !important;
+		margin-left:5px;		
+		
+	}
+	#Featured_title_text
+	{
+		float:left; 
+		height:22px;
+		min-width:300px;
+		width:auto;
+		padding:7px 0px 0px 15px;
+		background-image:url(../images/bg_left_featured.png); 
+		background-repeat:repeat-x; 
+		background-position:top;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		color:#ff6600;
 	}									
 	#Content
 	{

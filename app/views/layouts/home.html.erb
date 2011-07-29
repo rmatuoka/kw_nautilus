@@ -6,7 +6,21 @@
 <%= csrf_meta_tag %>
 <%=stylesheet_link_tag "template"%>
 <%=javascript_include_tag "jquery"%>
+<script>
+	jQuery.noConflict();
+</script>
+<%= javascript_include_tag "jquery.cycle.all.min" %>
 <%=javascript_include_tag "abas_nautilus"%>
+<script>
+jQuery(document).ready(function() {	
+	jQuery('#Featured_Box').cycle({
+		fx: 'fade',
+		speed: 3500,
+		timeout: 10000,
+		pager: '.featured_navigation_numbers'
+	});
+});
+</script>
 </head>
 
 <body>
@@ -18,18 +32,64 @@
 					<%= render :file => "layouts/_menusuperior.html.erb"%>
 				</div><!-- end header -->
 				<div id="Featured">
-					<ul>
-						<li>
-							<div style="background-color:yellow; position:relative; width:960px; height:325px; margin:auto">
-								
+					<div id="Featured_Box">
+						<!-- Inicio do Replica -->
+						<div>
+							<div class="Featured_image">
+								<div style="width:960px; height:325px;background-color:blue;"></div>
 							</div>
-							<div style="position:absolute; top:90%; left:-10px;z-index:3000px;">
-								Title
+							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
+								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
+								<div id="Featured_title_text">
+									<span>Linha de Produtos para Piscinas</span>
+								</div>
 							</div>
-						</li>
-					</ul>
-					<div id="Featured_navigation" style="position:absolute; top:90%; left:80%; z-index:3000px;">
-						1 2 3 4
+						</div>
+					
+						
+						<div>
+							<div class="Featured_image">
+								<div style="width:960px; height:325px;background-color:yellow;"></div>
+							</div>
+							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
+								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
+								<div id="Featured_title_text">
+									<span>Linha de Produtos para Piscinas 2</span>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div>
+							<div class="Featured_image">
+								<div style="width:960px; height:325px;background-color:green;"></div>
+							</div>
+							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
+								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
+								<div id="Featured_title_text">
+									<span>Linha de Produtos para Piscinas 3</span>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="Featured_image">
+								<div style="width:960px; height:325px;background-color:red;"></div>
+							</div>
+							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
+								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
+								<div id="Featured_title_text">
+									<span>Linha de Produtos para Piscinas 4</span>
+								</div>
+							</div>
+						</div>
+						<!-- Fim do Replica -->
+					</div>					
+					<div id="Featured_glass">
+						
+					</div>
+					<div id="Featured_navigation">
+						<span class="featured_navigation_numbers"></span>
 					</div>
 				</div><!-- end freatured -->
 			
