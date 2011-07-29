@@ -35,24 +35,22 @@
 	{
 		display:block;
 		font-family:Verdana, Geneva, sans-serif;
-		font-size:15px;
+		font-size:12px;
 		font-weight:normal;
 		color:#cc6600;
 		text-align:center;
 		margin-top:6px;
-		clip:rect(top 150px bottom left);
 	}	
 .item_info
 {
 	display:block;
 	background-image:url(../images/bg_info.png);
-	background-repeat:no-repeat;
+	background-repeat:repeat-y;
 	background-position:center top;	
 	top:47px;
 	position:absolute;
 	width:150px;
 	min-height:30px;
 	height:auto;
-	
-
+	clip:rect(0px,150px,auto,0px);
 }
