@@ -15,19 +15,7 @@
 			<div id="General">
 				<div id="Header">
 					<%= render :file => "layouts/_topbarlogo.html.erb"%>
-					<div id="Menu">
-						<ul>
-							<li><a href="#"><img src="images/menu/bt_institucional.png" width="105" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_produtos.png" width="74" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_assistenciatecnica.png" width="112" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_downloads.png" width="85" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_cases.png" width="52" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_notícias.png" width="66" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_videos.png" width="61" height="19" /></a></li>
-							<li><a href="#"><img src="images/menu/bt_atendimento.png" width="94" height="19" /></a></li>
-						</ul>   
-					</div>
-				
+					<%= render :file => "layouts/_menusuperior.html.erb"%>
 				</div><!-- end header -->				
                     <%=yield%>
 				<div id="clear"></div>

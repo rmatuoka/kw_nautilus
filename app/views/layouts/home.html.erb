@@ -15,25 +15,22 @@
 			<div id="General">
 				<div id="Header">
 					<%= render :file => "layouts/_topbarlogo.html.erb"%>
-					<div id="Menu">
-						<ul>
-							<li class="institucional"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="produtos"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="servicos"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="downloads"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="cases"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="noticias"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="videos"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-							<li class="atendimento"><a href="#" class="item_align"><img src="images/menu/trans.gif" width="1" height="1" /></a></li>
-
-						</ul>   
-					</div>
-				
+					<%= render :file => "layouts/_menusuperior.html.erb"%>
 				</div><!-- end header -->
 				<div id="Featured">
-				FREATURED
-
-
+					<ul>
+						<li>
+							<div style="background-color:yellow; position:relative; width:960px; height:325px; margin:auto">
+								
+							</div>
+							<div style="position:absolute; top:90%; left:-10px;z-index:3000px;">
+								Title
+							</div>
+						</li>
+					</ul>
+					<div id="Featured_navigation" style="position:absolute; top:90%; left:80%; z-index:3000px;">
+						1 2 3 4
+					</div>
 				</div><!-- end freatured -->
 			
 				<div id="Content">
