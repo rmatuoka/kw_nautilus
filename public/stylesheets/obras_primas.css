@@ -21,7 +21,8 @@
 .item_image
 {
 	position:relative;
-	top:22px;
+	top:23px;
+	left:1px;
 	width:150px;
 	height:116px;
 	margin:auto;
@@ -54,3 +55,11 @@
 	height:auto;
 	clip:rect(0px,150px,auto,0px);
 }
+#Image_internal
+	{
+		width:277px;
+		z-index:10;
+		position:absolute;
+		margin-top:-370px;
+		margin-left:477px;
+	}

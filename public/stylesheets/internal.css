@@ -533,6 +533,7 @@ body
 				width:680px;
 				margin-top:48px;
 				z-index:0;
+				height:auto;
 			}
 				#Right_content
 				{
@@ -540,6 +541,7 @@ body
 					width:613px;
 					margin:auto;
 					z-index:0;
+					height:auto;
 		
 				}
 				

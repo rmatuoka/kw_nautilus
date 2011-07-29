@@ -33,6 +33,10 @@ KwNautilus::Application.routes.draw do
   
   resources :obras
 
+  resources :linhas
+
+  resources :produtos
+
   root :to => "home#index"
   
   # The priority is based upon order of creation:
