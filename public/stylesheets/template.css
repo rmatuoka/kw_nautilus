@@ -133,18 +133,7 @@ body
 				  margin-right:10px;
 				  margin-top:7px;
 				}
-				#Top_bar #Search_bar button:nth-of-type(1) 
-				{
-					position:relative;
-					border:none; background:#F00;
-					margin-left:273px;
-					margin-left/*\**/:274px\9; /*ie8*/
-					*margin-left:259px; /*ie7*/
-					top:-9px;
-					*top:-10px;   /*ie7*/
-					z-index:20000;
-					cursor:pointer;
-				}				
+			
 				#Top_bar #Search_bar button 
 				{
 					position:relative;
@@ -157,6 +146,19 @@ body
 					z-index:20000;
 					cursor:pointer;
 				}
+				#1testeTop_bar #Search_bar @media screen and (-webkit-min-device-pixel-ratio:0)
+				{ button body:nth-of-type(1) { 
+					position:relative;
+					border:none; background:#F00;
+					margin-left:273px;
+					margin-left/*\**/:274px\9; /*ie8*/
+					*margin-left:259px; /*ie7*/
+					top:-9px;
+					*top:-10px;   /*ie7*/
+					z-index:20000;
+					cursor:pointer;
+					}
+				}					
 				#Top_bar .slide .inner {
 					position: absolute;
 					top:-8px;

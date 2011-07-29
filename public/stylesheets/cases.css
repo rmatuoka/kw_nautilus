@@ -1,0 +1,16 @@
+@charset "utf-8";
+#img_internal_revenda
+	{
+	float:left;
+	margin-left:-32px;
+	margin-top:20px;
+	min-height:500px;
+	height:auto;
+	}
+#img_internal_representante
+	{
+    float:left;
+	margin-top:20px;
+	min-height:500px;
+	height:auto;
+	}	
