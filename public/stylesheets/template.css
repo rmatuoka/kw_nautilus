@@ -452,6 +452,11 @@ body
 		height:325px; 
 		margin:auto;
 	}
+	#Featured #Featured_Box .Featured_image img
+	{
+		width:960px; 
+		height:325px; 
+	}
 	#Featured #Featured_glass
 	{
 		background-image:url(../images/bg_glass.png); 
@@ -459,7 +464,7 @@ body
 		background-position:top center;
 		width: 960px;
 		height: 325px;
-		z-index: 2500;
+		/*z-index: 2500; Tirei o Z-index pq ele estava impedindo o clique*/
 		position: absolute;
 		top: 0;
 		left: 0;

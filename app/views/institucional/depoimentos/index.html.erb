@@ -1,5 +1,5 @@
 <%content_for :title do%>
-	Meus Pedidos
+	Depoimentos
 <%end%>
 <%content_for :head do %>
   <%= javascript_include_tag "jquery.cycle.all.min" %>
@@ -8,13 +8,12 @@
 	jQuery(document).ready(function() {	
 		jQuery('#Box_depoimento').cycle({
 			fx: 'fade',
-			timeout: 10000,  
 			speed: 500,			
 			prev: "#dep_anterior",
-			next: "#dep_proximo",
-			autostop:      0,
-			pause: 0
+			next: "#dep_proximo"
+			
 		});
+		jQuery('#Box_depoimento').cycle('pause');
 	});
 	</script>
 <%end%>
@@ -26,28 +25,14 @@
 	  <div id='Box_right'>
 	    <%=image_tag("ico_title_internal.png")%>
 	    <div id='Right_content'>
-				  <h1>Depoismentos</h1>		
+				  <h1>Depoimentos</h1>		
 			<div id="Box_depoimento">
+				<%@Depoimentos.each do |d| %>
 				<div>
-					<h2>Luiz Augusto Vanti / <span>&nbsp;Lorem Ipsum</span></h2>
-					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
+					<h2><%=d.name%> <span><%=" / "+d.company if !d.company.blank? %><%=" - "+d.position if !d.position.blank? %></span></h2>
+					<%= raw d.testimonial%>
 				</div>
-				
-				<div>
-					<h2>Luiz Augusto Vanti 2/ <span>&nbsp;Lorem Ipsum</span></h2>
-					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. 	Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
-				</div>
-				
-				<div>
-					<h2>Luiz Augusto Vanti 3/ <span>&nbsp;Lorem Ipsum</span></h2>
-					<p>Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-					Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. 	Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim. Venho por meio desta agradecer o seu esforço e atenção dispensados acerca do meu caso e dos equipamentos da Nautilus. Fui verificar o equipameno e está tudo em ordem, funcionando dentro da normalidade após o reparo realizado por seu técnico. É por isso que uma empresa se destaca das demais, por funcionários capacitados e comprometidos com a marca que representa.
-						Gostaria de copiar esse email para a direção da Nautilus para que mais uma vez tenham a certeza da capacidade e presteza com que os funcionários desempenham suas funções,mas não encontrei no site os emails específicos. Peço a gentileza de fazê-lo por mim.</p>
-				</div>								
+				<% end %>
 			</div>
 		</div>
 		<%= image_tag("bt_dep_anterior.png", :id=>'dep_anterior')%>

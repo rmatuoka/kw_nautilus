@@ -1,5 +1,5 @@
 <%content_for :title do%>
-	Meus Pedidos
+	<%= @Dynamic_show.title%>
 <%end%>
 <%content_for :head do %>
 
@@ -12,11 +12,8 @@
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
-	  <h1>Sobre a Nautilus</h1>
-	  <p>A Nautilus é uma empresa atuante no mercado há mais de 25 anos. 
-Seu principal foco é a comercialização de equipamentos, acessórios e aquecedores para piscinas. Por trabalhar sempre com muito empenho, a empresa conseguiu se posicionar de forma expressiva no mercado e, graças à sua história, a Nautilus se tornou uma das melhores empresas no ramo em que atua.
-Com tradição no mercado e uma estrutura muito sólida, a Nautilus se preocupa em evoluir buscando o aperfeiçoamento de sua equipe, primando sempre pelo bom atendimento a seus clientes e a qualidade de seus equipamentos.
-O sucesso alcançado pela Nautilus é fruto do esforço coletivo. Toda a equipe e os revendedores que buscam sempre oferecer a você produtos com a mais alta tecnologia, com qualidade na prestação de serviços e economia para sua casa ou empreendimento.</p>
+		<h1><%= @Dynamic_show.title%></h1>
+		<%= raw @Dynamic_show.body%>
 	</div>
   </div>
 </div>

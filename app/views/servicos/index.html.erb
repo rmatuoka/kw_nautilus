@@ -1,5 +1,5 @@
 <%content_for :title do%>
-	Meus Pedidos
+	<%= @Dynamic_show.title%>
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalbig"%>
@@ -14,18 +14,8 @@
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
-	  <h1>Serviços</h1>
-	  <p>Além de oferecer a você equipamentos de qualidade, desenvolvidos a partir da mais alta tecnologia, a Nautilus fornece a você o serviço de manutenção mais eficaz e seguro do mercado.
-<br><br>
-Considerada a maior empresa de manutenção de bombas de calor do País, a Nautilus oferece serviços em equipamentos de todas as máquinas e de todos os fabricantes, sejam eles nacionais ou importados, com o know-how e a segurança que somente a marca Nautilus pode garantir.
-<br><br>
-Os equipamentos desenvolvidos pela Nautilus possuem uma incidência de manutenção, muito baixa, o que significa economia e conforto a você, além da garantia de poder aproveitar os benefícios dos equipamentos sem preocupação alguma.
-<br><br>
-Os funcionários da Nautilus são especialmente treinados para atender a você e garantir a solução de seu problema sem que você precise sair de sua residência ou empresa. Os funcionários são também treinados para garantir que a instalação dos equipamentos seja feita com tranquilidade e segurança para que você possa usufruir dos produtos da melhor forma possível, com garantia de alto desempenho.
-<br><br>
-Tantos anos de marcado, o pioneirismo e compromisso da Nautilus são itens de imensa importância e, para que eles sejam sempre mantidos, atender bem a você e assegurar o conforto e qualidade no desempenho do equipamento adquirido por você são imprescindíveis.
-<br><br>
-Para a Nautilus, cuidar bem do cliente e garantir serviços de qualidade aliados ao bom atendimento no momento de qualquer tipo de manutenção transmite mais segurança e confiabilidade ao cliente e garante à empresa a possibilidade de estabelecer um relacionamento mais próximo com o cliente, podendo, assim, atendê-lo cada vez melhor e com mais eficácia.</p>
+	  <h1><%= @Dynamic_show.title%></h1>
+	  <%= raw @Dynamic_show.body%>
 	</div>
   </div>
 </div>

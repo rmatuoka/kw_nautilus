@@ -34,55 +34,19 @@ jQuery(document).ready(function() {
 				<div id="Featured">
 					<div id="Featured_Box">
 						<!-- Inicio do Replica -->
+						<%@Destaques.each do |d|%>	
 						<div>
 							<div class="Featured_image">
-								<div style="width:960px; height:325px;background-color:blue;"></div>
+								<%= link_to image_tag(d.image.url), d.link%>
 							</div>
 							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
 								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
 								<div id="Featured_title_text">
-									<span>Linha de Produtos para Piscinas</span>
+									<span><%=d.title%></span>
 								</div>
 							</div>
 						</div>
-					
-						
-						<div>
-							<div class="Featured_image">
-								<div style="width:960px; height:325px;background-color:yellow;"></div>
-							</div>
-							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
-								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
-								<div id="Featured_title_text">
-									<span>Linha de Produtos para Piscinas 2</span>
-								</div>
-							</div>
-						</div>
-					
-						
-						<div>
-							<div class="Featured_image">
-								<div style="width:960px; height:325px;background-color:green;"></div>
-							</div>
-							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
-								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
-								<div id="Featured_title_text">
-									<span>Linha de Produtos para Piscinas 3</span>
-								</div>
-							</div>
-						</div>
-						
-						<div>
-							<div class="Featured_image">
-								<div style="width:960px; height:325px;background-color:red;"></div>
-							</div>
-							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
-								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
-								<div id="Featured_title_text">
-									<span>Linha de Produtos para Piscinas 4</span>
-								</div>
-							</div>
-						</div>
+						<%end%>
 						<!-- Fim do Replica -->
 					</div>					
 					<div id="Featured_glass">
@@ -98,50 +62,36 @@ jQuery(document).ready(function() {
 					<div id="Box_left">	
 						<div id="Depoimentos_box">
 								<h1><img src="images/tit_depoimentos.png" width="192" height="48" /></h1><br /><br />
-								<p class="Dep_title">Julio César/ Gerente Motel Damy</p> 
-								<p class="Dep_data">23 julho 2011</p><br />
-								<p class="Dep_text"><span class="Leftpar_as">"</span>
-									Lorem Ipsum is simply dummy
-									text of the printing and
-									typesetting. Lorem Ipsum has
-									been the industry's standard
-									dum.<span class="Leftpar_as">"</span>
+								<p class="Dep_title"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
+								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
+								<p class="Dep_text">
+									<span class="Leftpar_as">"</span>
+									<%	$teste = raw @Depoimento.first.testimonial	 %>
+									<%=	truncate(strip_tags($teste), :length => 150) %><span class="Leftpar_as">"</span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
-								<a href="#"><p class="Veja_mais">..Veja mais</p></a>
+								<%= link_to "Veja mais", institucional_depoimentos_path, :class=>"Veja_mais"%>
 						</div> 					
 						<div id="Noticias_box">	
 							<h1><img src="images/tit_noticias.png" width="169" height="54" /></h1>
                             <br /><br />
+							<%@NoticiasHome.each do |n|%>
 							<!--start box noticia -->
 							<div id="Item_noticias">
-								<div id="Photo"><img src="images/img_previewnoticias.png" width="71" height="72" /></div>
+								<div id="Photo">
+									<%= image_tag(n.image.url("home"),:width=>"71", :height=>"72" )%>
+								</div>
 								<div id="Text">
-								  <h2 class="Tit_noticia">Lorem Ipsum is simply</h2><br />
+								  <h2 class="Tit_noticia"><%=n.title%></h2><br />
 								  <p class="Text_noticia">
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
-										Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
-										1500s, when an unknown printer took a galley <span class="Veja_mais"><a href="#">..Veja mais</a></span>  <br />
+										<%=n.summary%><span class="Veja_mais"> <%= link_to "Veja mais", noticia_path(n.id) %></span>  <br />
 								  </p>
 								  
 								</div>
 							</div>
 							<!--end box noticia -->
-							<!--start box noticia -->
-							<div id="Item_noticias">
-								<div id="Photo"><img src="images/img_previewnoticias.png" width="71" height="72" /></div>
-								<div id="Text">
-								  <h2 class="Tit_noticia">Lorem Ipsum is simply</h2><br />
-								  <p class="Text_noticia">
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
-										Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
-										1500s, when an unknown printer took a galley <span class="Veja_mais"><a href="#">..Veja mais</a></span>  <br />
-								  </p>
-								  
-								</div>
-							</div>
-							<!--end box noticia -->							
+							<% end %>
     									
 						</div><!-- End box noticias -->
                         		
