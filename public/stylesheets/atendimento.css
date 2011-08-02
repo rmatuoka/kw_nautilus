@@ -11,8 +11,24 @@
 	
 #txt_form{
 	float:left;
+	text-align:right;
 	}
 	
 #comp_form{
 	float:left;
+	width:300px;
+	margin-top:6px;
 	}
+
+#comp_form select{
+	margin-bottom:6px;
+	width:338px;
+	}
+	
+#comp_form input{
+	margin-bottom:6px;
+	width:332px;
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #comp_form input { margin-bottom:3px; }	}
