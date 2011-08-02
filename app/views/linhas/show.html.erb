@@ -10,50 +10,31 @@
 			<div id="Title_p">
 			  <h1>Produtos</h1>
 			  <%= link_to image_tag("ico_title_internal.png", :width=>"19",:height=>"15",:class=>"align_detail_ico"), obras_path, :class=>"bt_textalign"%>
-			</div>				
-			<div id="Linhas">
-			  <div id="Linhas_produto">
-			  <div id="Linhas_img">
-				<%= link_to image_tag("img_linha_product.jpg", :width=>"150",:height=>"215",:class=>"align_detail"), obras_path, :class=>"bt_textalign"%>
-			  </div>
-			  <div id="Linhas_text">
-				<h2>Filtros para piscinas</h2>
-				<br />
-				<p>A Nautilus produz a mais completa linha de filtros de areia em polietileno rotomoldado, adequados para uso em piscinas residenciais ou piscinas públicas de pequeno, médio ou grande porte para hotéis, academias, clubes e escolas de natação.</p>		  
-				<br />
-				<p>Escolha o produto na lista abaixo:</p>
-				<br />
-				<p><a href="#">Filtros para piscinas</a></p>
-				<br />
-			  </div>			
 			</div>
-
+			<%	@Categorias.each do |categoria| %>
 			<div id="Linhas">
-			  <div id="Linhas_produto">
-			  <div id="Linhas_img">
-				<%= link_to image_tag("img_linha_product2.jpg", :width=>"156",:height=>"215",:class=>"align_detail"), obras_path, :class=>"bt_textalign"%>
-			  </div>
-			  <div id="Linhas_text">
-				<h1>Filtros para piscinas</h1>
-				<br />
-				<p>Aqueça a água de sua piscina e garanta o lazer por longos períodos durante o ano todo. Os aquecedores de piscinas Nautilus, também conhecidos como Bombas de Calor, representam o que há de mais moderno dentre os sistemas normalmente utilizados.</p>		  
-				<br />
-				<p>Escolha o produto na lista abaixo:</p>
-				<br />
-				<p><a href="#">- Aquahot</a></p>
-				<p><a href="#">- PA-35</a></p>
-				<p><a href="#">- Flex-60</a></p>
-				<p><a href="#">- Aquahot Comercial</a></p>	
-				<p><a href="#">- Ciclo Reverso</a></p>
-				<br />															
-			  </div>			
-			</div>			
+				<div id="Linhas_produto">
+					  <div id="Linhas_img">
+						<%= image_tag(categoria.image.url("image_category"), :width=>"150",:height=>"215",:class=>"align_detail")%>
+					  </div>
+					  <div id="Linhas_text">
+							<h2><%= categoria.title%></h2>
+							<br />
+							<p><%= categoria.description%></p>		  
+							<br />
+							<p>Escolha o produto na lista abaixo:</p>
+							<br />
+							<% categoria.products.find(:all, :conditions => ['published = 1']).each do |p|%>
+							<p><%= link_to "- " + p.title, produto_path(p.id)%></p>
+							<% end %>
+							<br />
+					  </div>
+				</div>				
+			</div>
+			<% end %>		
+
+			<div class="clear"></div>
 		</div>
-	<div class="clear"></div>
-	</div>
 	
-  </div>
+  	</div>
 
-</div>
-
-</div>
