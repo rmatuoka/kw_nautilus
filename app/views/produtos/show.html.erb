@@ -1,5 +1,5 @@
 <%content_for :title do%>
-	
+	<%= @Produto.title %>
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalbig"%>
@@ -9,14 +9,14 @@
 <div id='Content_bgrepeat'>
 <div id='Content'>
   <div id='Box_left'>
-    <%=image_tag("img_produto.png", :class=>"produto")%>
+    <%=image_tag(@Produto_fotos.first.image.url("p_medio"), :class=>"produto")%>
 	<%=image_tag("bt_zoom.png")%>
   </div>
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
-	<h1>Produtos</h1>
-	<p>A Nautilus é pioneira na fabricação da mais completa linha de filtros de areia, produzidos em polietileno, para piscinas residenciais e comerciais. Os tanques rotomoldados em material à prova de corrosão são produzidos em uma única peça, sem emendas, que os tornam muito mais resistentes a tensões residuais. O manuseio é simplificado através de válvula seletora produzida em plástico ABS resistente à corrosão. Sua capacidade varia de acordo com seu tamanho que comporta desde pequenas piscinas residenciais, até grandes piscinas de uso público, tais como em escolas de natação, clubes, hotéis, motéis que possuem uma frequência muito grande de banhistas.</p>
+	<h1><%= @Produto.title %></h1>
+	<%= raw @Produto.description %>
 	<ul>
 	  <li><%=image_tag("bt_info.png")%></li>
 	  <li><%=image_tag("bt_onde.png")%></li>
