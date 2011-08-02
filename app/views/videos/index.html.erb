@@ -16,23 +16,18 @@
     <div id='Right_content'>
 	  <h1>Videos</h1>
 	  <h2>Fique por dentro de tudo que acontece na Nautilus e em seu mercado.</h2>
-	  <div id="content_video">
-	    <div id="thumb_video">
-		  <%=image_tag("thumb_youtube.png")%>
-		</div>
-		  <p>Dando início aos trabalhos de abertura das vendas, para todo o mercado nacional, dos aquecedores da linha Fasterm, realizamos no último dia 19/08, em nossa fábrica em Atibaia, o primeiro treinamento técnico-comercial voltado exclusivamente para essa linha de produtos.</p>
-		<span><%=image_tag("bt_vermais.png")%></span>
-		<div class="clear"></div>
-	  </div>
-	  <div id="content_video">
-	    <div id="thumb_video">
-		  <%=image_tag("thumb_youtube.png")%>
-		</div>
-		  <p>Dando início aos trabalhos de abertura das vendas, para todo o mercado nacional, dos aquecedores da linha Fasterm, realizamos no último dia 19/08, em nossa fábrica em Atibaia, o primeiro treinamento técnico-comercial voltado exclusivamente para essa linha de produtos.</p>
-		<span><%=image_tag("bt_vermais.png")%></span>
-		<div class="clear"></div>
-	  </div>
-	  
+
+	  <% @Videos.each do |v| %>
+		  <div id="content_video">
+		    <div id="thumb_video">
+			  <%=image_tag(v.image.url("video_img"), :width=>"129", :height=>"97")%>
+			</div>
+			  <p><%= raw v.description%></p>
+			<span><%=link_to image_tag("bt_vermais.png"), video_path(v.id)%></span>
+			<div class="clear"></div>
+		  </div>
+	  <% end %>
+	  <%= (will_paginate @Videos, :prev_label => "Anterior", :next_label => "Próximo") if !@Videos.blank? %>
 	</div>
   </div>
 </div>

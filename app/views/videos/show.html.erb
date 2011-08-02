@@ -12,13 +12,21 @@
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
-	  <h1>Título do Video</h1>
-	  <p>Aqui você ficará por dentro de tudo que acontece na Nautilus e em seu meio de trabalho.</p>
+	  <h1><%= @Video.title%></h1>
+	  <%= raw @Video.description%>
 	  <div id='youtube'>
-	    <%=image_tag("img_youtube.png")%>
+	    <object width="364" height="293">
+			<param name="movie" value="<%=@Link%>?fs=1&amp;hl=pt_BR"></param>
+			<param name="allowFullScreen" value="true"></param>
+			<param name="allowscriptaccess" value="always"></param>
+			<embed src="<%=@Link%>?fs=1&amp;hl=pt_BR" type="application/x-shockwave-flash" 
+				allowscriptaccess="always" 
+				allowfullscreen="true" 
+				width="364" height="293"></embed>
+		</object>
 	  </div>
 	  <div id='txt_video'>
-	    <p>Venha conhecer nossa área de videos. Visite agora mesmo nosso canal do YouTube.</p>
+	    <p>Venha conhecer nossa área de videos. Visite agora mesmo nosso canal do YouTube.<%= link_to image_tag("img_youtube_small.png"), "http://www.youtube.com/user/nautilusequipamentos", :target => "_blank"%></p>
 	  </div>
 	</div>
   </div>

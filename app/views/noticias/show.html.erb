@@ -4,6 +4,8 @@
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalbig"%>
 <%=stylesheet_link_tag "noticias"%>
+<%= javascript_include_tag :defaults %>
+<%= stylesheet_link_tag 'lightbox' %>
 
 <%end%>
 <div id='Content_bgrepeat'>
@@ -25,7 +27,7 @@
       <h3>Clique na foto para ampliar:</h3>
       <ul>
 		<%@Noticia_imagens.each do |img|%>
-        <li><%=image_tag(img.image.url("thumb"))%></li>
+			<li><%= lightbox_image_tag(img.image.url("thumb"), img.image.url("n_medio"), {:class=>"images"}, :title => img.title, :rel=>"lightbox[noticias]") %></li>
 		<% end %>
       </ul>
 	  <% end %>
