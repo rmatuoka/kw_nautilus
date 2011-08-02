@@ -16,23 +16,17 @@
     <div id='Right_content'>
 	  <h1>Fique por dentro</h1>
 	  <h2>Fique por dentro de tudo que acontece na Nautilus e em seu mercado.</h2>
+	  <% @Noticias.each do |n|%>
 	  <div id="content_noticia">
 	    <div id="thumb_noticia">
-		  <%=image_tag("thumb_noticia.png")%>
+		  <%= image_tag(n.image.url("thumb"),:width=>"125", :height=>"95" )%>
 		</div>
-		  <p>Dando início aos trabalhos de abertura das vendas, para todo o mercado nacional, dos aquecedores da linha Fasterm, realizamos no último dia 19/08, em nossa fábrica em Atibaia, o primeiro treinamento técnico-comercial voltado exclusivamente para essa linha de produtos.</p>
-		<span><%=image_tag("bt_vermais.png")%></span>
+		  <p><%=n.summary%></p>
+		<span><%=link_to image_tag("bt_vermais.png"), noticia_path(n.id) %></span>
 		<div class="clear"></div>
 	  </div>
-	  <div id="content_noticia">
-	    <div id="thumb_noticia">
-		  <%=image_tag("thumb_noticia.png")%>
-		</div>
-		  <p>Dando início aos trabalhos de abertura das vendas, para todo o mercado nacional, dos aquecedores da linha Fasterm, realizamos no último dia 19/08, em nossa fábrica em Atibaia, o primeiro treinamento técnico-comercial voltado exclusivamente para essa linha de produtos.</p>
-		<span><%=image_tag("bt_vermais.png")%></span>
-		<div class="clear"></div>
-	  </div>
-	  
+	  <%end%>
+		<%= (will_paginate @Noticias, :prev_label => "Anterior", :next_label => "Próximo") if !@Noticias.blank? %> 
 	</div>
   </div>
 </div>

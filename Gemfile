@@ -9,6 +9,7 @@ gem 'mysql2'
 gem "nifty-generators", :group => :development
 gem 'mail'
 gem 'mongrel'
+gem 'will_paginate'
 
 # Use unicorn as the web server
 # gem 'unicorn'

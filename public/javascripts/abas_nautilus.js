@@ -13,14 +13,14 @@ jQuery(document).ready(function() {
 		if(jQuery("#Login_tab").hasClass("closed"))
 		{
 		  jQuery("#Login_tab").slideDown('fast');
-		  jQuery("#imgbotao").attr("src", "images/menu/bt_amigodarevenda1.png");
+		  jQuery("#imgbotao").attr("src", "/images/menu/bt_amigodarevenda1.png");
 		  jQuery("#Login_tab").removeClass("closed");
 		  jQuery("#Login_tab").addClass("open");
 		}
 		else
 		{
 			jQuery("#Login_tab").slideUp('fast');
-		  	jQuery("#imgbotao").attr("src", "images/menu/bt_amigodarevenda0.png");
+		  	jQuery("#imgbotao").attr("src", "/images/menu/bt_amigodarevenda0.png");
 			jQuery("#Login_tab").removeClass("open");
 		  	jQuery("#Login_tab").addClass("closed");
 		}  
