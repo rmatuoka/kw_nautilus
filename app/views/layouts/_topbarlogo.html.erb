@@ -5,8 +5,12 @@
 			</div>
 			<div id="Login_tab" class="closed" >
        			<div id="Login_content">
-                	<div class="Bg_linput"><input type="text"  maxlength="23" name="Login" /></div><br />
-                    <div class="Bg_linput"><input type="text"  maxlength="23" name="Senha"/></div><br />
+                	<div class="Bg_linput">
+						<input type="text"  maxlength="23" name="Login" value="Usuário" onfocus="if (this.value =='Usuário') {this.value=''}" onblur="if(this.value == '') { this.value='Usuário'}"/>
+					</div><br />
+                    <div class="Bg_linput">
+						<input type="password"  maxlength="23" name="Senha" value="Senha" onfocus="if (this.value =='Senha') {this.value=''}" onblur="if(this.value == '') { this.value='Senha'}"/>
+					</div><br />
 					<%= link_to image_tag("menu/bt_entrarlogin.png", :width=>"69", :height=>"25"), "#", :class=>"Entrar_button"%>
                 </div>
             </div>                                
