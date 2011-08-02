@@ -142,17 +142,17 @@ body
 					z-index:20000;
 					cursor:pointer;
 				}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- #Top_bar #Search_bar button 
- {
-					position:relative;
-					border:none; 
-					background:none;
-					margin-left:276px;
-					top:-11px;
-					z-index:20000;
-					cursor:pointer;	 
-	 }	}					
+				@media screen and (-webkit-min-device-pixel-ratio:0) {
+				 #Top_bar #Search_bar button 
+				 {
+									position:relative;
+									border:none; 
+									background:none;
+									margin-left:276px;
+									top:-11px;
+									z-index:20000;
+									cursor:pointer;	 
+					 }	}					
 				#Top_bar .slide .inner {
 					position: absolute;
 					top:-8px;

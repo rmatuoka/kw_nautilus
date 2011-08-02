@@ -92,7 +92,6 @@ body
 
 #General
 {
-	border:red 1px solid;
 	position:relative;
 	width:960px;
 	margin:auto;
@@ -146,6 +145,18 @@ body
 					z-index:20000;
 					cursor:pointer;
 				}
+				@media screen and (-webkit-min-device-pixel-ratio:0) {
+				 #Top_bar #Search_bar button 
+				 {
+									position:relative;
+									border:none; 
+									background:none;
+									margin-left:276px;
+									top:-11px;
+									z-index:20000;
+									cursor:pointer;	 
+					 }	}					
+				
 				#1testeTop_bar #Search_bar @media screen and (-webkit-min-device-pixel-ratio:0)
 				{ button body:nth-of-type(1) { 
 					position:relative;
@@ -529,14 +540,14 @@ body
 		position:relative;
 		display:inline-block;
 		width:100%;
-		min-height:800px;
+		min-height:620px;
 		height:auto;
 		margin:auto;
 	}
 	#Detail
 	{
 		position:absolute;
-		top:-33px;
+		top:-23px;
 		left:-53px;
 		display:inline-block;
 		width:1021px;
@@ -548,50 +559,61 @@ body
 			width:519px;
 			min-height:400px;
 			height:auto;
-			border:#0CC 1px solid;
 			float:left;
 			
 		}
 			#Content #Box_left #Depoimentos_box
 			{
+				position:relative;
 				width:510px;
-				height:275px;
-				border:#0CC 1px solid;
-				float:left;
-				
-				padding: 5px 5px 5px 5px;
-				
+				height:275px;				
 			}
-				.Leftpar_as
+				.Leftpar_as_left
 				{
-					font-family:Verdana, Geneva, sans-serif;
-					font-size:14px;
+					position:absolute;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:48px;
 					font-weight:normal;
 					color:#99999;					
 					color:#C60;
-				}			
+					margin-left:-27px;
+					margin-top:-7px;
+				}	
+				.Leftpar_as_right
+				{
+					position:absolute;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:48px;
+					font-weight:normal;
+					color:#99999;					
+					color:#C60;
+					margin-left:12px;
+					margin-top:-7px;					
+				}				
 			#Content #Box_left #Noticias_box
 			{
+				position:relative;
 				width:510px;
-				height:500px;
-				border:#0CC 1px solid;
-				float:left;
-				
-				padding: 5px 5px 5px 5px;
+				height:300px;
+				float:left;				
+				padding: 0px 0px 0px 0px;
 			}
 			#Content #Box_left #Item_noticias
-			{
+			{	
+				position:relative;
 				width:519;
 				height:126px;
 			}		
 				#Content #Box_left #Item_noticias #Photo
 				{
+					position:relative;
 					width:90px;
 					height:120px;
 					float:left;
 				}	
 				#Content #Box_left #Item_noticias #Text
 				{
+					position:relative;
 					width:413px;
 					height:120px;
 					float:left;					
@@ -610,72 +632,99 @@ body
 					font-weight:normal;
 					color:#666666;
 				}
-				.Veja_mais
+				.Ver_mais 
 				{
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:12px;
+					font-weight:bold;				
 					float:right;
-					margin-right:5px;	
-				}
-			#Agenda_de_eventos
-			{
-				width:519;
-				height:126px;
-				padding: 5px 5px 5px 5px;				
-			}						
+					padding-right:5px;	
+				}	
+				
 		#Content #Box_right
 		{
-			width:434px;
+			position:relative;
+			width:395px;
 			min-height:400px;
 			height:auto;
-			border:#0CC 1px solid;
-			float:left;		
+			float:left;
+			padding:0px 0px 0px 38px;	
 		}
 			#Content #Box_right #Planilha_box 
 			{
-				width:430px;
-				height:250px;
-				border:#0CC 1px solid;
-				float:left;
-				text-align:center;				
-				padding: 5px 5px 5px 5px;
+				position:relative;
+				width:388px;
+				height:250px;	
 			}
 			#Content #Box_right #Planilha_box #Planilha_box_content
 			{
+				position:relative;
 				background-image:url(../images/bg_planilha.png);
 				background-repeat:no-repeat;
 				background-position:center;
 				width:384px;
 				height:191px;
-				margin-top:-10px;
-				margin-left:30px;
-				float:left;
-				text-align:center;		
-			}								
+				margin-top:-10px;	
+			}
+				.bg_p_planilha1
+				{
+					display:block;
+					width:357px;
+					height:20px;
+					padding-top:5px;
+					background-image:url(../images/bg_p_planilha.png);
+					background-repeat:repeat;				
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:14px;
+					color:#595959;
+					font-weight:normal;	
+					text-align:left;
+					padding-left:18px;
+				}	
+				.bg_p_planilha0
+				{
+					display:block;
+					width:357px;
+					height:20px;
+					padding-top:5px;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:14px;
+					color:#595959;
+					font-weight:normal;	
+					text-align:left;
+					padding-left:18px;
+				}				
 			#Content #Box_right #Videos_box
 			{
-				width:430px;
-				height:250px;
-				border:#0CC 1px solid;
-				float:left;			
-				padding: 5px 5px 5px 5px;
+				position:relative;
+				width:388px;
+				height:250px;		
 			}	
 			
 
-				.Dep_title
+				.Dep_bc
 				{
+					position:relative;
 					font-family:Arial, Helvetica, sans-serif;
 					font-size:20px;
 					font-weight:normal;
 					color:#cc6600;
+					width:468px;
+					padding-left:5px;
 				}
 				.Dep_text
 				{
+					position:relative;
 					font-family:Arial, Helvetica, sans-serif;
-					font-size:25px;
+					font-size:20px;
 					font-weight:normal;
 					color:#333333;
+					width:468px;
+					padding-left:30px;
 				}	
 				.Dep_data
 				{
+					position:relative;
 					font-family:Arial, Helvetica, sans-serif;
 					font-size:10px;
 					font-weight:normal;
@@ -683,16 +732,21 @@ body
 				}							
 			#Content #Box_right #Ondeencontrar_box
 			{
-				width:430px;
-				height:130px;
-				float:left;
+				position:relative;
+				display:block;
+				width:400px;
+				height:98px;
 				background-color:#FFF;
-				padding: 5px 5px 5px 5px;				
-			}										
+				padding: 0px 0px 0px 0px;				
+			}	
+				#Content #Box_right #Ondeencontrar_box p
+				{
+					padding: 0px 0px 0px 5px;				
+				}			
 			
 	#Footer
 	{
-		font-family:Verdana, Geneva, sans-serif;
+		font-family:Arial, Helvetica, sans-serif;
 		color:#0066cc;
 		font-size:12px;
 		position:relative;
@@ -703,15 +757,14 @@ body
 	}	
 		#Footer_content
 		{
-			font-family:Verdana, Geneva, sans-serif;
+			font-family:Arial, Helvetica, sans-serif;
 			color:#0066cc;
 			font-size:12px;
 			position:relative;
 			width:960px;
 			min-height:132px;
 			margin:auto;
-			clear:both;
-			border:#00F 1px dashed;	
+			clear:both;	
 		}
 							
 	.clear{ clear:both; width:100%}

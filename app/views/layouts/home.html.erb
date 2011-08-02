@@ -62,19 +62,20 @@ jQuery(document).ready(function() {
 					<div id="Box_left">	
 						<div id="Depoimentos_box">
 								<h1><img src="images/tit_depoimentos.png" width="192" height="48" /></h1><br /><br />
-								<p class="Dep_title"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
+								<p class="Dep_bc"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
-									<span class="Leftpar_as">"</span>
+									<span class="Leftpar_as_left">"</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
-									<%=	truncate(strip_tags($teste), :length => 150) %><span class="Leftpar_as">"</span>
+									<%=	truncate(strip_tags($teste), :length => 150) %>
+									<span class="Leftpar_as_right">"<span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
-								<%= link_to "Veja mais", institucional_depoimentos_path, :class=>"Veja_mais"%>
+								<%= link_to "..Ver mais", institucional_depoimentos_path, :class=>"Ver_mais"%>
 						</div> 					
 						<div id="Noticias_box">	
-							<h1><img src="images/tit_noticias.png" width="169" height="54" /></h1>
+							<h1 style="border-bottom:2px #d0d0d0 solid;"><img src="images/tit_noticias.png" width="169" height="54" /></h1>
                             <br /><br />
 							<%@NoticiasHome.each do |n|%>
 							<!--start box noticia -->
@@ -85,7 +86,7 @@ jQuery(document).ready(function() {
 								<div id="Text">
 								  <h2 class="Tit_noticia"><%=n.title%></h2><br />
 								  <p class="Text_noticia">
-										<%=n.summary%><span class="Veja_mais"> <%= link_to "Veja mais", noticia_path(n.id) %></span>  <br />
+										<%=n.summary%><span class="Ver_mais"> <%= link_to "Ver mais", noticia_path(n.id) %></span>  <br />
 								  </p>
 								  
 								</div>
@@ -98,30 +99,31 @@ jQuery(document).ready(function() {
 				  </div><!-- end box left -->	       
 				  <div id="Box_right">
 					<div id="Planilha_box">
-							<h1><img src="images/tit_planilha.png" style="margin-left:100px;"/></h1>
+							<h1><img src="images/tit_planilha.png" style="margin:23px 0px 0px 180px;"/></h1>
 							<div id="Planilha_box_content">
 							<br /><br /><br /><br />
-								<p>Lorem Ipsum is simply dummy text of the printing
-									and typesetting industry.
-									Lorem Ipsum has been the industry's standard dummy
-									text ever sin <span class="Veja_mais"><a href="#">..Veja mais</a></span>
-								</p>
+								<p class="bg_p_planilha1">Lorem Ipsum is simply dummy text of the printing</p>
+								<p class="bg_p_planilha0">and typesetting industry.</p>
+								<p class="bg_p_planilha1">Lorem Ipsum is simply dummy text of the printing</p>
+								<span class="Ver_mais" style="font-size:18px;"><br />
+								<a href="#">..Ver mais</a></span>
+								
 								
 							</div>
                             
 					</div>  				  
 					<div id="Videos_box">
-							<h1><img src="images/tit_videos.png"/></h1><br />
-							<a href="#"><img src="images/bt_bigyoutube.jpg" width="384" height="188" style="margin-left:20px;" /></a>
+							<h1><img src="images/tit_videos.png" style="margin-left:5px;"/></h1><br />
+							<a href="#"><img src="images/bt_bigyoutube.jpg" width="384" height="188"/></a>
 					</div>   
  
                     <div id="Ondeencontrar_box">
-                            <h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1><br />
+                            <h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
                             <a href="#"></a>
                             <p class="Text_noticia">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br />
-                                Lorem Ipsum has been the industry's standard dummy text ever since the<br /><br />
-                                1500s, when an unknown printer took a galley <span class="Veja_mais"><a href="#">..Veja mais</a></span><br />
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+                                Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s, when an unknown printer took a galley <span class="Ver_mais"><a href="#">..Ver mais</a></span>
                             </p>
                     </div>                         
 			  	  </div>	
