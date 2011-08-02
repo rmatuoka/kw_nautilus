@@ -3,6 +3,24 @@
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "linhas"%>
+<%=stylesheet_link_tag "internalbig"%>
+
+<script>
+  jQuery(document).ready(function(){
+		jQuery("#agua_potavel").mouseover(function(){
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos1.png"))%>");
+		});
+		
+		jQuery("#aquecedores").mouseover(function(){
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos2.png"))%>");
+		});
+		
+		jQuery("#piscinas").mouseover(function(){
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos3.png"))%>");
+		});
+	  });
+    
+</script>
 
 <%end%>
 <div id='Content_bgrepeat'>
@@ -13,10 +31,11 @@
  	    <h1>Produtos</h1>
 	  </div>
 	  <div id='Box_content'>
+	    <div class='Box_img_produto'><%=image_tag("img_produtos1.png")%></div>
 	    <ul>
-		  <li>Filtros de Água Potável</li>
-		  <li>Aquecedores de Água a 55C</li>
-		  <li>Produtos para Piscinas</li>
+		  <li><a href='http://www.uol.com.br' id="agua_potavel">Filtros de Água Potável</a></li>
+		  <li><a href='#' id="aquecedores">Aquecedores de Água a 55C</a></li>
+		  <li><a href='#' id="piscinas">Produtos para Piscinas</a></li>
 		</ul>
 	  </div>
     </div>

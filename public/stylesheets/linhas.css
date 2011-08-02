@@ -63,12 +63,39 @@
 	height:400px;
 	}
 
+.Box_img_produto{
+	margin-top:10px;
+	margin-left:11px;
+	}
+
+#Box_content ul{
+	margin-top:20px;
+    margin-left:50px;
+	height:100px;
+}
+
 #Box_content ul li{
-	margin-top:300px;
+    display:inline-block;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	color:#666;
+	height:50px;
+    line-height:70px;
 }
 	
-#Box_content ul li{
-	margin-top:300px;
-	border:1px solid red;
-    display:inline;	
+#Box_content ul li a{
+    display:inline-block;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	color:#666;
+	margin-right:40px;
+	text-decoration:none;
+}
+
+#Box_content ul li a:hover{
+    background-image:url(../images/bt_produtos.png);
+	background-repeat:no-repeat;
+	background-position: top center;
 }
