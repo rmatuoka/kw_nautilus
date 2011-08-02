@@ -23,12 +23,29 @@
 #comp_form select{
 	margin-bottom:6px;
 	width:338px;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
 	}
 	
 #comp_form input{
 	margin-bottom:6px;
 	width:332px;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
 	}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  #comp_form input { margin-bottom:3px; }	}
+ 
+ #comp_form textarea{
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px; 
+ }
+ 
+ .bt_enviar{
+	 float:right;
+	 margin-right:-35px;
+	 }
