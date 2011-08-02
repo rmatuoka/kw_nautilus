@@ -71,7 +71,6 @@ body
 #GeneralbgFooter
 {
 	background-image:url(../images/bg_all_bot.jpg);
-	/*background-repeat:repeat-x;*/
 	background-position:top center;		
 	position:relative;
 	width:100%;
