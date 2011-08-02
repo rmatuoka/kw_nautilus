@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
                 	<div id="Detail"><img src="images/fr_detail.png" width="1064" height="152" /></div>
 					<div id="Box_left">	
 						<div id="Depoimentos_box">
-								<h1><img src="images/tit_depoimentos.png" width="192" height="48" /></h1><br /><br />
+								<h1><img src="images/tit_depoimentos.png" width="192" height="48" /></h1><br /><br /><br />
 								<p class="Dep_bc"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
