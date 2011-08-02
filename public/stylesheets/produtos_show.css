@@ -1,0 +1,10 @@
+#Box_left .produto{
+	margin-left:50px;
+
+	}
+
+#Right_content ul li{
+	margin-top:10px;
+	display:inline-block;
+	margin-right:20px;
+	}

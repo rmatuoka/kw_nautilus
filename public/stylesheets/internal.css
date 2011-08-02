@@ -61,17 +61,15 @@ body
 {
 	position:relative;
 	/*background-image:url(../images/bg_home.jpg);*/
-	background-image:url(../images/bg_all_top.jpg);
+	background-image:url(../images/bg_teste.png);
 	background-repeat:repeat-x;
 	background-position:top center;		
 	width:100%;
 	height:100%;
-	background-color:#f1fcff;;
+	background-color:#6cc6e4;;
 }
 #GeneralbgFooter
 {
-	background-image:url(../images/bg_all_bot.jpg);
-	background-position:top center;		
 	position:relative;
 	width:100%;
 	margin:auto;
@@ -534,7 +532,7 @@ body
 					width:277px;
 					z-index:10;
 					position:absolute;
-					margin-top:-250px;					
+					margin-top:-219px;					
 					margin-left:6px;
 					}
 																																																		
