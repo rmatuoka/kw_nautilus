@@ -4,8 +4,9 @@
 	position:relative;
 	margin-top:20px;
 	width:640px;
-	height:370px;
-	background:#fff;
+	min-height:370px;
+	height:auto;
+	/*background:#fff;*/
 }
 .item_galeria
 {
@@ -16,6 +17,7 @@
 	margin-top:20px;
 	width:193px;
 	height:162px;
+	display:inline-block;
 }
 .item_image
 {
@@ -40,7 +42,16 @@
 		color:#cc6600;
 		text-align:center;
 		margin-top:6px;
+		margin-bottom: 6px;
 	}	
+	.item_image span a
+	{
+		text-decoration:none;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:12px;
+		font-weight:normal;
+		color:#cc6600;
+	}
 .item_info
 {
 	display:block;

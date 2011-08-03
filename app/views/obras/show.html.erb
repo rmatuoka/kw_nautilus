@@ -3,6 +3,20 @@
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "obras_primas_show"%>
+<%=stylesheet_link_tag "internalbig"%>
+<%= javascript_include_tag "jquery.cycle.all.min" %>
+	<script>
+	jQuery(document).ready(function() {	
+		jQuery('#Image').cycle({
+			fx: 'fade',
+			speed: 500,			
+			prev: "#btn_left_trans",
+			next: "#btn_right_trans"
+			
+		});
+		jQuery('#Image').cycle('pause');
+	});
+	</script>
 
 <%end%>
 <div id='Content_bgrepeat'>
@@ -13,20 +27,25 @@
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
 	  <h1>Obras Primas</h1>
-	  <p>Escolha abaixo a obra que você gostaria de ver:</p>
+	  <p><%= @Imagens.first.case.title%></p>
 	  <div id='Galeria'>
 		<div id="Button_place">
+			<%=image_tag("trans.gif",:id=>"btn_left_trans",:class=>"Trans_button_right",:width=>"32",:height=>"87")%>
 			<div id='Left_button'>
-				<%=image_tag("bt_left_button.png", :width=>"52",:height=>"117")%>
+				<%=image_tag("bt_left_button.png", :id=>"btn_left",:width=>"52",:height=>"117")%>
 			</div>
 		 	<div id='Image'>
-				  <div id='Photo'>
-					<%=image_tag("img_preview_image.jpg", :width=>"487",:height=>"365")%>	
-				  </div>
+				<% @Imagens.each do |imagens|%>
+				<div id='Photo'>
+					<%=image_tag(imagens.image.url("c_medio"), :width=>"487",:height=>"365")%>
+				</div>
+				<% end %>
 		  	</div>
+			<%=image_tag("trans.gif",:id=>"btn_right_trans",:class=>"Trans_button_left",:width=>"32",:height=>"87")%>
 			<div id='Right_button'>
 				<%=image_tag("bt_right_button.png", :width=>"52",:height=>"117")%>
 			</div>
+			<%= image_tag("bt_return.png",id=>"btn_right",:style=>"margin-top: 30px;float: right;margin-right: 60px;")%>			
 		</div>
 	  </div>
 
