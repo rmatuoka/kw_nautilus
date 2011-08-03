@@ -4,13 +4,22 @@
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalbig"%>
 <%=stylesheet_link_tag "produtos_show"%>
+<%= javascript_include_tag :defaults %>
+<%= stylesheet_link_tag 'lightbox' %>
 
 <%end%>
 <div id='Content_bgrepeat'>
 <div id='Content'>
   <div id='Box_left'>
-    <%=image_tag(@Produto_fotos.first.image.url("p_medio"), :class=>"produto")%>
-	<%=image_tag("bt_zoom.png")%>
+    <%=image_tag(@Produto_fotos.first.image.url("p_medio"), :width=>"200", :class=>"produto")%>
+	<%#=image_tag("bt_zoom.png")%>
+		<% if (@Produto_fotos.count > 0) %>
+		<div style="margin-top:20px;margin-left:10px;">
+		<% @Produto_fotos.each do |foto|%>
+			<%= lightbox_image_tag(foto.image.url("thumb"), foto.image.url("p_medio"), {:class=>"images"}, :title => foto.title, :rel=>"lightbox[produtos]") %>
+		<% end %>
+		</div>
+		<% end %>
   </div>
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
@@ -18,9 +27,12 @@
 	<h1><%= @Produto.title %></h1>
 	<%= raw @Produto.description %>
 	<ul>
-	  <li><%=image_tag("bt_info.png")%></li>
-	  <li><%=image_tag("bt_onde.png")%></li>
-	  <li><%=image_tag("bt_manual.png")%></li>
+	<%if @Produto.pdf.url() != "/uploads/pdfs/original/missing.png"%>
+		<%=%>
+		<li><%=link_to image_tag("bt_info.png"),@Produto.pdf.url(),:target=>"_blank"%></li>
+	<%end%>		
+	  <li><%= link_to image_tag("bt_onde.png"), institucional_revendas_path%></li>
+	  <li><%#=image_tag("bt_manual.png")%></li>
 	</ul>
 	</div>
   </div>

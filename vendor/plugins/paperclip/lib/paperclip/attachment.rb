@@ -8,12 +8,12 @@ module Paperclip
 
     def self.default_options
       @default_options ||= {
-        :url                   => "/system/:attachment/:id/:style/:filename",
+        :url                   => "/uploads/:attachment/:id/:style/:filename",
         :path                  => ":rails_root/public:url",
         :styles                => {},
         :processors            => [:thumbnail],
         :convert_options       => {},
-        :default_url           => "/system/:attachment/:style/missing.png",
+        :default_url           => "/uploads/:attachment/:style/missing.png",
         :default_style         => :original,
         :storage               => :filesystem,
         :use_timestamp         => true,
