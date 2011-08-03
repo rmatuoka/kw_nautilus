@@ -13,7 +13,16 @@
 	float:left;
 	margin-right:10px;
 	}
-
+#repre_estado select{
+	width:130px;
+	height:20px;
+	font-size:15px;
+	margin-left:-5px;
+	margin-top:5px;
+	}
+#cidades p{
+	margin-left:5px;
+	}
 #repre_cidade{
 	float:left;
 	margin-right:10px;
@@ -21,14 +30,6 @@
 	
 #repre_busca{
 	float:left;
-	}
-
-select{
-	width:200px;
-	height:20px;
-	font-size:15px;
-	margin-left:-5px;
-	margin-top:5px;
 	}
 
 #resultado_busca_0{

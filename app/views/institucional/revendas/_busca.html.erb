@@ -2,7 +2,7 @@
 <div id='repre_top'>
     <div id='repre_estado'>
      <p>Selecione o Estado:</p>
-      	<%= collection_select :pessoa, :estado, @Estados, :state, :state %>
+      	<%= collection_select :pessoa, :estado, @Estados, :state, :state,{:size=>"10"} %>
 	<div id="cidades" style="display:inline-block;"></div>
 	</div>
 	

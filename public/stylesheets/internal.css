@@ -136,7 +136,7 @@ body
 					*margin-left:259px; /*ie7*/
 					top:-9px;
 					*top:-10px;   /*ie7*/
-					z-index:20000;
+					z-index:90;
 					cursor:pointer;
 				}
 				@media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -146,8 +146,8 @@ body
 									border:none; 
 									background:none;
 									margin-left:276px;
-									top:-11px;
-									z-index:20000;
+									top:-12px;
+									z-index:90;
 									cursor:pointer;	 
 					 }	}					
 				#Top_bar .slide .inner {
