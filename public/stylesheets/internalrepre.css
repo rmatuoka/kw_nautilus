@@ -31,7 +31,35 @@ select{
 	margin-top:5px;
 	}
 
+#resultado_busca_0{
+	margin-top:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	line-height:16px;
+	color:#808080;
+	font-weight:bold;
+	padding:10px;
+	}
+	
+#resultado_busca_0 h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	font-weight:bold;
+	margin-bottom:3px;
+    }
+
+#resultado_busca_0 span{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#dd6417;
+	font-weight:bold;
+    }
+
 #resultado_busca_1{
+    background:url(../images/bg_busca_revenda.png);
 	margin-top:10px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
@@ -52,34 +80,6 @@ select{
     }
 
 #resultado_busca_1 span{
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:14px;
-	color:#dd6417;
-	font-weight:bold;
-    }
-
-#resultado_busca_2{
-    background:url(../images/bg_busca_revenda.png);
-	margin-top:10px;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-	line-height:16px;
-	color:#808080;
-	font-weight:bold;
-	padding:10px;
-	}
-	
-#resultado_busca_2 h1{
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:16px;
-	border:0px;
-	padding:0px;
-	margin:0px;
-	font-weight:bold;
-	margin-bottom:3px;
-    }
-
-#resultado_busca_2 span{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:14px;
 	color:#dd6417;

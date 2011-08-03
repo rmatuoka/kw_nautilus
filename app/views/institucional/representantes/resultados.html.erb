@@ -13,7 +13,7 @@
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
-	  <h1>Revendas</h1>
+	  <h1>Representantes</h1>
 	  <%=render :partial => "busca"%>
 	  <div id='repre_bottom'>
 	    	<%if !@Resultados.blank?%>
@@ -21,15 +21,15 @@
 				<%@Resultados.each do |r|%>
 					<div id='resultado_busca_<%=counter % 2 %>'>
 					  <h1><%=r.name%></h1>
-					  <span>Local:</span> <%=r.city%> / <%=r.state%><br>
-					  <span>Bairro:</span> <%=r.zone%><br>
-					  <span>CEP:</span> <%=r.cep%><br>
+					  <span>Estado:</span> <%=r.state%><br>
+					  <span>Região:</span> <%=r.region%><br>
+					  <span>E-Mail:</span> <%=r.email%><br>
 					  <span>Telefone:</span> <%=r.phone%>
 					</div>
 				<%counter = counter + 1%>
 				<%end%>
 			<%else%>
-				Não há revendedores cadastrados nesta cidade
+				Não há representantes cadastrados neste estado
 			<%end%>
 
 	  </div>

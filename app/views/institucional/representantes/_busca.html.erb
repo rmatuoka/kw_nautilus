@@ -1,0 +1,17 @@
+<%=form_tag resultados_institucional_representantes_path, :method => :post%>
+<div id='repre_top'>
+    <div id='repre_estado'>
+     <p>Selecione o Estado:</p>
+      	<%= collection_select :pessoa, :estado, @Estados, :state, :state %>
+	</div>
+	
+	<div id='repre_cidade'>
+	</div>
+	<div id='repre_busca'>
+     <p>&nbsp;</p>
+		<%= image_submit_tag "bt_busca_internal.png", :width=>"85",:height=>"29",:class=>"align_detail", :alt => "Buscar", :align => "absmiddle" %>
+      <%#= link_to image_tag("bt_busca_internal.png", :width=>"85",:height=>"29",:class=>"align_detail"), "#", :class=>"bt_textalign"%>
+	</div>
+	<div class="clear"></div>
+  </div>
+</form>
