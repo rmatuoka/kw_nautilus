@@ -61,19 +61,15 @@ body
 {
 	position:relative;
 	/*background-image:url(../images/bg_home.jpg);*/
-	background-image:url(../images/bg_all_top.jpg);
+	background-image:url(../images/bg_teste.png);
 	background-repeat:repeat-x;
 	background-position:top center;		
 	width:100%;
 	height:100%;
-	background-color:#f1fcff;
+	background-color:#6cc6e4;
 }
 #GeneralbgFooter
 {
-	background-image:url(../images/bg_all_bot.jpg);
-	background-repeat:repeat-x;
-	background-position:top center;		
-	background-position: bottom center;
 	position:relative;
 	width:100%;
 	margin:auto;
@@ -639,8 +635,10 @@ body
 					font-size:12px;
 					font-weight:bold;				
 					float:right;
-					padding-right:5px;	
+					padding-right:5px;
+
 				}	
+
 				
 		#Content #Box_right
 		{
