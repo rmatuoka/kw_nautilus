@@ -15,6 +15,7 @@ class ObrasController < ApplicationController
   end
 
   def show
+    @Imagens = CaseImage.all(:conditions=>['`case_images`.case_id = ? and published = "1"', params[:id]])
   end
 
 end
