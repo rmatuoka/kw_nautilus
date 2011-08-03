@@ -4,7 +4,12 @@ KwNautilus::Application.routes.draw do
 
   namespace(:institucional){
     resources :depoimentos
-    resources :revendas
+    resources :revendas do
+      collection do
+        post 'resultados'
+        post 'popula_cidades'
+      end
+    end
     resources :missao
     resources :sobre
     resources :revendas_representantes

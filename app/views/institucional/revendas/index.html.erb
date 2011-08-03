@@ -3,7 +3,6 @@
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalrepre"%>
-
 <%end%>
 <div id='Content_bgrepeat'>
 <div id='Content'>
@@ -14,12 +13,9 @@
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
 	  <h1>Revendas e Representates</h1>
-	  <p>Escolha que área você gostaria de consultar:</p>
-	  <div id='img_internal_revenda'>
-	  <%= link_to image_tag("img_internal_revenda.png", :width=>"302",:height=>"308",:class=>"align_detail"), institucional_sobre_index_path, :class=>"bt_textalign"%>
-	  </div>
-	  <div id='img_internal_representante'>
-	  <%= link_to image_tag("img_internal_representantes.png", :width=>"300",:height=>"307",:class=>"align_detail"), institucional_sobre_index_path, :class=>"bt_textalign"%>
+	  <%=render :partial => "busca"%>
+	  <div id='repre_bottom'>
+	   
 	  </div>
 	</div>
   </div>
