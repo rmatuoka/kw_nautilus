@@ -1,0 +1,28 @@
+<div id="Breadcrumb">
+		administração > <a href="<%=admin_sellers_path%>">representantes</a>
+	</div>
+	<div id="Content">
+		<span class="Titulo">Representante</span>
+		<div class="Linha"></div>
+		<div class="Toolbar">
+			<li class="Add"><%= link_to "Novo" , new_admin_seller_path%></li>
+			<li class="Help"><a href="#">Ajuda</a></li>
+		</div>
+		
+		<div id="Grid">
+			<h3><%=@Seller.name%></h3><br>
+			<b>Estado:</b><br>
+			<%=@Seller.state%><br>
+			<br>
+			<b>Região:</b><br>
+			<%=@Seller.region%><br>
+			<br>
+			<b>Telefone:</b><br>
+			<%=@Seller.phone%><br>
+			<br>
+			<b>Email:</b><br>
+			<%=@Seller.email%><br>
+		</div>
+		<div class="Linha"></div>
+	</div>
+

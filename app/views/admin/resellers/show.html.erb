@@ -1,0 +1,34 @@
+<div id="Breadcrumb">
+		administração > <a href="<%=admin_resellers_path%>">revendas</a>
+	</div>
+	<div id="Content">
+		<span class="Titulo">Revenda</span>
+		<div class="Linha"></div>
+		<div class="Toolbar">
+			<li class="Add"><%= link_to "Novo" , new_admin_reseller_path%></li>
+			<li class="Help"><a href="#">Ajuda</a></li>
+		</div>
+		
+		<div id="Grid">
+			<h3><%=@Reseller.name%></h3><br>
+			<b>Cidade:</b><br>
+			<%=@Reseller.city%><br>
+			<br>
+			<b>Estado:</b><br>
+			<%=@Reseller.state%><br>
+			<br>
+			<b>Zona:</b><br>
+			<%=@Reseller.zone%><br>
+			<br>
+			<b>CEP:</b><br>
+			<%=@Reseller.cep%><br>
+			<br>
+			<b>Telefone:</b><br>
+			<%=@Reseller.phone%><br>
+			<br>
+			<b>Email:</b><br>
+			<%=@Reseller.email%><br>
+		</div>
+		<div class="Linha"></div>
+	</div>
+

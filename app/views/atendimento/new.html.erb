@@ -13,30 +13,38 @@
   </div>
   <div id='Box_right'>
     <%=image_tag("ico_title_internal.png")%>
-    <div id='Right_content'>
-	  <h1>Atendimento</h1>
-	  <p>Envie-nos seu contato, dúvida, sugestões ou críticas através do formulário abaixo. Se preferir, entre em contato diretamente pelo telefone 55 11 4411-1488.</p>
-	  <div id='txt_form'>
-	  <p>Departamento:</p>
-	  <p>Nome:</p>
-	  <p>Telefone:</p>
-	  <p>E-mail:</p>
-	  <p>Empresa:</p>
-	  <p>Cidade:</p>
-	  <p>Estado:</p>
-	  <p>Mensagem:</p>
-	  </div>
-	  <div id='comp_form'>
-	  <select><option>Suporte</option></select><br>
-	  <input type="text" /><br>
-	  <input type="text" /><br>
-	  <input type="text" /><br>
-	  <input type="text" /><br>
-	  <input type="text" /><br>
-	  <input type="text" /><br>
-	  <textarea name="" cols="39" rows="10"></textarea>
-	  <%=image_tag("bt_enviar.png", :class=>"bt_enviar")%>
-	  </div>
+	<div id='Right_content'>
+		<h1>Atendimento</h1>
+		<p>Envie-nos seu contato, dúvida, sugestões ou críticas através do formulário abaixo. Se preferir, entre em contato diretamente pelo telefone 55 11 4411-1488.</p>
+		<%= form_tag '/atendimento', {:method => :post} %>
+		<div id='txt_form'>		
+			<p>Departamento:</p>
+			<p>Nome:</p>
+			<p>Telefone:</p>
+			<p>E-mail:</p>
+			<p>Empresa:</p>
+			<p>Cidade:</p>
+			<p>Estado:</p>
+			<p>Mensagem:</p>
+		</div>
+	  	<div id='comp_form'>
+			<%=select_tag :area, raw(
+			'<option value="compras@nautilus.ind.br">Compras</option>
+			 <option value="vendas@nautilus.ind.br">Vendas</option>
+			 <option value="financeiro@nautilus.ind.br">Financeiro</option>
+			 <option value="cobranca@nautilus.ind.br">Cobrança</option>
+			 <option value="suporte@nautilus.ind.br">Suporte</option>
+			 <option value="assistenciatecnica@nautilus.ind.br">Assistência Técnica</option>')%><br>			
+			<%=text_field_tag :name %><br>
+			<%=text_field_tag :phone %><br>
+			<%=text_field_tag :email %><br>
+			<%=text_field_tag :company %><br>
+			<%=text_field_tag :city %><br>
+			<%=text_field_tag :state %><br>
+			<%=text_area_tag(:message, content = nil, :rows=>"10")%>
+		</form>
+		<%=image_submit_tag "bt_enviar.png", :alt=>"Enviar", :title=>"Enviar", :class=>"bt_enviar"%>
+		</div>
 	</div>
   </div>
 </div>

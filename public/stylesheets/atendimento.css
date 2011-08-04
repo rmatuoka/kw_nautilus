@@ -37,15 +37,23 @@
 	}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- #comp_form input { margin-bottom:3px; }	}
+ #comp_form input { margin-bottom:6px; }	}
  
- #comp_form textarea{
+#comp_form textarea{
+	margin-bottom:6px;
+	width:332px;
 	-moz-border-radius:5px;
     -webkit-border-radius:5px;
-    border-radius:5px; 
- }
+    border-radius:5px;
+}
  
  .bt_enviar{
 	 float:right;
-	 margin-right:-35px;
+	 margin-right:-42px;
+	 width:auto !important;
 	 }
+.p_agradecimento
+{
+	margin-top:100px;
+	text-align:center;
+}

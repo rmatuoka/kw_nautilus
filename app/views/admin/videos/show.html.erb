@@ -1,0 +1,25 @@
+<div id="Breadcrumb">
+		administração > <a href="<%=admin_videos_path%>">vídeos</a>
+	</div>
+	<div id="Content">
+		<span class="Titulo">Vídeos</span>
+		<div class="Linha"></div>
+		<div class="Toolbar">
+			<li class="Add"><%= link_to "Novo" , new_admin_video_path%></li>
+			<li class="Help"><a href="#">Ajuda</a></li>
+		</div>
+		
+		<div id="Grid">
+			<h3><%=@Video.title%></h3><br>
+			<b>Descrição:</b><br>
+			<%=raw @Video.description%><br>
+			<br>
+			<b>Link:</b><br>
+			<%=@Video.link%><br>
+			<br>
+			<b>Imagem:</b><br>
+			<img src="<%=@Video.image.url("video_img")%>"><br>
+		</div>
+		<div class="Linha"></div>
+	</div>
+
