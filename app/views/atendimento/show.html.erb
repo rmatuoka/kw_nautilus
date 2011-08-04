@@ -1,2 +1,32 @@
-<h1>Atendimento#show</h1>
-<p>Find me in app/views/atendimento/show.html.erb</p>
+<%content_for :title do%>
+	Atendimento
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalbig"%>
+<%=stylesheet_link_tag "atendimento"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+	<div id='Right_content'>
+		<h1>Atendimento</h1>
+		<div class="p_agradecimento">
+			<p>
+				Muito obrigado por entrar em contato.
+				<br> 
+				<br>
+				Em breve nossa equipe entrará em contato.
+			</p>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_atendimento.png")%>
+</div>

@@ -1,0 +1,51 @@
+<%= form_for([:admin, @Reseller], :html => { :multipart => :true }) do |f| %>
+<% if flash[:msg] %>
+<div id="mensagem">
+	<h2><%=flash[:msg]%></h2>
+	<%= errors_for(@Reseller, "Ocorreu um erro").html_safe %>
+</div>
+<% end %>
+	<label>
+		Nome:<br>
+		<%=f.text_field :name %><br>
+	</label><br><br>
+	
+	<label>
+		Cidade:<br>
+		<%=f.text_field :city %><br>
+	</label><br><br>
+	
+	<label>
+		Estado:<br>
+		<%=f.text_field :state %><br>
+	</label><br><br>
+	
+	<label>
+		Zona:<br>
+		<%=f.text_field :zone %><br>
+	</label><br><br>
+	
+	<label>
+		Cep:<br>
+		<%=f.text_field :cep %><br>
+	</label><br><br>
+	
+	<label>
+		Telefone:<br>
+		<%=f.text_field :phone %><br>
+	</label><br><br>
+	
+	<label>
+		E-Mail:<br>
+		<%=f.text_field :email %><br>
+	</label><br><br>
+	
+	<label>
+		Publicado?<br>
+		<%=f.radio_button :published, 0 %> Não
+		<%=f.radio_button :published, 1 %> Sim  
+	</label><br><br>
+	
+	
+	<button type="submit">Salvar</button>
+<% end %>
