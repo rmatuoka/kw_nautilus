@@ -65,14 +65,14 @@ jQuery(document).ready(function() {
 								<p class="Dep_bc"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
-									<span class="Leftpar_as_left">"</span>
+									<span class="Leftpar_as_left">''</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
 									<%=	truncate(strip_tags($teste), :length => 150) %>
 									<span class="Leftpar_as_right">"<span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
-								<%= link_to "ver mais", institucional_depoimentos_path, :class=>"Ver_mais"%>
+								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
 						</div> 					
 						<div id="Noticias_box">	
 							<h1 style="border-bottom:2px #d0d0d0 solid;"><img src="images/tit_noticias.png" width="169" height="54" /></h1>
@@ -86,7 +86,7 @@ jQuery(document).ready(function() {
 								<div id="Text">
 								  <h2 class="Tit_noticia"><%=n.title%></h2><br />
 								  <p class="Text_noticia">
-										<%=n.summary%><span class="Ver_mais"> <%= link_to "ver mais", noticia_path(n.id) %></span>  <br />
+										<%=n.summary%><span class="Ver_mais"> <%= link_to "...ver mais", noticia_path(n.id), :class=>"Ver_mais" %></span>  <br />
 								  </p>
 								  
 								</div>
@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
 								<p class="bg_p_planilha0">inovadora!</p>
 								<p class="bg_p_planilha1">Aguardem mais informações.</p>
 								<span class="Ver_mais" style="font-size:18px;"><br />
-								<!--<a href="#">ver mais</a></span> -->
+								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_plani"%>
 								
 								
 							</div>
@@ -122,7 +122,7 @@ jQuery(document).ready(function() {
                             <a href="#"></a>
                             <p class="Text_noticia">
                                 Clique aqui e confira a nossa lista de revendas! <br>
-								<span class="Ver_mais"><%= link_to "ver mais", institucional_revendas_path%></span>
+								<span class="Ver_mais"><%= link_to "...ver mais", institucional_revendas_path, :class=>"Ver_mais"%></span>
                             </p>
                     </div>                         
 			  	  </div>	
