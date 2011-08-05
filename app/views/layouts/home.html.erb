@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
 						<%@Destaques.each do |d|%>	
 						<div>
 							<div class="Featured_image">
-								<%= link_to image_tag(d.image.url), d.link%>
+								<%= link_to image_tag(d.image.url("destaque")), d.link%>
 							</div>
 							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
 								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
@@ -81,7 +81,7 @@ jQuery(document).ready(function() {
 							<!--start box noticia -->
 							<div id="Item_noticias">
 								<div id="Photo">
-									<%= image_tag(n.image.url("home"),:width=>"71", :height=>"72" )%>
+									<%= image_tag(n.image.url("new_home"))%>
 								</div>
 								<div id="Text">
 								  <h2 class="Tit_noticia"><%=n.title%></h2><br />
