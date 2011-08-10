@@ -10,5 +10,10 @@ class Product < ActiveRecord::Base
         :url => "/uploads/:attachment/:id/:basename_:style.:extension",
         :path => ":rails_root/public/uploads/:attachment/:id/:basename_:style.:extension"
 
+	has_attached_file :manual,
+        :url => "/uploads/:attachment/:id/:basename_:style.:extension",
+        :path => ":rails_root/public/uploads/:attachment/:id/:basename_:style.:extension"
+
+
     validates_presence_of :title
 end

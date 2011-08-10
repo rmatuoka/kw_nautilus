@@ -1,0 +1,19 @@
+<div id="Breadcrumb">
+		administração > <a href="<%=admin_downloads_path%>">cases</a>
+	</div>
+	<div id="Content">
+		<span class="Titulo">Cases</span>
+		<div class="Linha"></div>
+		<div class="Toolbar">
+			<li class="Add"><%= link_to "Novo" , new_admin_download_path%></li>
+			<li class="Help"><a href="#">Ajuda</a></li>
+		</div>
+		
+		<div id="Grid">
+			<h3><%=@Download.title%></h3><br>
+			<b>Categoria:</b><br>
+			<%= mostra_categoria(@Download.category.to_s)%><br>
+			<br>
+		</div>
+		<div class="Linha"></div>
+	</div>

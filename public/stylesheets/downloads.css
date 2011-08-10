@@ -1,5 +1,9 @@
+#Right_content{
+	min-height:500px;
+	margin-bottom: 20px;
+}
 #efeito a{ 
-  display:block; 
+  display:inline; 
   font-weight:bold; 
   color:#fff; 
   padding:5px 10px; 
@@ -27,8 +31,8 @@
     width:277px;
 	z-index:10;
 	position:absolute;
-	margin-top:-420px;
-	*margin-top:-420px;
+	margin-top: 41px;
+	*margin-top: 41px;;
 	margin-left:6px;
   }
 
@@ -43,4 +47,32 @@
 	margin-left:20px;
     padding-left:15px;
 	}
+.Title_opened h2{
+	float:left;
+}	
+.Title_opened #img_seta{
+	margin-top: 10px;
+	margin-left: 10px;
+	height:14px;
+	width:15px;
+	float:left;
+	background-image: url(../images/seta_up.png);
+	background-repeat: no-repeat;
+}
+.Title_closed h2{
+	float:left;
+}
+.Title_closed #img_seta{
+	margin-top: 10px;
+	margin-left: 10px;
+	height:14px;
+	width:15px;
+	float:left;
+	background-image: url(../images/seta_down.png);
+	background-repeat: no-repeat;
+}	
+.hide
+{
+	display:none;	
+}
 

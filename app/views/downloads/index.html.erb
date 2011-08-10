@@ -4,7 +4,7 @@
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalbig"%>
 <%=stylesheet_link_tag "downloads"%>
-<%=javascript_include_tag "jquery.accordion.js"%>
+<%=javascript_include_tag "ShowSession.js"%>
 <%end%>
 <div id='Content_bgrepeat'>
 <div id='Content'>
@@ -15,36 +15,71 @@
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
 	  <h1>Downloads</h1>
-	  <div id="efeito"> 
-        <a href="#"><h2>Folhetos <%=image_tag("seta_up.png")%></h2></a> 
-        <div>
-		  <ul>
-		    <li class="sem_fundo"><p>Folheto Acessórios - Tamanho do arquivo: 2,59 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="com_fundo"><p>Folheto Aquecedor AC-290 - Tamanho do arquivo: 1,97 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="sem_fundo"><p>Folheto Aquecedor Flex-60 - Tamanho do arquivo: 4,91 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="com_fundo"><p>Folheto Aquecedor Solar - Tamanho do arquivo: 2,79 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="sem_fundo"><p>Folheto Aquecedores - Tamanho do arquivo: 2,92 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="com_fundo"><p>Folheto Filtros - Tamanho do arquivo: 2,41 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="sem_fundo"><p>Folheto Filtros com Carrinho - Tamanho do arquivo: 2,15 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="com_fundo"><p>Folheto Gerador de Cloro - Aquaclor - Tamanho do arquivo: 1,89 Mb <%=image_tag("bt_download.png")%></p></li>
-			<li class="sem_fundo"><p>Folheto Motobombas - Tamanho do arquivo: 1,82 Mb <%=image_tag("bt_download.png")%></p></li> 
-         </div> 
-          <a href="#"><h2>Manuais <%=image_tag("seta_down.png")%></h2></a> 
-        <div> 
-          <p>ponha aqui o conteúdo...</p> 
-        </div> 
-          <a href="#"><h2>Vistas Explodidas <%=image_tag("seta_down.png")%></h2></a> 
-        <div> 
-          <p>ponha aqui o conteúdo...</p> 
-        </div> 
+	  <div id="efeito">
+		<%	$i = 0
+			$atual = 0
+			$fundo = 0
+			@Downloads.each do |donwloads|
+		%>
+		<% if $atual != donwloads.category %>
+			<% if $atual == 0%>
+				<div id="Open_download" class="Title_opened" style="cursor:pointer;" onclick="show_session(<%= $i.to_s %>, this)">
+				<h2><%= mostra_categoria(donwloads.category.to_s)%></h2><div id="img_seta"></div> 
+				<div class="clear"></div>
+		        <div id="Session_show<%= $i%>" >
+				  <ul>
+			<%else%>
+					</ul>
+				</div>
+				</div>
+				<div id="Open_download" class="Title_closed" style="cursor:pointer;" onclick="show_session(<%= $i.to_s %>, this)">
+				<h2><%= mostra_categoria(donwloads.category.to_s)%></h2><div id="img_seta"></div>  
+				<div class="clear"></div>
+		        <div id="Session_show<%= $i%>" class="hide">
+					<ul>
+					<% $fundo = 0%>
+			<%end%>
+		<% end %>		
+		
+		<%if $fundo == 0%>
+			<li class="sem_fundo"><p><%= donwloads.title%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
+		<%
+		$fundo = 1
+		else
+		%>
+			<li class="com_fundo"><p><%= donwloads.title%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
+		<%
+		$fundo = 0
+		end
+			$i += 1
+			$atual = donwloads.category 
+		%>
+
+		<% #Inicio da Impressão dos manuais vinculados aos produtos
+		if $atual == 2
+			@Manuais.each do |manual|	
+		%>
+			<%if $fundo == 0%>
+				<li class="sem_fundo"><p><%= manual.title%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
+			<%
+			$fundo = 1
+			else
+			%>
+				<li class="com_fundo"><p><%= manual.title%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
+			<%
+			$fundo = 0
+			end
+			%>
+			
+		<%
+			end
+		end #Fim da Impressão dos manuais vinculados aos produtos
+		%>		
+		
+		<%
+			end
+		%>
       </div>
-	      <script type="text/javascript"> 
-            jQuery(function(){ 
-            jQuery('#efeito').accordion({ 
-              autoheight:false 
-              }); 
-            }); 
-          </script>  
 	</div>
   </div>
 </div>

@@ -25,6 +25,7 @@ KwNautilus::Application.routes.draw do
     resources(:notices){
       resources :notice_images
     }
+    resources :downloads    
     resources :users
     resources :headers
     resources :contacts
