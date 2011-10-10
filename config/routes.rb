@@ -72,6 +72,7 @@ KwNautilus::Application.routes.draw do
     resources :missao
     resources :sobre
     resources :revendas_representantes
+	resources :fasterm
     
     root :to => "sobre#index"
   }

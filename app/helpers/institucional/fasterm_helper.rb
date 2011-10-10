@@ -1,0 +1,2 @@
+module Institucional::FastermHelper
+end

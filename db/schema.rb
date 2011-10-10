@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110808205606) do
+ActiveRecord::Schema.define(:version => 20111010192314) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
@@ -234,6 +234,7 @@ ActiveRecord::Schema.define(:version => 20110808205606) do
     t.string   "manual_content_type"
     t.integer  "manual_file_size"
     t.datetime "manual_updated_at"
+    t.boolean  "fasterm"
   end
 
   create_table "request_catalogs", :force => true do |t|

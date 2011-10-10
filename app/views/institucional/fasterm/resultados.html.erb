@@ -1,0 +1,43 @@
+<%content_for :title do%>
+	Revendas
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalrepre"%>
+<%= javascript_include_tag :defaults %>
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    <%=render :file => "layouts/_menuinternal.html.erb"%>
+  </div>
+  <div id='Box_right'>
+    <%=image_tag("ico_title_internal.png")%>
+    <div id='Right_content'>
+	  <h1>Revendas</h1>
+	  <%=render :partial => "busca"%>
+	  <div id='repre_bottom'>
+	    	<%if !@Resultados.blank?%>
+				<%counter = 0%>
+				<%@Resultados.each do |r|%>
+					<div id='resultado_busca_<%=counter % 2 %>'>
+					  <h1><%=r.name%></h1>
+					  <span>Local:</span> <%=r.city%> / <%=r.state%><br>
+					  <span>Bairro:</span> <%=r.zone%><br>
+					  <span>CEP:</span> <%=r.cep%><br>
+					  <span>Telefone:</span> <%=r.phone%>
+					</div>
+				<%counter = counter + 1%>
+				<%end%>
+			<%else%>
+				Não há revendedores cadastrados nesta cidade
+			<%end%>
+
+	  </div>
+	</div>
+  </div>
+  
+</div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_revenda.png")%>
+</div>
