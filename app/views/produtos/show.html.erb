@@ -14,7 +14,7 @@
     <%=image_tag(@Produto_fotos.first.image.url("p_medio"), :width=>"200", :class=>"produto")%>
 	<%#=image_tag("bt_zoom.png")%>
 		<% if (@Produto_fotos.count > 0) %>
-		<div style="margin-top:20px;margin-left:10px;">
+		<div style="margin-top:20px;margin-left:50px;width:200;">
 		<% @Produto_fotos.each do |foto|%>
 			<%= lightbox_image_tag(foto.image.url("thumb"), foto.image.url("p_medio"), {:class=>"images"}, :title => foto.title, :rel=>"lightbox[produtos]") %>
 		<% end %>
