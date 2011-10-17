@@ -803,10 +803,30 @@ body
 			font-size:12px;
 			position:relative;
 			width:960px;
-			min-height:132px;
+			min-height:77px;
 			margin:auto;
-			clear:both;	
+			clear:both;
+			background:#fff;	
 		}
+		.Text_place_foot	
+		{
+      	          position:relative;
+		  top:25px;
+		  left:15px;
+		}
+		.Text_nautilus_foot
+		{
+		 color:#ff3300;
+		 font-size:17px;
+		}
+		.Logos_place_foot	
+		{
+      	          position:relative;
+		  float:right;
+		  width:455px;
+		  top:-15px;
+		}
+
 							
 	.clear{ clear:both; width:100%}
 	
