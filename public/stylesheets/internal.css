@@ -651,11 +651,16 @@ body
 		font-size:12px;
 		position:relative;
 		width:100%;
-		min-height:132px;
+		min-height:465px;
 		margin:auto;
 		clear:both;
 		
 	}	
+	#Footer span
+	{
+		float:none;
+		
+	}		
 		#Footer_content
 		{
 			z-index:0;
@@ -664,13 +669,37 @@ body
 			background-position:center top;
 			position:relative;
 			width:960px;
-			min-height:169px;
+			min-height:460px;
 			margin:auto;
 			clear:both;	
 		}
-			#Footer_text
+		.Text_place_foot	
+		{
+      	  position:relative;
+		  top:150px;
+		  left:50px;
+		  width:500x;
+		  height:200px;
+		  line-height:15px;
+		}
+		.Text_nautilus_foot
+		{
+		 color:#ff3300;
+		 font-size:17px;
+		 font-weight:normal;
+		 position:relative;
+		 top:0;
+		 left:0;
+		}
+		.Logos_place_foot	
+		{
+      	  position:relative;
+		  width:400px;
+		  left:50px;
+		  top:110px;
+		}		
+			#Footer_text1
 			{
-				float:left;
 				font-family:Arial, Helvetica, sans-serif;
 				color:#cc6633;
 				font-size:12px;
