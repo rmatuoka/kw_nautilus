@@ -676,8 +676,8 @@ body
 		.Text_place_foot	
 		{
       	  position:relative;
-		  top:150px;
-		  left:50px;
+		  top:110px;
+		  left:25px;
 		  width:500x;
 		  height:200px;
 		  line-height:15px;
@@ -695,8 +695,8 @@ body
 		{
       	  position:relative;
 		  width:400px;
-		  left:50px;
-		  top:110px;
+		  left:583px;
+		  top:145px;
 		}		
 			#Footer_text1
 			{
