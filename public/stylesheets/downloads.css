@@ -29,9 +29,10 @@
 #Image_internal_downloads
   {
     width:277px !important;
-	z-index:10;
+	height:500px;
+	z-index:100;
 	position:absolute;
-	top:404px !important;
+	top:100px !important;
   }
 
 .sem_fundo{
