@@ -26,12 +26,12 @@
 
 	}
 
-#Image_internal
+#Image_internal_downloads
   {
-    width:277px;
+    width:277px !important;
 	z-index:10;
 	position:absolute;
-	top:622px;
+	top:404px !important;
   }
 
 .sem_fundo{
