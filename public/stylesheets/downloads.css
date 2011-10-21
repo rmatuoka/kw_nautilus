@@ -1,6 +1,12 @@
-#Right_content{
+#Right_content1{
 	min-height:500px;
 	margin-bottom: 20px;
+}
+#efeito
+{
+    position:relative;
+	min-height:500px;
+	height:auto;
 }
 #efeito a{ 
   display:inline; 
@@ -32,6 +38,7 @@
 	height:500px;
 	z-index:100;
 	position:absolute;
+	left:6px;
 	top:100px !important;
   }
 
