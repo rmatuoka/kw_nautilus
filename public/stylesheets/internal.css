@@ -230,7 +230,13 @@ body
 			background-position:center top;
 			width:1021px;
 			height:80px;
-		}	
+		}
+		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
+		{
+				#Menu {
+						padding-top:13px;
+					  }
+		}		
 			#Menu ul
 			{
 				margin-top:21px;
