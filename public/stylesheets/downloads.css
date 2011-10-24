@@ -1,3 +1,17 @@
+		#Content
+		{
+			background-image:url(../images/bg_contenttop.png);
+			background-repeat:no-repeat;
+			background-position:center top;
+			position:relative;
+			width:100%;
+			height:459px !important;
+			margin:auto;
+			margin-top:-5px;
+			margin-right:2px;
+			z-index:0;
+		}
+
 #Right_content1{
 	min-height:500px;
 	margin-bottom: 20px;
