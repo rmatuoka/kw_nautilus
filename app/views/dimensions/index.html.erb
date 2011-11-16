@@ -1,0 +1,145 @@
+<%content_for :title do%>
+	Fique por dentro
+<%end%>
+<%content_for :head do %>
+<%=stylesheet_link_tag "internalbig"%>
+<%=stylesheet_link_tag "dimensions"%>
+
+<%end%>
+<div id='Content_bgrepeat'>
+<div id='Content'>
+  <div id='Box_left'>
+    
+  </div>
+  <div id='Box_right'>
+	<div id="Box_planilha">	
+	  
+		<h1><%=image_tag("ico_title_internal.png",:class=>"Ico_align")%>AquaPD</h1><br />
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to ...</p><br />
+		<div class="clear"></div>
+		<div class="Form_div">
+			<form>
+				<h2>Dados dos Clientes</h2><br />
+				<div class="clear"></div>
+				<div class="Input_big">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<br />
+				<div class="Input_big">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<br />
+				<div class="Input_med">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<br />
+				<div class="Input_big">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<div class="clear"></div>
+			</form>	
+			<form>
+				<h2>Dados da Piscina</h2><br />
+				<div class="clear"></div>	
+				<div class="Input_med">
+					<input type="text" value="Comprimento"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Largura / ex: 1.2 m"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Profundidade Maxima / ex: 1.6m"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Profundidade Minima / ex: 0.8m"/>
+				</div>	
+				<div class="Input_big">
+					<input type="text" value="Uso residencial / Comercial"/>
+				</div>				
+				<div class="Input_med">
+					<input type="text" value="Temperatura desejada / até 55Cº"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Utilização"/>
+				</div>
+				<div class="clear"></div>
+			</form>	
+			<form>
+				<h2>Dados para o Aquecimento</h2><br />
+				<div class="clear"></div>
+				<div class="Input_med">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>	
+				<div class="Input_med">
+					<input type="text" value="Nome do Cliente ou Obra"/>
+				</div>				
+				<div class="clear"></div>
+			</form>		
+			<form>
+				<h2>Capa Térmica ?</h2><br />
+				<div class="clear"></div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Sim</label>
+				</div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Não</label>
+				</div>		
+				<div class="clear"></div>
+			</form>		
+			<form>
+				<h2>Velocidade do vento</h2><br />
+				<div class="clear"></div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Nenhum</label>
+				</div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Fraco</label>
+				</div>	
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Moderado</label>
+				</div>	
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>Forte</label>
+				</div>				
+				<div class="clear"></div>
+			</form>		
+			<form>
+				<h2>Capa Térmica ?</h2><br />
+				<div class="clear"></div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>KWH</label>
+				</div>
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>GPL/KG</label>
+				</div>	
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>R$M&sup3;</label>
+				</div>	
+				<div class="Input_radio">
+					<input type="radio" name="" value="Nome do Cliente ou Obra"/>
+					<label>L</label>
+				</div>				
+				<div class="clear"></div>
+			</form>
+			<%=link_to image_tag("bt_enviar_fplan.png" ,:class=>"Bt_enviar"),"#"%>
+			<div class="clear"></div>
+		</div>	
+	</div>	
+  </div>
+</div>
+<div id='Image_internal'>
+  <%=image_tag("img_dimensions.png")%>
+</div>
+</div>

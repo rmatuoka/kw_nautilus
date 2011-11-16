@@ -1,5 +1,7 @@
 KwNautilus::Application.routes.draw do
   
+  get "dimensions/index"
+
   #Inicio Namespace Admin
   namespace(:admin){
     resources(:sections){
@@ -87,6 +89,7 @@ KwNautilus::Application.routes.draw do
   resources :linhas
   resources :produtos
   resources :home
+  resources :dimensions
 
   root :to => "home#index"
  
