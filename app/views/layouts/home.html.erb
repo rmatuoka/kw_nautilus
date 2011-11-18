@@ -70,13 +70,13 @@ jQuery(document).ready(function() {
 									<span class="Leftpar_as_left">''</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
 									<%=	truncate(strip_tags($teste), :length => 150) %>
-									<span class="Leftpar_as_right">"<span>
+									<span class="Leftpar_as_right">"</span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
 								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
 						</div> 	
-						<%= image_tag("img_linedetailhome.png", :style=>"float:left;")%>						
+						<div id="clear"></div>
 						<div id="Noticias_box">	
 							<h1 style="border-bottom:2px #d0d0d0 solid;"><img src="images/tit_noticias.png" width="169" height="54" /></h1>
                             <br /><br />
@@ -99,38 +99,33 @@ jQuery(document).ready(function() {
     									
 						</div><!-- End box noticias -->
                         		
-				  </div><!-- end box left -->	       
-				  <div id="Box_right">
-					<div id="Planilha_box">
-							<h1><img src="images/tit_planilha.png" style="margin:23px 0px 0px 180px;"/></h1>
-							<div id="Planilha_box_content">
-							<br /><br /><br /><br />
-								<p class="bg_p_planilha1">Em breve uma ferramenta Nautilus</p>
-								<p class="bg_p_planilha0">inovadora!</p>
-								<p class="bg_p_planilha1">Aguardem mais informações.</p>
-								<span class="Ver_mais" style="font-size:18px;"><br />
-								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_plani"%>
+					</div><!-- end box left -->	       
+					<div id="Box_right">
+						<div id="Planilha_box">
+								<h1><img src="images/tit_planilha.png" style="position:relative;left:170px; top:12px;"/></h1>
+								<div id="Planilha_box_content">
+								<br />
+									<p class="bg_p_planilha1 Ver_mais_plani">Acerte na escolha dos produtos para sua piscina.<br /><a href="#">Clique aqui e saiba como.</a></p>
+
+									
+									
+								</div>
 								
-								
-							</div>
-                            
-					</div>  				  
-					<div id="Videos_box">
-							<h1><img src="images/tit_videos.png" style="margin-left:5px;"/></h1><br />
-							<%= link_to image_tag("bt_bigyoutube.jpg", :width=>"384", :height=>"188"),videos_path%>
-					</div>   
- 
-                    <div id="Ondeencontrar_box">
-                            <h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
-                            <a href="#"></a>
-                            <p class="Text_noticia">
-                                Clique aqui e confira a nossa lista de revendas! <br>
-								<span class="Ver_mais"><%= link_to "...ver mais", institucional_revendas_path, :class=>"Ver_mais"%></span>
-                            </p>
-                    </div>                         
-			  	  </div>	
-                                 
-			  </div>                    																				  
+						</div>  				  
+						<div id="Videos_box">
+								<h1><img src="images/tit_videos.png" style="margin-left:5px;"/></h1><br />
+								<%= link_to image_tag("bt_bigyoutube.jpg", :width=>"384", :height=>"188"),videos_path%>
+						</div>   
+	 
+						<div id="Ondeencontrar_box">
+								<h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
+								<a href="#"></a>
+								<p class="Text_noticia">
+									Clique aqui e confira a nossa lista de revendas! <br>
+									<span class="Ver_mais"><%= link_to "...ver mais", institucional_revendas_path, :class=>"Ver_mais"%></span>
+								</p>
+						</div>                         
+					</div>                  																				  
 				</div><!-- end Content -->
 				<div id="clear"></div>
 				<div id="Footer">
@@ -148,6 +143,7 @@ jQuery(document).ready(function() {
 						</div>
                     </div>
 				</div><!-- end footer -->
+				<div id="clear"></div>
 			</div><!-- ends general -->    
 		</div><!-- ends bgcurvers -->	
 	</div><!-- ends bggeneralfooter -->	

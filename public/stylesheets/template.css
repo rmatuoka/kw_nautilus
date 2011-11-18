@@ -680,14 +680,15 @@ body
 			width:395px;
 			min-height:400px;
 			height:auto;
-			float:left;
+			float:right;
 			padding:0px 0px 0px 38px;	
 		}
 			#Content #Box_right #Planilha_box 
 			{
 				position:relative;
 				width:388px;
-				height:250px;	
+				height:250px;
+				top:-2px;				
 			}
 			#Content #Box_right #Planilha_box #Planilha_box_content
 			{
@@ -697,23 +698,37 @@ body
 				background-position:center;
 				width:384px;
 				height:191px;
-				margin-top:-10px;	
+				margin-top:-12px;
+				left:-6px;				
 			}
 				.bg_p_planilha1
 				{
 					display:block;
-					width:357px;
-					height:20px;
-					padding-top:5px;
+					width:348px;
+					height:39px;
+					position:relative;	
+					top:102px;
+					left:-19px;
 					background-image:url(../images/bg_p_planilha.png);
 					background-repeat:repeat;				
-					font-family:Arial, Helvetica, sans-serif;
+					font-family:Verdana, Geneva, sans-serif;
 					font-size:14px;
-					color:#595959;
+					font-weight:normal !important;
+					color:#0073b3;
 					font-weight:normal;	
 					text-align:left;
-					padding-left:18px;
+					padding:11px 0px 0px 10px
 				}	
+				.bg_p_planilha1 a
+				{
+					text-decoration:none;
+					color:#0073b3;
+				}
+					.bg_p_planilha1 a:hover
+					{
+						text-decoration:underline;
+						color:#0073b3;
+					}				
 				.bg_p_planilha0
 				{
 					display:block;
@@ -808,7 +823,7 @@ body
 		}
 		.Text_place_foot	
 		{
-      	          position:relative;
+      	  position:relative;
 		  top:25px;
 		  left:15px;
 		}
