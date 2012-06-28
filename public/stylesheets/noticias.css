@@ -4,6 +4,14 @@
 	padding-bottom:10px;
 	}
 
+#content_noticia p a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color: #666666;
+	text-decoration:none;
+	}
+
 span{
 	float:right;
 	}

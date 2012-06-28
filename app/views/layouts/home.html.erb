@@ -39,12 +39,12 @@ jQuery(document).ready(function() {
 						<%@Destaques.each do |d|%>	
 						<div>
 							<div class="Featured_image">
-								<%= link_to image_tag(d.image.url("destaque")), d.link%>
+								<%= link_to image_tag(d.image.url("destaque")), d.link, :target=>"new" %>
 							</div>
 							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
 								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
 								<div id="Featured_title_text">
-									<span><%=d.title%></span>
+									<span><%= link_to d.title, d.link, :target=>"new"%></span>
 								</div>
 							</div>
 						</div>
@@ -61,21 +61,23 @@ jQuery(document).ready(function() {
 			
 				<div id="Content">
                 	<div id="Detail"><img src="images/fr_detail.png" width="1064" height="152" /></div>
-					<div id="Box_left">	
+					<div id="Box_left">
+						
 						<div id="Depoimentos_box">
 								<h1><img src="images/tit_depoimentos.png" width="192" height="48" /></h1><br /><br /><br />
-								<p class="Dep_bc"><%= @Depoimento.first.name %><%=" / "+ @Depoimento.first.company if !@Depoimento.first.company.blank? %><%=" - "+ @Depoimento.first.position if !@Depoimento.first.position.blank? %></p> 
+								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
 									<span class="Leftpar_as_left">''</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
-									<%=	truncate(strip_tags($teste), :length => 150) %>
+									<%=	link_to truncate(strip_tags($teste), :length => 150), institucional_depoimentos_path %>
 									<span class="Leftpar_as_right">"</span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
 								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
 						</div> 	
+						
 						<div id="clear"></div>
 						<div id="Noticias_box">	
 							<h1 style="border-bottom:2px #d0d0d0 solid;"><img src="images/tit_noticias.png" width="169" height="54" /></h1>
@@ -84,12 +86,12 @@ jQuery(document).ready(function() {
 							<!--start box noticia -->
 							<div id="Item_noticias">
 								<div id="Photo">
-									<%= image_tag(n.image.url("new_home"))%>
+									<%= link_to image_tag(n.image.url("new_home")), noticia_path(n.id)%>
 								</div>
 								<div id="Text">
-								  <h2 class="Tit_noticia"><%=n.title%></h2><br />
+								  <h2 class="Tit_noticia"><%= link_to n.title, noticia_path(n.id) %></h2><br />
 								  <p class="Text_noticia">
-										<%=n.summary%><span class="Ver_mais"> <%= link_to "...ver mais", noticia_path(n.id), :class=>"Ver_mais" %></span>  <br />
+										<%= link_to n.summary, noticia_path(n.id) %><span class="Ver_mais"> <%= link_to "...ver mais", noticia_path(n.id), :class=>"Ver_mais" %></span>  <br />
 								  </p>
 								  
 								</div>
@@ -105,7 +107,7 @@ jQuery(document).ready(function() {
 								<h1><img src="images/tit_planilha.png" style="position:relative;left:170px; top:12px;"/></h1>
 								<div id="Planilha_box_content">
 								<br />
-									<p class="bg_p_planilha1 Ver_mais_plani">Acerte na escolha dos produtos para sua piscina.<br /><a href="#">Clique aqui e saiba como.</a></p>
+									<p class="bg_p_planilha1 Ver_mais_plani"><%= link_to "Acerte na escolha dos produtos para sua piscina.", "#" %><br /><%= link_to "Clique aqui e saiba como.", "#" %></p>
 
 									
 									
@@ -121,7 +123,7 @@ jQuery(document).ready(function() {
 								<h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
 								<a href="#"></a>
 								<p class="Text_noticia">
-									Clique aqui e confira a nossa lista de revendas! <br>
+									<%= link_to "Clique aqui e confira a nossa lista de revendas!", institucional_revendas_path %><br>
 									<span class="Ver_mais"><%= link_to "...ver mais", institucional_revendas_path, :class=>"Ver_mais"%></span>
 								</p>
 						</div>                         
@@ -136,10 +138,10 @@ jQuery(document).ready(function() {
 						</div>
 						
 						<div class="Logos_place_foot">
-							<%= image_tag("img_logo_anappi.png", :width=>"44", :height=>"48") %>
-							<%= image_tag("img_logo_abrava.png", :width=>"89", :height=>"31", :style=>"margin-left:22px;") %>
-							<%= image_tag("img_logo_ah.png", :width=>"54", :height=>"48", :style=>"margin-left:22px;")%>
-							<%= image_tag("img_logo_abesco.png", :width=>"53", :height=>"56", :style=>"margin-left:22px;") %>
+							<%= link_to image_tag("img_logo_anappi.png", :width=>"44", :height=>"48"), "http://www.anapp.org.br/", :target=>"new" %>
+							<%= link_to image_tag("img_logo_abrava.png", :width=>"89", :height=>"31", :style=>"margin-left:22px;"), "http://www.abrava.com.br/", :target=>"new"  %>
+							<%= link_to image_tag("img_logo_ah.png", :width=>"54", :height=>"48", :style=>"margin-left:22px;"),"#" , :target=>"new" %>
+							<%= link_to image_tag("img_logo_abesco.png", :width=>"53", :height=>"56", :style=>"margin-left:22px;"), "http://www.abesco.com.br/", :target=>"new"  %>
 						</div>
                     </div>
 				</div><!-- end footer -->

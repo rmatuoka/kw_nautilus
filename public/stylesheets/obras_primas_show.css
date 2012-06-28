@@ -19,6 +19,7 @@
 	position: absolute;
 	top: 193px;
 	left: 34px;
+	cursor:pointer;
 }
 .Trans_button_left
 {
@@ -26,6 +27,7 @@
 	position: absolute;
 	top: 193px;
 	left: 573px;
+	cursor:pointer;
 }
 #Left_button
 {

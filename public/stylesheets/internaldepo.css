@@ -2,12 +2,14 @@
 	float:left;
 	margin-top:20px;
 	margin-left:10px;
+	cursor:pointer;
 	}
 
 #dep_proximo{
 	float:right;
 	margin-top:20px;
 	margin-right:20px;
+	cursor:pointer;
 	}
 
 #Image_internal{

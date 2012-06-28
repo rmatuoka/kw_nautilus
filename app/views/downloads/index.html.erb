@@ -44,12 +44,12 @@
 		<% end %>		
 		
 		<%if $fundo == 0%>
-			<li class="sem_fundo"><p><%= donwloads.title%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
+			<li class="sem_fundo"><p><%= link_to donwloads.title, donwloads.archive.url, :target=>"_blank"%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
 		<%
 		$fundo = 1
 		else
 		%>
-			<li class="com_fundo"><p><%= donwloads.title%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
+			<li class="com_fundo"><p><%= link_to donwloads.title, donwloads.archive.url, :target=>"_blank"%> - Tamanho: <%=number_to_human_size(donwloads.archive_file_size) %> <%= link_to image_tag("bt_download.png"), donwloads.archive.url, :target=>"_blank"%></p></li>
 		<%
 		$fundo = 0
 		end
@@ -62,12 +62,12 @@
 			@Manuais.each do |manual|	
 		%>
 			<%if $fundo == 0%>
-				<li class="sem_fundo"><p><%= manual.title%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
+				<li class="sem_fundo"><p><%= link_to manual.title, manual.manual.url, :target=>"_blank"%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
 			<%
 			$fundo = 1
 			else
 			%>
-				<li class="com_fundo"><p><%= manual.title%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
+				<li class="com_fundo"><p><%= link_to manual.title, manual.manual.url, :target=>"_blank"%> - Tamanho: <%=number_to_human_size(manual.manual_file_size) %> <%= link_to image_tag("bt_download.png"), manual.manual.url, :target=>"_blank"%></p></li>
 			<%
 			$fundo = 0
 			end
