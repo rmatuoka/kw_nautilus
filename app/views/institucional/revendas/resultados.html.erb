@@ -23,7 +23,7 @@
 					  <h1><%=r.name%></h1>
 					  <span>Local:</span> <%=r.city%> / <%=r.state%><br>
 					  <span>Bairro:</span> <%=r.zone%><br>
-					  <span>CEP:</span> <%=r.cep%><br>
+					  <span>CEP:</span> <%=r.cep[0,5]+"-"+r.cep[5,7]%><br>
 					  <span>Telefone:</span> <%=r.phone%>
 					</div>
 				<%counter = counter + 1%>

@@ -35,12 +35,12 @@
 			 <option value="cobranca@nautilus.ind.br">Cobrança</option>
 			 <option value="suporte@nautilus.ind.br">Suporte</option>
 			 <option value="assistenciatecnica@nautilus.ind.br">Assistência Técnica</option>')%><br>			
-			<%=text_field_tag :name %><br>
-			<%=text_field_tag :phone %><br>
-			<%=text_field_tag :email %><br>
-			<%=text_field_tag :company %><br>
-			<%=text_field_tag :city %><br>
-			<%=text_field_tag :state %><br>
+			<%=text_field_tag :name ,:class=>"InputText" %><br>
+			<%=text_field_tag :phone ,:class=>"InputText" %><br>
+			<%=text_field_tag :email ,:class=>"InputText" %><br>
+			<%=text_field_tag :company ,:class=>"InputText" %><br>
+			<%=text_field_tag :city ,:class=>"InputText" %><br>
+			<%=text_field_tag :state ,:class=>"InputText" %><br>
 			<%=text_area_tag(:message, content = nil, :rows=>"10")%>
 		</form>
 		<%=image_submit_tag "bt_enviar.png", :alt=>"Enviar", :title=>"Enviar", :class=>"bt_enviar"%>
