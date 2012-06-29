@@ -9,7 +9,7 @@
 		<div id='Content'>
 			<div id="Title_p">
 			  <h1>Produtos</h1>
-			  <%= link_to image_tag("ico_title_internal.png", :width=>"19",:height=>"15",:class=>"align_detail_ico"), obras_path, :class=>"bt_textalign"%>
+			  <%= image_tag("ico_title_internal.png", :width=>"19",:height=>"15",:class=>"align_detail_ico"), :class=>"bt_textalign"%>
 			</div>
 			<%	@Categorias.each do |categoria| %>
 			<div id="Linhas">
@@ -33,6 +33,7 @@
 					  <%if !categoria.link.blank?%>
 						<div class="Selo">
 							<%=link_to(image_tag(categoria.selo.url), categoria.link, :target => "_blank")%>
+							<%= link_to image_tag("bt_return.png"), "javascript:history.go(-1)"%>
 						</div>
 					  <%end%>
 				</div>				
