@@ -1,5 +1,9 @@
 KwNautilus::Application.routes.draw do
   
+  get "busca/index"
+
+  get "busca/resultado"
+
   get "dimensions/index"
 
   #Inicio Namespace Admin

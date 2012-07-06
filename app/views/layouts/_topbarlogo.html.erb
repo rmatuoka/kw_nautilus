@@ -16,15 +16,17 @@
             </div>                                
 		</div>
         <div id="Search_bar" class="slide" >
-          <button><%= image_tag("menu/bt_busca.png", :width=>"103", :height=>"53")%></button>
+	   <%form_tag %> 
+          <button><%=image_submit_tag "menu/bt_busca.png", :class=>"Bt_busca"%></button>
 		  
           <div class="inner" style="margin-left: 387px;">
                             <div class="Search_tab">
-                                <input type="text"  maxlength="34" name="Busca"/> 
+				<%=text_field_tag :keyword, nil ,:class=>"Search_input"%>
                             </div>
           </div>
+	  </form>
         </div>           
 </div>
 <div id="Logo">
-	<%= link_to image_tag("logo_nautilus.png", :width=>"636", :height=> "151", :alt=>"Nautilus", :title=>"Nautilus"), root_path%>
+	<%= link_to image_tag("logo_nautilus.png", :width=>"292", :height=> "151", :alt=>"Nautilus", :title=>"Nautilus"), root_path%>
 </div>

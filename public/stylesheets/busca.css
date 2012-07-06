@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	text-decoration:none;
+	cursor:pointer;
+}
+hr{ color:#e76a17;}
+.Prod_notc
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:11.87px;
+	color:#5b5b5b;
+	margin:0px 0px 10px 0px;
+}
+				.Search
+				{
+					position: relative;
+					top:0px;
+					left: 0;
+					bottom: 0;
+					height:50px;
+					width:387px;
+					background-image:url(../images/menu/bg_searchfield.png);
+					background-repeat:no-repeat;
+					background-position:center;
+				}
+				.Search input
+				{
+					width:100px;
+					margin:16px 0px 0px 10px;
+					background:transparent;
+					border:none;
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:14px;
+					
+				}
+.Bt_busca
+{
+	left: 276px;
+	position: relative;
+	top: -16px;
+}
+input.campo_in  
+{
+	width:277px;
+}
+.Search_input
+{
+	position:absolute;
+	top: 13px
+	left:2px;
+	width:339px;
+	background:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:11.87px;
+	color:#5b5b5b;
+}
+
+#Box_content_internal
+{
+	width:903px;
+	margin:0 auto;
+}
+.Title_acquisition_h1
+{
+	position:relative;
+	top:0px;
+	left:-30px;
+	margin-bottom:10px;
+}
+.Title_acquisition_h2
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:11px;
+	color:#e76a17
+}
+.Title_acquisition_h3
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:11px;
+	color:#e76a17;
+}
+.Title_busca_h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:16px;
+	color:#e76a17 !important;	
+}
+.img_align_line_busca1
+{
+	position:relative;
+	margin-bottom:17px;
+}
+.Item_busca
+{
+	position:relative;
+	width:895px;
+	height:87px;
+}
+	.Title_name
+	{
+		font-family:Verdana, Geneva, sans-serif;
+		font-weight:normal;
+		font-size:14px;
+		color:#e76a17;		
+	}
+	.Title_data
+	{
+		font-family:Verdana, Geneva, sans-serif;
+		font-weight:normal;
+		font-size:11px;
+		color:#808080;	
+		margin-left:10px;	
+	}
+	.Text_busca
+	{
+		font-family:Verdana, Geneva, sans-serif;
+		font-weight:normal;
+		font-size:14px;
+		color:#808080;
+	}
+	.img_align_line_busca2
+	{
+		position:relative;
+		margin-top:17px;
+	}
+.Text_acquisition_black
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	color:#000000;
+}
+
+.Text_acquisition_green
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color:#046629;
+}
+.Img_topic_align
+{
+	position:relative;
+	margin-right:17px;
+	margin-left:17px;
+}

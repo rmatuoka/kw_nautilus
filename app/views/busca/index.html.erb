@@ -1,0 +1,26 @@
+<%content_for :title do%>
+	Busca
+<%end%>
+<%content_for :head do %>	
+	<%= stylesheet_link_tag "busca" %>
+<%end%>
+<%content_for :featured_image do %>
+	<%= image_tag("img_freatured_servicos.png")%>
+<%end%>
+<div id="Content">
+	<div id="Box_content_internal">
+		<h1 class="Title_acquisition_h1"><img src="images/tit_resultado.png" /></h1>
+		<img src="images/img_line_detailinternal.png" width="903" height="7" />
+		<br /><br />
+		<h2 class="Title_acquisition_h2">&nbsp;BUSCAR</h2>
+		<div class="Search">
+		<%=form_tag '/busca/resultado', :method => :get, :name=>"formkeyword"%>
+			<%=text_field_tag :keyword, nil ,:class=>"Search_input"%>
+			<%=image_submit_tag "bt_busca.png", :class=>"Bt_busca"%>
+		</form>
+		</div>
+		<br />		
+		<div id="clear"></div>
+		</div>
+	</div>
+</div>
