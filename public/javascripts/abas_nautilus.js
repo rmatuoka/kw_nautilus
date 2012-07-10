@@ -1,11 +1,15 @@
 jQuery(document).ready(function() {
-/* search bar */
+/* search bar 
   jQuery('#Search_bar button').click(function() {
     var jQuerymarginLefty = jQuery(this).next();
     jQuerymarginLefty.animate({marginLeft: parseInt(jQuerymarginLefty.css('marginLeft'),10) == 0 ? jQuerymarginLefty.outerWidth() : 0});
   });
- /* search bar */
-  
+  search bar */
+  jQuery('#Bt_buscar').click(function() {
+    var jQuerymarginLefty = jQuery('.inner');
+    jQuery('#Bt_master').html('<input class="Bt_busca" src="/images/menu/bt_busca.png" type="image">');
+    jQuerymarginLefty.animate({marginLeft: parseInt(jQuerymarginLefty.css('marginLeft'),10) == 0 ? jQuerymarginLefty.outerWidth() : 0});
+  }); 
   
     jQuery("#Login_tab").hide();  
 	

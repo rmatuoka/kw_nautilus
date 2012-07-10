@@ -13,50 +13,6 @@ hr{ color:#e76a17;}
 	color:#5b5b5b;
 	margin:0px 0px 10px 0px;
 }
-				.Search
-				{
-					position: relative;
-					top:0px;
-					left: 0;
-					bottom: 0;
-					height:50px;
-					width:387px;
-					background-image:url(../images/menu/bg_searchfield.png);
-					background-repeat:no-repeat;
-					background-position:center;
-				}
-				.Search input
-				{
-					width:100px;
-					margin:16px 0px 0px 10px;
-					background:transparent;
-					border:none;
-					font-family:Verdana, Geneva, sans-serif;
-					font-size:14px;
-					
-				}
-.Bt_busca
-{
-	left: 276px;
-	position: relative;
-	top: -16px;
-}
-input.campo_in  
-{
-	width:277px;
-}
-.Search_input
-{
-	position:absolute;
-	top: 13px
-	left:2px;
-	width:339px;
-	background:none;
-	font-family:Verdana, Geneva, sans-serif;
-	font-weight:normal;
-	font-size:11.87px;
-	color:#5b5b5b;
-}
 
 #Box_content_internal
 {
