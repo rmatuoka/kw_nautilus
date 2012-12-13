@@ -46,9 +46,9 @@ jQuery(document).ready(function() {
 								<%= link_to image_tag(d.image.url("destaque")), d.link, :target=>"new" %>
 							</div>
 							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
-								<%= image_tag("img_left_featured.png", :style=>"float:left;")%>
+								<%= image_tag("img_left_featured.png", :style=>"float:left; visibility:hidden;")%>
 								<div id="Featured_title_text">
-									<span><%= link_to d.title, d.link, :target=>"new"%></span>
+									<span><%= link_to d.title, d.link, :target=>"new" %></span>
 								</div>
 							</div>
 						</div>

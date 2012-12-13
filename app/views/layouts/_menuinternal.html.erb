@@ -1,9 +1,12 @@
 <div id="Menu_internal">
       <ul>
-	    <li><p class="bg_botao"><%= link_to image_tag("menu/Menu_internal/img_circledetail.png", :width=>"9",:height=>"9",:class=>"align_detail")+"Sobre a Nautilus", institucional_sobre_index_path, :class=>"bt_textalign"%></p></li>
-		<li><p class="bg_botao"><%= link_to image_tag("menu/Menu_internal/img_circledetail.png", :width=>"9",:height=>"9",:class=>"align_detail")+"Missão e Valores", institucional_missao_index_path, :class=>"bt_textalign"%></p></li>
-        <li><p class="bg_botao"><%= link_to image_tag("menu/Menu_internal/img_circledetail.png", :width=>"9",:height=>"9",:class=>"align_detail")+"Revendas e Representantes", institucional_revendas_representantes_path, :class=>"bt_textalign"%></p></li>
-        <li><p class="bg_botao"><%= link_to image_tag("menu/Menu_internal/img_circledetail.png", :width=>"9",:height=>"9",:class=>"align_detail")+"Depoimentos", institucional_depoimentos_path, :class=>"bt_textalign"%></p></li>
-		<!--<li><p class="bg_botao"><%= link_to image_tag("menu/Menu_internal/img_circledetail.png", :width=>"9",:height=>"9",:class=>"align_detail")+"Revendas - Fasterm", institucional_fasterm_index_path, :class=>"bt_textalign"%></p></li>-->
+	    <li class="institucional"><%= link_to "• INSTITUCIONAL", institucional_root_path, :class=>"item_align"%></li>
+		<li class="produtos"><%= link_to "• PRODUTOS", linhas_path, :class=>"item_align"%></li>
+		<li class="servicos"><%= link_to "• SERVIÇOS", servicos_path, :class=>"item_align"%></li>
+		<li class="downloads"><%= link_to "• DOWNLOADS", downloads_path, :class=>"item_align"%></li>
+		<li class="cases"><%= link_to "• CASES", cases_path, :class=>"item_align"%></li>
+		<li class="noticias"><%= link_to "• NOTÍCIAS", noticias_path, :class=>"item_align"%></li>
+		<li class="videos"><%= link_to "• VIDEOS", videos_path, :class=>"item_align"%></li>
+		<li class="atendimento"><%= link_to "• ATENDIMENTO", new_atendimento_path%></li>
       </ul> 
     </div>

@@ -49,6 +49,16 @@ blockquote, q {
 }
 
 /* end of reset*/
+@font-face {
+				font-family: 'BebasNeue';
+				src: url('bebasneue.eot');
+				src: url('bebasneue.eot?#iefix') format('embedded-opentype'),
+						 url('bebasneue.woff') format('woff'),
+						 url('bebasneue.ttf') format('truetype'),
+						 url('bebasneue.svg#bebasneue') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
 html
 {
 	
@@ -255,7 +265,7 @@ body
 		}		
 		#Menu ul
 		{
-			margin-top:21px;
+			margin-top:18px;
 			margin-left:50px;
 		}
 		#Menu li
@@ -265,175 +275,111 @@ body
 		}
 		.item_align
 		{
-			padding-top:5px;
-			*padding-top:20px;
-			padding-left:105px;
+			margin-right:45px;
 		}
 			.institucional
 			{
+				
 			}
 			.institucional a
 			{
-				background-image:url(../images/menu/bt_institucional01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.institucional a:hover
 			{
-				background-image:url(../images/menu/bt_institucional01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.servicos a
 			{
-				background-image:url(../images/menu/bt_servicos01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.servicos a:hover
 			{
-				background-image:url(../images/menu/bt_servicos01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.produtos a
 			{
-				background-image:url(../images/menu/bt_produtos01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.produtos a:hover
 			{
-				background-image:url(../images/menu/bt_produtos01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.cases a
 			{
-				background-image:url(../images/menu/bt_cases01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.cases a:hover
 			{
-				background-image:url(../images/menu/bt_cases01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 
 			.downloads a
 			{
-				background-image:url(../images/menu/bt_downloads01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.downloads a:hover
 			{
-				background-image:url(../images/menu/bt_downloads01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.servicos a
 			{
-				background-image:url(../images/menu/bt_servicos01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.servicos a:hover
 			{
-				background-image:url(../images/menu/bt_servicos01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.noticias a
 			{
-				background-image:url(../images/menu/bt_noticias01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.noticias a:hover
 			{
-				background-image:url(../images/menu/bt_noticias01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.videos a
 			{
-				background-image:url(../images/menu/bt_videos01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.videos a:hover
 			{
-				background-image:url(../images/menu/bt_videos01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 			.atendimento a
 			{
-				background-image:url(../images/menu/bt_atendimento01.png);
-				background-repeat:no-repeat;
-				background-position:0px 0px;
-				width:128px;
-				height:28px;
+				font-family:BebasNeue;
 				text-decoration:none;
+				color:#FFF;
+				font-size:18px;
 			}
 			.atendimento a:hover
 			{
-				background-image:url(../images/menu/bt_atendimento01.png);
-				background-repeat:no-repeat;
-				background-position:0px -36px;
-				width:128px;
-				height:28px;
-
+				color:#763204;
 			}
 	#Featured /*Destaque*/
 	{
@@ -529,6 +475,7 @@ body
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:14px;
 		color:#ff6600;
+		margin-left:15px;
 	}
 	#Featured_title_text a
 	{
