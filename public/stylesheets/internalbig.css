@@ -1,10 +1,5 @@
 #Content_bgrepeat
   {
-    background-image:url(../images/bg_contentrepeat.png);
-	background-repeat:no-repeat;
-	background-position:-5px 447px;
-	*background-position:-5px 447px; /*ie7*/
-	background-position /*\**/:-4px 447px\9; /*ie8*/
 	position:relative;
 	display:inline-block;
 	width:100%;
@@ -16,9 +11,6 @@
   
 #Content
   {
-	background-image:url(../images/bg_contenttop.png);
-	background-repeat:no-repeat;
-	background-position:center top;
 	position:relative;
 	width:100%;
 	min-height:452px;

@@ -1,8 +1,6 @@
 		#Content
 		{
-			background-image:url(../images/bg_contenttop.png);
-			background-repeat:no-repeat;
-			background-position:center top;
+			
 			position:relative;
 			width:100%;
 			height:459px !important;
@@ -47,12 +45,12 @@
 
 #Image_internal_downloads
   {
-    width:277px !important;
-	height:500px;
+    width:215px !important;
+	height:215px;
 	z-index:100;
 	position:absolute;
 	left:6px;
-	top:100px !important;
+	margin-top:-215px;
   }
 
 .sem_fundo{

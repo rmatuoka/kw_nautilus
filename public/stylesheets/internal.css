@@ -26,7 +26,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 	color: black;
-	background: white;
+	background: #f9ffff;
 }
 ol, ul {
 	list-style: none;
@@ -87,7 +87,7 @@ body
 	background-position:top center;		
 	width:100%;
 	height:100%;
-	background-color:#6cc6e4;;
+	background-color:#f9ffff;
 }
 #GeneralbgFooter
 {
@@ -388,11 +388,7 @@ body
 	}	
 		#Content_bgrepeat
 		{
-			background-image:url(../images/bg_contentrepeat.png);
-			background-repeat:no-repeat;
-			background-position:-5px 452px;
-			*background-position:-5px 452px; /*ie7*/
-			background-position /*\**/:-4px 452px\9; /*ie8*/
+			
 			margin-top:0px;
 			position:relative;
 			display:inline-block;
@@ -404,9 +400,7 @@ body
 		}											
 		#Content
 		{
-			background-image:url(../images/bg_contenttop.png);
-			background-repeat:no-repeat;
-			background-position:center top;
+			
 			position:relative;
 			width:100%;
 			min-height:452px;
@@ -601,7 +595,7 @@ body
 	#Footer
 	{
 		font-family:Verdana, Geneva, sans-serif;
-		color:#0066cc;
+		color:#e56f2e;
 		font-size:12px;
 		position:relative;
 		width:100%;
@@ -618,9 +612,6 @@ body
 		#Footer_content
 		{
 			z-index:0;
-			background-image:url(../images/bg_footerinternal.png);
-			background-repeat:no-repeat;
-			background-position:center top;
 			position:relative;
 			width:960px;
 			min-height:460px;
@@ -658,7 +649,7 @@ body
 			#Footer_text1
 			{
 				font-family:Arial, Helvetica, sans-serif;
-				color:#cc6633;
+				color:#e56f2e;
 				font-size:12px;
 				position:relative;
 				width:500px;
