@@ -30,6 +30,7 @@ jQuery(document).ready(function() {
 </head>
 
 <body>
+	<div id='bg_top'></div>
 	<div id="GeneralbgFooter">
 		<div id="bgCurves">
 			<div id="General">
@@ -67,24 +68,8 @@ jQuery(document).ready(function() {
                 	
 					<div id="Box_left">
 						
-						<div id="Depoimentos_box">
-								<h1><img src="images/tit_depoimentos.png" width="513" height="55" /></h1><br /><br /><br />
-								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
-								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
-								<p class="Dep_text">
-									<span class="Leftpar_as_left">''</span>
-									<%	$teste = raw @Depoimento.first.testimonial	 %>
-									<%=	link_to truncate(strip_tags($teste), :length => 150), institucional_depoimentos_path %>
-									<span class="Leftpar_as_right">"</span>
-								</p>                          
-								<a href="#"></a>
-								<br /><br />
-								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
-						</div> 	
-						
-						<div id="clear"></div>
-						<div id="Noticias_box">	
-							<h1 style="border-bottom:2px #d0d0d0 solid;"><img src="images/tit_noticias.png" width="169" height="54" /></h1>
+						 	<div id="Noticias_box">	
+							<h1><img src="images/tit_noticias.png" width="506" height="46" /></h1>
                             <br /><br />
 							<%@NoticiasHome.each do |n|%>
 							<!--start box noticia -->
@@ -100,10 +85,28 @@ jQuery(document).ready(function() {
 								  
 								</div>
 							</div>
-							<!--end box noticia -->
+						<!--end box noticia -->
 							<% end %>
     									
 						</div><!-- End box noticias -->
+						<div id="clear"></div>
+						
+						<div id="Depoimentos_box">
+								<h1><img src="images/tit_depoimentos.png" width="513" height="55" /></h1><br /><br /><br />
+								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
+								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
+								<p class="Dep_text">
+									<span class="Leftpar_as_left">''</span>
+									<%	$teste = raw @Depoimento.first.testimonial	 %>
+									<%=	link_to truncate(strip_tags($teste), :length => 150), institucional_depoimentos_path %>
+									<span class="Leftpar_as_right">"</span>
+								</p>                          
+								<a href="#"></a>
+								<br /><br />
+								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
+						</div>
+						
+							
                         		
 					</div><!-- end box left -->	       
 					<div id="Box_right">
@@ -134,6 +137,7 @@ jQuery(document).ready(function() {
 					</div>                  																				  
 				</div><!-- end Content -->
 				<div id="clear"></div>
+				
 				<div id="Footer">
                 	<div id="Footer_content">
 						<div class="Text_place_foot">
@@ -153,6 +157,7 @@ jQuery(document).ready(function() {
 			</div><!-- ends general -->    
 		</div><!-- ends bgcurvers -->	
 	</div><!-- ends bggeneralfooter -->	
+	<div id='bg_footer'></div>
 </body>
 </html>
 
