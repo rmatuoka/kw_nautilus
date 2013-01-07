@@ -23,9 +23,19 @@
 
 
 #content_video{
-	margin-top:10px;
+	margin-top:30px;
 	border-bottom:1px solid #999;
 	padding-bottom:10px;
+	height:250px;
+	}
+	
+#content_video p{
+	float:right;
+	margin-left:350px;
+	}
+
+#content_video iframe{
+	margin-top:-50px;
 	}
 
 span{

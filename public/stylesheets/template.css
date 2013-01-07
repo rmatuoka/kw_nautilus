@@ -647,8 +647,8 @@ body
 				#Content #Box_left #Item_noticias #Photo
 				{
 					position:relative;
-					width:78px;
-					height:78px;
+					max-width:78px;
+					max-height:78px;
 					float:left;
 					border:2px solid white;
 				}	
@@ -803,7 +803,21 @@ body
 				position:relative;
 				width:388px;
 				height:250px;		
-			}	
+			}
+			
+			#box_video_utube{
+				background-image:url(../images/bt_bigyoutube.png);
+				background-repeat:no-repeat;	
+				background-position:center top;
+				width:383px;
+				height:270px;
+				text-align:center;
+				}
+			
+			#box_video_utube iframe{
+				margin-left:-1px;
+				margin-top:2px;
+				}
 			
 
 				.Dep_bc

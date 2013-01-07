@@ -19,11 +19,8 @@
 
 	  <% @Videos.each do |v| %>
 		  <div id="content_video">
-		    <div id="thumb_video">
-			  <%=image_tag(v.image.url("video_img"), :width=>"129", :height=>"97")%>
-			</div>
-			  <p><%= raw v.description%></p>
-			<span><%=link_to image_tag("bt_vermais.png"), video_path(v.id)%></span>
+		  	  <p><%= raw v.description%></p>
+			  <iframe width="318" height="240" src="http://www.youtube.com/embed/IlMlsCo5Myo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 			<div class="clear"></div>
 		  </div>
 	  <% end %>
