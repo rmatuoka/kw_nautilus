@@ -168,6 +168,8 @@ body
 	position:relative;
 	width:100%;
 	margin:auto;
+	margin-top:-225px;
+	z-index:100000;
 }
 #General
 {
@@ -186,7 +188,7 @@ body
 	#Logo
 	{
 		position:absolute;
-		left:-89px;
+		left:0px;
 		top:12px;		
 		width:278px;
 		margin:auto;
@@ -315,25 +317,22 @@ body
 					.open{}
 					.close{display:none;}	
 			/*Tab login end  */				
-									
 		#Menu
 		{
 			position:absolute;	
 			top:180px;
 			left:-46px;
-			background-image:url(../images/menu/bg_menuinternal.png);
-			background-repeat:no-repeat;
-			background-position:center top;
+			
 			width:1021px;
-			height:80px;
-		}
+			height:59px;
+		}	
 		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
 		{
 				#Menu {
 						padding-top:13px;
 					  }
 		}		
-			#Menu ul
+		#Menu ul
 		{
 			margin-top:18px;
 			margin-left:50px;
@@ -345,7 +344,7 @@ body
 		}
 		.item_align
 		{
-			margin-right:45px;
+			margin-right:34px;
 		}
 			.institucional
 			{
@@ -353,10 +352,10 @@ body
 			}
 			.institucional a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.institucional a:hover
 			{
@@ -364,10 +363,10 @@ body
 			}
 			.servicos a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.servicos a:hover
 			{
@@ -375,10 +374,10 @@ body
 			}
 			.produtos a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.produtos a:hover
 			{
@@ -386,10 +385,10 @@ body
 			}
 			.cases a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.cases a:hover
 			{
@@ -398,10 +397,10 @@ body
 
 			.downloads a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.downloads a:hover
 			{
@@ -409,10 +408,10 @@ body
 			}
 			.servicos a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.servicos a:hover
 			{
@@ -420,10 +419,10 @@ body
 			}
 			.noticias a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.noticias a:hover
 			{
@@ -431,10 +430,10 @@ body
 			}
 			.videos a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.videos a:hover
 			{
@@ -442,10 +441,10 @@ body
 			}
 			.atendimento a
 			{
-				font-family:BebasNeue;
+				font-family:helvetica;
 				text-decoration:none;
 				color:#FFF;
-				font-size:18px;
+				font-size:13pt;
 			}
 			.atendimento a:hover
 			{

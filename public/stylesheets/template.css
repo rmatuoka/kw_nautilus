@@ -460,10 +460,10 @@ body
 	#Featured /*Destaque*/
 	{
 		position:relative;
-		width:960px;
+		width:970px;
 		height:335px;
 		margin:auto;
-		margin-left:6px;
+		margin-left:0px;
 		margin-top:-11px;
 		background:#FFF;
 	}
@@ -482,7 +482,7 @@ body
 	{
 		width:950px; 
 		height:315px;
-		margin-left:5px;
+		margin-left:10px;
 		margin-top:10px;
 	}
 	#Featured #Featured_glass

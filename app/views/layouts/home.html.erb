@@ -46,12 +46,7 @@ jQuery(document).ready(function() {
 							<div class="Featured_image">
 								<%= link_to image_tag(d.image.url("destaque")), d.link, :target=>"new" %>
 							</div>
-							<div style="position:absolute; top:83%; left:-46px;z-index:3000;display:inline-block">
-								<%= image_tag("img_left_featured.png", :style=>"float:left; visibility:hidden;")%>
-								<div id="Featured_title_text">
-									<span><%= link_to d.title, d.link, :target=>"new" %></span>
-								</div>
-							</div>
+							
 						</div>
 						<%end%>
 						<!-- Fim do Replica -->
