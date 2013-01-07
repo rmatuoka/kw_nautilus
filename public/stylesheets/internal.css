@@ -1,3 +1,33 @@
+#bg_top{
+	position:relative;
+	background-color:#fff;
+	background-image:url('../images/bg_top.jpg');
+	background-repeat:repeat-x;
+	height:225px;
+	z-index:1000;
+	}
+
+#bg_footer{
+	position:relative;
+	bottom:0px;
+	background-color:#fff;
+	height:145px;
+	z-index:1000;
+	margin-top:-32px;
+	}
+	
+@font-face {
+    font-family: 'helvetica';
+    src: url('helvetica.eot');
+    src: url('helvetica.eot?#iefix') format('embedded-opentype'),
+         url('helvetica.woff') format('woff'),
+         url('helvetica.ttf') format('truetype'),
+         url('helvetica.svg#helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @charset "utf-8";
 /* CSS Document */
 /* beginning of reset*/
@@ -89,6 +119,50 @@ body
 	height:100%;
 	background-color:#f9ffff;
 }
+
+#box_top_bar_1{
+	float:right;
+	margin-right:30px;
+	margin-top:28px;
+	}
+
+#box_top_bar_1 img{
+	float:right;
+	margin-left:5px;
+	margin-top:5px;
+	}
+
+.field_form_busca{
+	width:176px;
+	height:23px;
+	background-image:url(../images/bg_form_busca.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border:1px solid transparent;
+	margin-top:8px;
+	padding-left:10px;
+	color:#a9a9a9;
+	font-size:10px;
+	}
+
+#box_top_bar_2{
+	float:right;
+	margin-top:40px;
+	}
+
+.field_form_amigo{
+	width:106px;
+	height:20px;
+	background-image:url(../images/bg_form_amigo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border:1px solid transparent;
+	margin-top:8px;
+	padding-left:10px;
+	color:#a9a9a9;
+	font-size:10px;
+	}
+
 #GeneralbgFooter
 {
 	position:relative;

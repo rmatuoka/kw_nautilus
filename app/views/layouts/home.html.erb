@@ -80,7 +80,7 @@ jQuery(document).ready(function() {
 								<div id="Text">
 								  <h2 class="Tit_noticia"><%= link_to n.title, noticia_path(n.id) %></h2><br />
 								  <p class="Text_noticia">
-										<%= link_to n.summary, noticia_path(n.id) %><span class="Ver_mais"> <%= link_to "...ver mais", noticia_path(n.id), :class=>"Ver_mais" %></span>  <br />
+										<%= link_to n.summary, noticia_path(n.id) %><span class="Ver_mais"> <%= link_to "ver mais", noticia_path(n.id), :class=>"Ver_mais" %></span>  <br />
 								  </p>
 								  
 								</div>
@@ -96,14 +96,14 @@ jQuery(document).ready(function() {
 								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
-									<span class="Leftpar_as_left">''</span>
+									<span class="Leftpar_as_left">‘‘</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
 									<%=	link_to truncate(strip_tags($teste), :length => 150), institucional_depoimentos_path %>
-									<span class="Leftpar_as_right">"</span>
+									<span class="Leftpar_as_right">’’</span>
 								</p>                          
 								<a href="#"></a>
 								<br /><br />
-								<%= link_to "...ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
+								<%= link_to "ver mais", institucional_depoimentos_path, :class=>"Ver_mais_depo"%>
 						</div>
 						
 							
