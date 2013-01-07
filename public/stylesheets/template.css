@@ -11,9 +11,9 @@
 	position:relative;
 	bottom:0px;
 	background-color:#fff;
-	height:125px;
+	height:145px;
 	z-index:1000;
-	margin-top:-130px;
+	margin-top:-32px;
 	}
 
 @charset "utf-8";
@@ -110,6 +110,50 @@ body
 	background-color:#f9ffff;
 	z-index:10000;
 }
+
+#box_top_bar_1{
+	float:right;
+	margin-right:30px;
+	margin-top:28px;
+	}
+
+#box_top_bar_1 img{
+	float:right;
+	margin-left:5px;
+	margin-top:5px;
+	}
+
+.field_form_busca{
+	width:176px;
+	height:23px;
+	background-image:url(../images/bg_form_busca.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border:1px solid transparent;
+	margin-top:8px;
+	padding-left:10px;
+	color:#a9a9a9;
+	font-size:10px;
+	}
+
+#box_top_bar_2{
+	float:right;
+	margin-top:40px;
+	}
+
+.field_form_amigo{
+	width:106px;
+	height:20px;
+	background-image:url(../images/bg_form_amigo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border:1px solid transparent;
+	margin-top:8px;
+	padding-left:10px;
+	color:#a9a9a9;
+	font-size:10px;
+	}
+
 #GeneralbgFooter
 {
 	position:relative;
@@ -524,7 +568,7 @@ body
 		min-height:620px;
 		height:auto;
 		margin:auto;
-		margin-top:-5px;
+		margin-top:17px;
 		font-family:Arial, Helvetica, sans-serif;
 	}
 	#Detail
@@ -591,6 +635,11 @@ body
 				float:left;				
 				padding: 0px 0px 0px 0px;
 			}
+			
+			#Content #Box_left #Noticias_box h1 img
+			{
+				margin-top:10px;
+				}
 			#Content #Box_left #Item_noticias
 			{	
 				position:relative;
@@ -720,13 +769,13 @@ body
 					height:39px;
 					position:relative;	
 					top:102px;
-					left:-19px;
+					left:-13px;
 					background-image:url(../images/bg_p_planilha.png);
 					background-repeat:repeat;				
 					font-family:Verdana, Geneva, sans-serif;
-					font-size:14px;
+					font-size:13px;
 					font-weight:normal !important;
-					color:#0073b3;
+					color:#004aaa;
 					font-weight:normal;	
 					text-align:left;
 					padding:11px 0px 0px 10px
@@ -812,14 +861,13 @@ body
 				}							
 			#Content #Box_right #Ondeencontrar_box
 			{
-				background:url(../images/bg_onde_encontrar.png);
 				background-repeat:repeat-x;
 				position:relative;
 				display:block;
 				width:385px;
 				height:90px;
 				padding: 0px 0px 0px 0px;
-				margin-top:80px;
+				margin-top:98px;
 				margin-bottom:20px;		
 			}	
 				#Content #Box_right #Ondeencontrar_box p
@@ -827,7 +875,25 @@ body
 					padding: 0px 0px 0px 5px;
 					line-height:15px;
 					margin-top:5px;				
-				}			
+				}
+			
+			.onde_link{
+				margin-left:120px;
+				margin-top:30px !important;
+				
+				}
+			.onde_link a{
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:12px;
+				font-weight:normal;
+				color:#595959;
+				text-decoration:none;
+				}
+			
+			.onde_form{
+				margin-left:122px;
+				margin-top:5px;
+				}
 			
 	#Footer
 	{
@@ -839,11 +905,12 @@ body
 		min-height:132px;
 		margin:auto;
 		clear:both;	
+		top:100px;
 	}	
 		#Footer_content
 		{
 			font-family:Arial, Helvetica, sans-serif;
-			color:#0066cc;
+			color:#0073b3;
 			font-size:12px;
 			position:relative;
 			width:960px;
@@ -860,7 +927,7 @@ body
 		}
 		.Text_nautilus_foot
 		{
-		 color:#ff3300;
+		 color:#0073b3;
 		 font-size:17px;
 		}
 		.Logos_place_foot	

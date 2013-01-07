@@ -123,15 +123,21 @@ jQuery(document).ready(function() {
 						</div>  				  
 						<div id="Videos_box">
 								<h1><img src="images/tit_videos.png" style="margin-left:5px;"/></h1><br />
-								<%= link_to image_tag("bt_bigyoutube.jpg", :width=>"383", :height=>"270"),videos_path%>
+								<%= link_to image_tag("bt_bigyoutube.png", :width=>"383", :height=>"270"),videos_path%>
 						</div>   
 	 
 						<div id="Ondeencontrar_box">
 								<h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
 								<a href="#"></a>
 								<p class="Text_noticia">
-									<%= link_to "Clique aqui e confira a nossa lista de revendas!", institucional_revendas_path %><br>
-									<span class="Ver_mais"><%= link_to "...ver mais", institucional_revendas_path, :class=>"Ver_mais"%></span>
+									<p class="onde_link"><%= link_to "Clique aqui e confira a nossa lista de revendas!", institucional_revendas_path %></p>
+									
+									<form class="onde_form">
+										<select>
+											<option>São Paulo</option>
+										</select>
+									</form>
+									<img src="images/map_onde_encontrar.png" style=" float:left; margin-top:-80px;"/>
 								</p>
 						</div>                         
 					</div>                  																				  
