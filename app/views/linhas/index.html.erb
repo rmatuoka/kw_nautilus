@@ -26,6 +26,7 @@
     
 </script>
 
+
 <%end%>
 <div id='Content_bgrepeat'>
   <div id='Content'>
@@ -40,7 +41,8 @@
 		    <li><%=link_to "Aquecedores de Água a 55°C", linha_path(2), :id=>"aquecedores"%></li>
 		    <li><%=link_to "Filtros de Água Potável", linha_path(1), :id=>"agua_potavel"%></li>
 		  </ul>
-	    <div class='Box_img_produto'><%=image_tag "img_produtos3.png" ,:class=> "slideshow"%></div>
+	    <div class='Box_img_produto slideshow'><%=image_tag "img_produtos3.png"%></div>
+		<br><br>
 		<%= link_to image_tag("bt_return.png"), "javascript:history.go(-1)"%>
 	  </div>
     </div>
