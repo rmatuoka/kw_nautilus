@@ -4,7 +4,7 @@
 <%content_for :head do %>
 <%=stylesheet_link_tag "linhas"%>
 <%=stylesheet_link_tag "internalbig"%>
-
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 <script>
   jQuery(document).ready(function(){
 		jQuery("#agua_potavel").mouseover(function(){
@@ -19,6 +19,10 @@
 		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos3.png"))%>");
 		});
 	  });
+	  
+	  jQuery('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
     
 </script>
 
@@ -31,7 +35,7 @@
  	    <h1>Produtos</h1>
 	  </div>
 	  <div id='Box_content'>
-	    <div class='Box_img_produto'><%=image_tag("img_produtos1.png")%></div>
+	    <div class='Box_img_produto'><%=image_tag "img_produtos1.png" ,:class=> "slideshow"%></div>
 	    <ul>
 		  <li><%=link_to "Filtros de Água Potável", linha_path(1), :id=>"agua_potavel"%></li>
 		  <li><%=link_to "Aquecedores de Água a 55°C", linha_path(2), :id=>"aquecedores"%></li>

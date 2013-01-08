@@ -477,7 +477,6 @@ body
 			position:relative;
 			width:100%;
 			min-height:452px;
-			height:auto;
 			margin:auto;
 			margin-top:-5px;
 			margin-right:2px;
@@ -672,9 +671,9 @@ body
 		font-size:12px;
 		position:relative;
 		width:100%;
-		min-height:465px;
 		margin:auto;
 		clear:both;
+		top:-50px;
 		
 	}	
 	#Footer span
@@ -684,10 +683,10 @@ body
 	}		
 		#Footer_content
 		{
+			color:#0073b3;
 			z-index:0;
 			position:relative;
 			width:960px;
-			min-height:460px;
 			margin:auto;
 			clear:both;	
 		}
@@ -697,14 +696,13 @@ body
 		  top:110px;
 		  left:25px;
 		  width:500x;
-		  height:200px;
 		  line-height:15px;
 		  z-index:1000;
 		}
 		
 		.Text_nautilus_foot
 		{
-		 color:#ff3300;
+		 color:#0073b3;
 		 font-size:17px;
 		 font-weight:normal;
 		 position:relative;
