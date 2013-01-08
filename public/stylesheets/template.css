@@ -726,6 +726,11 @@ body
 					margin-top:-20px;
 				}
 				
+				.Ver_mais_depo:hover
+				{
+					text-decoration:underline;
+					}
+				
 				.Ver_mais_plani
 				{
 					font-family:Arial, Helvetica, sans-serif;
