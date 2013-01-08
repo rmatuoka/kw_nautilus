@@ -84,6 +84,7 @@ KwNautilus::Application.routes.draw do
   }
   #Final Namespace Institucional
   resources :servicos
+  resources :dimensione
   resources :atendimento
   resources :downloads
   resources :videos
