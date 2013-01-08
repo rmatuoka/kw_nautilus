@@ -95,8 +95,5 @@
 }
 
 #Box_content ul li a:hover{
-    background-image:url(../images/bt_produtos.png);
-	background-repeat:no-repeat;
-	background-position: top center;
 	color:#c85200;
 }
