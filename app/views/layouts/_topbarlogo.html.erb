@@ -31,19 +31,19 @@
         </div>
 		-->      
 		<div id='box_top_bar_2'>
-			<img src="images/logo_amigo.png" /><br>
+			<%= image_tag('logo_amigo.png') %><br>
 			<form>
-				<input type="text" class="field_form_amigo" value="Usuário" />
+				<input type="text" class="field_form_amigo" value="Usuário" onblur="if(value=='') value = 'Usuário'" onfocus="if(value=='Usuário') value = ''" />
 				<input type="password" class="field_form_amigo" /><br>
-				<input type="image" src="images/btn_entrar.png" style="margin-top:5px; margin-left:175px;"/>
+				<%= image_submit_tag('btn_entrar.png', :style=>"margin-top:5px; margin-left:175px;") %>
 		</div> 
 		<div id='box_top_bar_1'>
 			<form>
-				<input type="text" class="field_form_busca" value="Buscar" /><input type="image" src="images/bt_form_busca.png" style="margin-top:10px; float:right;"/>
+				<input type="text" class="field_form_busca" value="Buscar" onblur="if(value=='') value = 'Buscar'" onfocus="if(value=='Buscar') value = ''" /><%= image_submit_tag('bt_form_busca.png', :style=>"margin-top:10px; float:right; margin-left:-6px;") %>
 			</form>
 			<br>
-			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), root_path%>
-			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), root_path%>
+			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch"%>
+			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "https://www.facebook.com/nautilus.equipamentos"%>
 		</div>
 		    
 </div>

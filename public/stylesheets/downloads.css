@@ -92,3 +92,11 @@
 	display:none;	
 }
 
+#bg_footer{
+	position:relative;
+	bottom:0px;
+	background-color:#fff;
+	height:145px;
+	z-index:1000;
+	visibility:hidden;
+	}

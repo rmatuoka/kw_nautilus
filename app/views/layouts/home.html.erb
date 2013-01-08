@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
 						<div id="clear"></div>
 						
 						<div id="Depoimentos_box">
-								<h1><img src="images/tit_depoimentos.png" width="513" height="55" /></h1><br /><br /><br />
+								<h1><img src="images/tit_depoimentos.png" width="507" height="47" /></h1><br /><br /><br />
 								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
@@ -107,14 +107,11 @@ jQuery(document).ready(function() {
 					<div id="Box_right">
 						<div id="Planilha_box">
 								<h1><img src="images/tit_planilha.png" style="position:relative;left:0px; top:12px;"/></h1>
+								<a href="<%= dimensions_path%>">
 								<div id="Planilha_box_content">
-								<br />
-									<p class="bg_p_planilha1 Ver_mais_plani"><%= link_to "Acerte na escolha dos produtos para sua piscina.", "#" %><br /><%= link_to "Clique aqui e saiba como.", "#" %></p>
-
-									
-									
-								</div>
 								
+								</div>
+								</a>
 						</div>  				  
 						<div id="Videos_box">
 								<h1><img src="images/tit_videos.png" style="margin-left:5px;"/></h1><br />

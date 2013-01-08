@@ -597,7 +597,7 @@ body
 				width:495px;
 				height:275px;
 				margin-top:560px !important;
-			
+				left:10px;
 			}
 			
 			#Content #Box_left #Depoimentos_box h1 img
@@ -633,6 +633,7 @@ body
 				height:300px;
 				float:left;				
 				padding: 0px 0px 0px 0px;
+				left:10px;
 			}
 			
 			#Content #Box_left #Noticias_box h1 img
@@ -707,7 +708,12 @@ body
 					color:#0073b3;
 					text-decoration:none;
 					margin-top:20px;
+					
 				}
+				
+				a.Ver_mais:hover {
+					text-decoration:underline;
+					}
 
 				.Ver_mais_depo
 				{
@@ -745,7 +751,8 @@ body
 				position:relative;
 				width:388px;
 				height:250px;
-				top:-2px;				
+				top:-2px;
+				left:20px;			
 			}
 			#Content #Box_right #Planilha_box #Planilha_box_content
 			{
@@ -803,7 +810,8 @@ body
 			{
 				position:relative;
 				width:388px;
-				height:250px;		
+				height:250px;
+				left:20px;	
 			}
 			
 			#box_video_utube{
@@ -831,7 +839,7 @@ body
 				.Dep_bc a
 				{
 					font-family:Arial, Helvetica, sans-serif;
-					font-size:20px;
+					font-size:15px;
 					font-weight:normal;
 					color:#cc6600;
 					text-decoration:none;
@@ -840,7 +848,7 @@ body
 				{
 					position:relative;
 					font-family:Arial, Helvetica, sans-serif;
-					font-size:20px;
+					font-size:15px;
 					font-weight:normal;
 					color:#595959;
 					width:468px;
@@ -862,8 +870,9 @@ body
 					font-family:Arial, Helvetica, sans-serif;
 					font-size:10px;
 					font-weight:normal;
-					color:#333333;
+					color:#717171;
 					margin-left:5px;
+					margin-top:3px;
 				}							
 			#Content #Box_right #Ondeencontrar_box
 			{
@@ -874,7 +883,8 @@ body
 				height:90px;
 				padding: 0px 0px 0px 0px;
 				margin-top:98px;
-				margin-bottom:20px;		
+				margin-bottom:20px;
+				left:25px;	
 			}	
 				#Content #Box_right #Ondeencontrar_box p
 				{
