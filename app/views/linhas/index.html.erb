@@ -8,15 +8,15 @@
 <script>
   jQuery(document).ready(function(){
 		jQuery("#agua_potavel").mouseover(function(){
-		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos1.png"))%>");
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(link_to image_tag("img_produtos1.png"), linha_path(1), :id=>"agua_potavel")%>");
 		});
 		
 		jQuery("#aquecedores").mouseover(function(){
-		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos2.png"))%>");
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(link_to image_tag("img_produtos2.png"), linha_path(2), :id=>"aquecedores")%>");
 		});
 		
 		jQuery("#piscinas").mouseover(function(){
-		   jQuery(".Box_img_produto").html("<%=escape_javascript(image_tag("img_produtos3.png"))%>");
+		   jQuery(".Box_img_produto").html("<%=escape_javascript(link_to image_tag("img_produtos3.png"), linha_path(3), :id=>"piscinas")%>");
 		});
 	  });
 	  
@@ -41,7 +41,7 @@
 		    <li><%=link_to "Aquecedores de Água a 55°C", linha_path(2), :id=>"aquecedores"%></li>
 		    <li><%=link_to "Filtros de Água Potável", linha_path(1), :id=>"agua_potavel"%></li>
 		  </ul>
-	    <div class='Box_img_produto slideshow'><%=image_tag "img_produtos3.png"%></div>
+	    <div class='Box_img_produto slideshow'><%=link_to image_tag("img_produtos3.png"), linha_path(3)%></div>
 		<br><br>
 		<%= link_to image_tag("bt_return.png"), "javascript:history.go(-1)"%>
 	  </div>
