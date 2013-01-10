@@ -353,8 +353,24 @@ body
 		}
 		.item_align
 		{
-			margin-right:34px;
+			margin-right:22px;
 		}
+			.home
+			{
+				
+			}
+			.home a
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#FFF;
+				font-size:13pt;
+			}
+			.home a:hover
+			{
+				color:#763204;
+			}
+		
 			.institucional
 			{
 				
