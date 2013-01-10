@@ -3,6 +3,17 @@
 <%end%>
 <%content_for :head do %>
 <%=stylesheet_link_tag "internalrepre"%>
+
+<script>
+<%if params[:state] != nil%>
+	<%if !params[:state].blank?%>
+		jQuery(document).ready(function(){
+	        jQuery("#pessoa_estado").val("<%=params[:state]%>");
+		});
+	<%end%>
+<%end%>
+</script>
+
 <%end%>
 <div id='Content_bgrepeat'>
 <div id='Content'>

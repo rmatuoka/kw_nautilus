@@ -25,7 +25,13 @@ jQuery(document).ready(function() {
 		timeout: 10000,
 		pager: '.featured_navigation_numbers'
 	});
+
+	jQuery("#pessoa_estado").change(function(){
+		window.location.href = '/institucional/revendas?state=' + jQuery("#pessoa_estado").val();
+	});
+
 });
+
 </script>
 </head>
 
@@ -126,11 +132,10 @@ jQuery(document).ready(function() {
 								<p class="Text_noticia">
 									<p class="onde_link"><%= link_to "Clique aqui e confira a nossa lista de revendas!", institucional_revendas_path %></p>
 									
-									<!-- <form class="onde_form">
-										<select>
-											<option>São Paulo</option>
-										</select>
-									</form> -->
+									<form id="frm_onde" class="onde_form">
+										<%= collection_select :pessoa, :estado, @Estados, :state, :state,{:size=>"10", :prompt => 'Selecione...'} %>
+									</form>
+									
 									<img src="images/map_onde_encontrar.png" style=" float:left; margin-top:-80px;"/>
 								</p>
 						</div>                         
