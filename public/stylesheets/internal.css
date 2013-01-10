@@ -346,6 +346,22 @@ body
 		{
 			margin-right:34px;
 		}
+			.home
+			{
+				
+			}
+			.home a
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#FFF;
+				font-size:13pt;
+			}
+			.home a:hover
+			{
+				color:#763204;
+			}
+		
 			.institucional
 			{
 				
