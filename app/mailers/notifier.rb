@@ -4,12 +4,12 @@ class Notifier < ActionMailer::Base
   def enviar(corpo)
       @Contato = corpo
       #mail(:to => "bsilva@korewa.com.br", :bbc => "bsilva@korewa.com.br", :subject => "Nautilus - Contato via site")
-      mail(:to => @Contato.area, :bbc => "log@korewa.com.br", :subject => "Nautilus - Contato via site")
+      mail(:to => @Contato.area, :bcc => "log@korewa.com.br", :subject => "Nautilus - Contato via site")
   end
   
   def protocolo(contato)
       @Contato = contato
-      mail(:to => @Contato.area, :bbc => "log@korewa.com.br", :subject => "Atendimento Nautilus - Protocolo Nº. " + @Contato.id.to_s)
+      mail(:to => @Contato.area, :bcc => "log@korewa.com.br", :subject => "Atendimento Nautilus - Protocolo Nº. " + @Contato.id.to_s)
   end
   
 end
