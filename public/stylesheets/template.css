@@ -11,9 +11,11 @@
 	position:relative;
 	bottom:0px;
 	background-color:#fff;
-	height:145px;
+	background-image:url('../images/bg_footer.jpg');
+	background-repeat:repeat-x;
+	height:100px;
 	z-index:1000;
-	margin-top:-32px;
+	margin-top:-180px;
 	}
 
 @charset "utf-8";
@@ -351,8 +353,24 @@ body
 		}
 		.item_align
 		{
-			margin-right:34px;
+			margin-right:22px;
 		}
+			.home
+			{
+				
+			}
+			.home a
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#FFF;
+				font-size:13pt;
+			}
+			.home a:hover
+			{
+				color:#763204;
+			}
+		
 			.institucional
 			{
 				
@@ -918,45 +936,34 @@ body
 			
 	#Footer
 	{
-		font-family:Arial, Helvetica, sans-serif;
-		color:#0066cc;
-		font-size:12px;
+		
 		position:relative;
 		width:100%;
-		min-height:132px;
 		margin:auto;
-		clear:both;	
-		top:100px;
+		clear:both;
+		height:150px;
 	}	
-		#Footer_content
-		{
-			font-family:Arial, Helvetica, sans-serif;
-			color:#0073b3;
-			font-size:12px;
-			position:relative;
-			width:960px;
-			min-height:77px;
-			margin:auto;
-			clear:both;
-			background:#fff;	
-		}
+		
+		#Footer_content{
+			margin-top:35px;
+			}
+	
 		.Text_place_foot	
 		{
+		  font-family:Verdana, Geneva, sans-serif;
+		  font-size:12px;	
       	  position:relative;
-		  top:25px;
-		  left:15px;
+		  left:25px;
+		  line-height:15px;
+		  top:45px;
+		  color:#0073b3;
 		}
-		.Text_nautilus_foot
-		{
-		 color:#0073b3;
-		 font-size:17px;
-		}
+
 		.Logos_place_foot	
 		{
       	  position:relative;
-		  float:right;
-		  width:400px;
-		  top:-15px;
+		  left:583px;
+		  width:380px;
 		}
 
 							

@@ -344,8 +344,24 @@ body
 		}
 		.item_align
 		{
-			margin-right:34px;
+			margin-right:22px;
 		}
+			.home
+			{
+				
+			}
+			.home a
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#FFF;
+				font-size:13pt;
+			}
+			.home a:hover
+			{
+				color:#763204;
+			}
+		
 			.institucional
 			{
 				
@@ -666,69 +682,35 @@ body
 				
 	#Footer
 	{
-		font-family:Verdana, Geneva, sans-serif;
-		color:#e56f2e;
-		font-size:12px;
+		
 		position:relative;
 		width:100%;
 		margin:auto;
 		clear:both;
-		top:-100px;
-		
+		height:150px;
 	}	
-	#Footer span
-	{
-		float:none;
 		
-	}		
-		#Footer_content
-		{
-			color:#0073b3;
-			z-index:0;
-			position:relative;
-			width:960px;
-			margin:auto;
-			clear:both;	
-		}
+		#Footer_content{
+			margin-top:35px;
+			}
+	
 		.Text_place_foot	
 		{
+		  font-family:Verdana, Geneva, sans-serif;
+		  font-size:12px;	
       	  position:relative;
-		  top:110px;
 		  left:25px;
-		  width:500x;
 		  line-height:15px;
-		  z-index:1000;
+		  top:-30px;
+		  color:#0073b3;
 		}
-		
-		.Text_nautilus_foot
-		{
-		 color:#0073b3;
-		 font-size:17px;
-		 font-weight:normal;
-		 position:relative;
-		 top:0;
-		 left:0;
-		}
+
 		.Logos_place_foot	
 		{
       	  position:relative;
-		  width:400px;
 		  left:583px;
-		  top:145px;
-		  z-index:2000;
+		  width:380px;
 		}		
-			#Footer_text1
-			{
-				font-family:Arial, Helvetica, sans-serif;
-				color:#e56f2e;
-				font-size:12px;
-				position:relative;
-				width:500px;
-				min-height:27px;
-				margin-top:100px;
-				margin-left:25px;
-				clear:both;
-			}		
 							
 	.clear{ clear:both; width:100%}
 	
