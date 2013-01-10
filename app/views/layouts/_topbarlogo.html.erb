@@ -1,55 +1,25 @@
-<div id="Top_bar">
-		<!--
-		<div id="Login_field">
-			<div id="login_buttom">
-				<%= link_to image_tag("menu/bt_amigodarevenda0.png", :width=>"242",:height=>"53",:id=>"imgbotao"), '#', :id=>"login"%>
-			</div>
-			<div id="Login_tab" class="closed" >
-       			<div id="Login_content">
-                	<div class="Bg_linput">
-						<input type="text"  maxlength="23" name="Login" value="Usuário" onfocus="if (this.value =='Usuário') {this.value=''}" onblur="if(this.value == '') { this.value='Usuário'}"/>
-					</div><br />
-                    <div class="Bg_linput">
-						<input type="password"  maxlength="23" name="Senha" value="Senha" onfocus="if (this.value =='Senha') {this.value=''}" onblur="if(this.value == '') { this.value='Senha'}"/>
-					</div><br />
-					<%= link_to image_tag("menu/bt_entrarlogin.png", :width=>"69", :height=>"25"), "#", :class=>"Entrar_button"%>
-                </div>
-            </div>                                
-		</div>
-		
-        <div id="Search_bar" class="slide" >
-	   <%= form_tag '/busca/resultado', :method => :get, :name=>"formkeyword" %> 
-          <div class="inner" style="margin-left: 387px;">
-                            <div class="Search_tab">
-				<%=text_field_tag :keyword, nil ,:class=>"Search_input"%>
-                            </div>
-          </div>
-	  <button id="Bt_master">
-	    <%=image_tag "menu/bt_busca.png", :class=>"Bt_busca", :id=>"Bt_buscar"%>
-	  </button>
-	  </form>
-        </div>
-		-->    
+<div id="Top_bar">  
 		<div id='box_top_bar_2'>
 			<%= image_tag('logo_amigo.png') %><br>
 			<form>
 				<input type="text" class="field_form_amigo" value="Usuário" onblur="if(value=='') value = 'Usuário'" onfocus="if(value=='Usuário') value = ''" />
 				<input type="password" class="field_form_amigo" /><br>
 				<%= image_submit_tag('btn_entrar.png', :style=>"margin-top:5px; margin-left:175px;") %>
+			</form>
 		</div> 
+		
 		<div id='box_top_bar_1'>
-			<form action="/busca/resultado" method="get" name="">
-
+			
+			<form action="/busca/resultado" id="form_busca" method="get" name="form_busca">
 			 	<%=text_field_tag :keyword, "Buscar" ,:class=>"field_form_busca", :onblur => "if(value=='') value = 'Buscar'", :onfocus => "if(value=='Buscar') value = ''"%>
-				<%= image_submit_tag('bt_form_busca.png', :style=>"margin-top:10px; float:right; margin-left:-6px;") %>
+				<%= image_submit_tag('bt_form_busca.png', :style=>"margin-top:-25px; float:right; margin-left:0px;") %>
 			</form>
 			
 			<br>
 			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch", :target=>"_new"%>
 			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "https://www.facebook.com/nautilus.equipamentos", :target=>"_new"%>
-		
 		</div>
-		    
+		
 </div>
 <div id="Logo">
 	<%= link_to image_tag("logo_nautilus.png", :width=>"292", :height=> "151", :alt=>"Nautilus", :title=>"Nautilus"), root_path%>

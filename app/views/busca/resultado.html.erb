@@ -11,31 +11,33 @@
 <div id='Content_bgrepeat'>
 <div id="Content">
 	<div id="Box_content_internal">
-		<br /><br />
-		<br /><br />
-		<br /><br />
-		<br />
-		<h2 class="Title_acquisition_h3">RESULTADOS DA BUSCA:</h2>
-		<br />
-		<hr></hr>
+		<br><br><br>
+		<h1>Resultado da Busca por: <%=params[:keyword] if !params[:keyword].blank?%></h1>
+		<br><br><br>
 		<% if @Erro %>
 			<div class="Item_busca">
 				<p class="Text_busca">Preencha o campo Busca!</p>
 			</div>
 		<% else %>
-			<%if (!@Produtos.blank?) && (!@Noticias.blank?) %>
+		
+			<%if (!@Produtos.blank?) || (!@Noticias.blank?) %>
 				<%if (!@Produtos.blank?) %>
 					<h3 class="Title_busca_h3">Resultados em Produtos</h3><br />
 					<% @Produtos.each do |p| %>
 							<div class="Item_busca">
-								<a href="<%=produto_path(p.id)%>">
-									<label class="Title_name"><%= p.title%></label>
-									<p class="Text_busca"><%= p.section.title %></p>
-								</a>
-								<hr></hr>
+									<label class=""><a href="<%=produto_path(p.id)%>" class="Title_name"><%= p.title%></a></label><br /><br />
+									<p class="Text_busca">
+										<%if p.product_images.first%>
+											<%=image_tag(p.product_images.first.image.url(:thumb), :align => "left", :style => "margin:0px 10px 0px 0px;")%>
+										<%end%>
+										<%= raw(p.description) %>
+									</p>
+								<div id="name" style="clear:both;"></div>
+								<hr vspace="10">
 							</div>
 					<%end%>
 				<%end%>
+			
 				<%if (!@Noticias.blank?) %>
 					<h3 class="Title_busca_h3">Resultados em Noticias</h3><br />
 					<% @Noticias.each do |n| %>
@@ -48,6 +50,7 @@
 							</div>
 					<%end%>							
 				<%end%>				
+			
 			<% else %>
 				<div class="Item_busca">
 					<p class="Text_busca">Não foi encontrado nenhum item relacionado com a palavra chave digitada!</p>

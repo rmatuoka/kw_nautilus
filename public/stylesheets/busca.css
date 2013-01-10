@@ -4,7 +4,22 @@ a{
 	text-decoration:none;
 	cursor:pointer;
 }
-hr{ color:#e76a17;}
+hr{ color:#e76a17; margin:15px 0px 15px 0px;}
+
+h1
+{
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: 
+	#dd6417;
+	border-bottom: 1px solid 
+	#dd6417;
+	padding-bottom: 5px;
+	position: relative;
+	z-index: 1
+}
 .Prod_notc
 {
 	font-family:Verdana, Geneva, sans-serif;
@@ -55,14 +70,14 @@ hr{ color:#e76a17;}
 {
 	position:relative;
 	width:895px;
-	height:87px;
+	margin-bottom:;
 }
 	.Title_name
 	{
 		font-family:Verdana, Geneva, sans-serif;
 		font-weight:normal;
-		font-size:14px;
-		color:#e76a17;		
+		font-size:16px;
+		color:#0C4DA2;		
 	}
 	.Title_data
 	{
@@ -77,6 +92,14 @@ hr{ color:#e76a17;}
 		font-family:Verdana, Geneva, sans-serif;
 		font-weight:normal;
 		font-size:14px;
+		color:#808080;
+	}
+	
+	.Item_busca p
+	{
+		font-family:Verdana, Geneva, sans-serif;
+		font-weight:normal;
+		font-size:12px;
 		color:#808080;
 	}
 	.img_align_line_busca2
