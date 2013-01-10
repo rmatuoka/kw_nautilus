@@ -70,7 +70,7 @@ jQuery(document).ready(function() {
 					<div id="Box_left">
 						
 						 	<div id="Noticias_box">	
-							<h1><img src="images/tit_noticias.png" width="506" height="46" /></h1>
+							<h1><a href="/noticias"><img src="images/tit_noticias.png" width="506" height="46" /></a></h1>
                             <br /><br />
 							<%@NoticiasHome.each do |n|%>
 							<!--start box noticia -->
@@ -93,7 +93,7 @@ jQuery(document).ready(function() {
 						<div id="clear"></div>
 						
 						<div id="Depoimentos_box">
-								<h1><img src="images/tit_depoimentos.png" width="507" height="47" /></h1><br /><br /><br />
+								<h1><a href="/institucional/depoimentos"><img src="images/tit_depoimentos.png" width="507" height="47" /></a></h1><br /><br /><br />
 								<p class="Dep_bc"><%= link_to @Depoimento.first.name, institucional_depoimentos_path %><%=(link_to " / "+ @Depoimento.first.company, institucional_depoimentos_path) if !@Depoimento.first.company.blank? %><%= (link_to " - "+ @Depoimento.first.position, institucional_depoimentos_path) if !@Depoimento.first.position.blank? %></p> 
 								<p class="Dep_data"><%= I18n.localize(@Depoimento.first.created_at, :format => "%d de %B de %Y")%></p><br />
 								<p class="Dep_text">
@@ -127,7 +127,7 @@ jQuery(document).ready(function() {
 						</div>   
 	 
 						<div id="Ondeencontrar_box">
-								<h1><img src="images/tit_ondeencontrar.png" width="385" height="47" /></h1>
+								<h1><a href="/institucional/revendas"><img src="images/tit_ondeencontrar.png" width="385" height="47" /></a></h1>
 								<a href="#"></a>
 								<p class="Text_noticia">
 									<p class="onde_link"><%= link_to "Clique aqui e confira a nossa lista de revendas!", institucional_revendas_path %></p>
@@ -136,7 +136,7 @@ jQuery(document).ready(function() {
 										<%= collection_select :pessoa, :estado, @Estados, :state, :state,{:size=>"10", :prompt => 'Selecione...'} %>
 									</form>
 									
-									<img src="images/map_onde_encontrar.png" style=" float:left; margin-top:-80px;"/>
+									<a href="/institucional/revendas"><img src="images/map_onde_encontrar.png" style=" float:left; margin-top:-80px;"/></a>
 								</p>
 						</div>                         
 					</div>                  																				  
