@@ -26,6 +26,8 @@ class AtendimentoController < ApplicationController
     if @Contato.save
       #ENVIA EMAIL
       Notifier.enviar(@Contato).deliver
+      Notifier.protocolo(@Contato).deliver
+      
       #Notifier.deliver_enviar(@Contato,"Nautilus - Contato via site", @Contato.area, @Contato.area)
       #if Notifier.deliver_enviar(@corpo.to_s,"Contato Via SITE", @Contact.email)
 
