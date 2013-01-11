@@ -19,11 +19,11 @@ jQuery(document).ready(function() {
 
 <div id="Top_bar">  
 		<div id='box_top_bar_2'>
-			<%= image_tag('logo_amigo.png') %><br>
+			<%= link_to image_tag ('logo_amigo.png'), "http://www.amigodarevenda.com.br", :target=>"_new" %><br>
 			<form>
 				<input type="text" class="field_form_amigo" value="Usuário" onblur="if(value=='') value = 'Usuário'" onfocus="if(value=='Usuário') value = ''" />
 				<input type="password" class="field_form_amigo" /><br>
-				<%= image_submit_tag('btn_entrar.png', :style=>"margin-top:5px; margin-left:175px;", :onclick => "javascript:alert('Em breve! Descupe o transtorno.');return false;") %>
+				<%= link_to image_tag ('btn_entrar.png', :style=>"margin-top:5px; margin-left:175px;"), "http://www.amigodarevenda.com.br", :target=>"_new" %>
 			</form>
 		</div> 
 		
