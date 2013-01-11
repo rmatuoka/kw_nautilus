@@ -10,10 +10,10 @@
 #bg_footer{
 	position:relative;
 	bottom:0px;
-	background-color:#fff;
+	background-color:#f7fcff;
 	background-image:url('../images/bg_footer.jpg');
 	background-repeat:repeat-x;
-	height:100px;
+	height:180px;
 	z-index:1000;
 	margin-top:-180px;
 	}
@@ -956,7 +956,7 @@ body
 		  left:25px;
 		  line-height:15px;
 		  top:45px;
-		  color:#0073b3;
+		  color:#f28737;
 		}
 
 		.Logos_place_foot	
