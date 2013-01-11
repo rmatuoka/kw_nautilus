@@ -13,12 +13,12 @@
     <%=image_tag("ico_title_internal.png")%>
     <div id='Right_content'>
 	  <h1>Cases</h1>
-	  <p>Escolha abaixo a case que você gostaria de ver:</p>
-	  <div id='img_internal_revenda' style="visibility:hidden;">
-	  <%= link_to image_tag("img_casesdesucesso.png", :width=>"302",:height=>"308",:class=>"align_detail"), "/obras?area=Obras%20Importantes", :class=>"bt_textalign"%>
-	  </div>
-	  <div id='img_internal_representante' style="visibility:hidden;">
+	  <p style="visibility:hidden;">Escolha abaixo a case que você gostaria de ver:</p>
+	  <div id='img_internal_representante' style="margin-left:-45px;">
 	  <%= link_to image_tag("img_obrasprimas.png", :width=>"300",:height=>"307",:class=>"align_detail"), "/obras?area=Obras%20Primas", :class=>"bt_textalign"%>
+	  </div>
+	  <div id='img_internal_revenda' style="visibility:hidden; margin-left:-30px;">
+	  <%= link_to image_tag("img_casesdesucesso.png", :width=>"302",:height=>"308",:class=>"align_detail"), "/obras?area=Obras%20Importantes", :class=>"bt_textalign"%>
 	  </div>
 	</div>
   </div>
