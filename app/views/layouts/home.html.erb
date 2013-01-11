@@ -29,6 +29,19 @@ jQuery(document).ready(function() {
 	jQuery("#pessoa_estado").change(function(){
 		window.location.href = '/institucional/revendas?state=' + jQuery("#pessoa_estado").val();
 	});
+	
+	jQuery(".utube").mouseenter(function(){
+		jQuery(this).attr('src','images/ico_utube_hover.png	');
+	});
+	jQuery(".utube").mouseleave(function(){
+		jQuery(this).attr('src','images/ico_utube.png	');
+	});
+	jQuery(".face").mouseenter(function(){
+		jQuery(this).attr('src','images/ico_face_hover.png	');
+	});
+	jQuery(".face").mouseleave(function(){
+		jQuery(this).attr('src','images/ico_face.png	');
+	});
 
 });
 

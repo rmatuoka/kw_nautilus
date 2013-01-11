@@ -1,3 +1,22 @@
+<script>
+jQuery(document).ready(function() {	
+	jQuery(".utube").mouseenter(function(){
+		jQuery(this).attr('src','images/ico_utube_hover.png	');
+	});
+	jQuery(".utube").mouseleave(function(){
+		jQuery(this).attr('src','images/ico_utube.png	');
+	});
+	jQuery(".face").mouseenter(function(){
+		jQuery(this).attr('src','images/ico_face_hover.png	');
+	});
+	jQuery(".face").mouseleave(function(){
+		jQuery(this).attr('src','images/ico_face.png	');
+	});
+
+});
+
+</script>
+
 <div id="Top_bar">  
 		<div id='box_top_bar_2'>
 			<%= image_tag('logo_amigo.png') %><br>
@@ -15,8 +34,8 @@
 			</form>
 			
 			<br>
-			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch", :target=>"_new"%>
-			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus"), "https://www.facebook.com/nautilus.equipamentos", :target=>"_new"%>
+			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"utube"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch", :target=>"_new"%>
+			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"face"), "https://www.facebook.com/nautilus.equipamentos", :target=>"_new"%>
 		</div>
 		
 </div>
