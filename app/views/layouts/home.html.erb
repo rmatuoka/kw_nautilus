@@ -112,7 +112,7 @@ jQuery(document).ready(function() {
 								<p class="Dep_text">
 									<span class="Leftpar_as_left">‘‘</span>
 									<%	$teste = raw @Depoimento.first.testimonial	 %>
-									<%=	link_to truncate(strip_tags($teste), :length => 150), institucional_depoimentos_path %>
+									<a href="/institucional/depoimentos"><%=raw(truncate(strip_tags(@Depoimento.first.testimonial), :length => 150))%></a>
 									<span class="Leftpar_as_right">’’</span>
 								</p>                          
 								<a href="#"></a>
