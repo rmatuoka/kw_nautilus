@@ -9,7 +9,7 @@ class Notifier < ActionMailer::Base
   
   def protocolo(contato)
       @Contato = contato
-      mail(:to => @Contato.area, :bcc => "log@korewa.com.br", :subject => "Atendimento Nautilus - Protocolo Nº. " + @Contato.id.to_s)
+      mail(:to => @Contato.email, :bcc => "log@korewa.com.br", :subject => "Atendimento Nautilus - Protocolo Nº. " + @Contato.id.to_s)
   end
   
 end
