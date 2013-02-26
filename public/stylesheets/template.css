@@ -349,7 +349,7 @@ body
 		#Menu li
 		{
 			display: inline;
-			margin-left:10px;
+		/*	margin-left:10px; */
 		}
 		.item_align
 		{

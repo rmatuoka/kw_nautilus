@@ -25,6 +25,10 @@
 		<%=f.radio_button :published, 1 %> Sim  
 	</label><br><br>
 	
+	<label>
+		Ordem (1-Destaque, 10-Irrelevante): <br>
+		<%= f.select(:order,options_for_select(['1','2','3','4','5','6','7','8','9','10'], @Download.order))	%>
+	</label><br><br>
 	
 	<button type="submit">Salvar</button>
 <% end %>
