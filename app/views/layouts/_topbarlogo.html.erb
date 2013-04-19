@@ -19,12 +19,13 @@ jQuery(document).ready(function() {
 
 <div id="Top_bar">  
 		<div id='box_top_bar_2'>
-			<%= link_to image_tag ('logo_amigo.png'), "http://www.amigodarevenda.com.br", :target=>"_new" %><br>
 			<form>
 				<input type="text" class="field_form_amigo" value="Usuário" onblur="if(value=='') value = 'Usuário'" onfocus="if(value=='Usuário') value = ''" />
 				<input type="password" class="field_form_amigo" /><br>
 				<%= link_to image_tag ('btn_entrar.png', :style=>"margin-top:5px; margin-left:175px;"), "http://www.amigodarevenda.com.br", :target=>"_new" %>
 			</form>
+			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"utube"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch", :target=>"_new"%>
+			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"face"), "https://www.facebook.com/nautilus.equipamentos", :target=>"_new"%>
 		</div> 
 		
 		<div id='box_top_bar_1'>
@@ -32,10 +33,6 @@ jQuery(document).ready(function() {
 			 	<%=text_field_tag :keyword, "Buscar" ,:class=>"field_form_busca", :onblur => "if(value=='') value = 'Buscar'", :onfocus => "if(value=='Buscar') value = ''"%>
 				<%= image_submit_tag('bt_form_busca.png', :style=>"margin-top:-25px; float:right; margin-left:0px;") %>
 			</form>
-			
-			<br>
-			<%= link_to image_tag("ico_utube.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"utube"), "http://www.youtube.com/channel/UCxF6Cj-aYp2YAAi49YZWZlw?feature=watch", :target=>"_new"%>
-			<%= link_to image_tag("ico_face.png", :width=>"20", :height=> "20", :alt=>"Nautilus", :title=>"Nautilus", :class=>"face"), "https://www.facebook.com/nautilus.equipamentos", :target=>"_new"%>
 		</div>
 		
 </div>
