@@ -1,3 +1,15 @@
+.utube{
+	float:right;
+	margin-top:8px;
+	margin-right:8px;
+	}
+
+.face{
+	float:right;
+	margin-top:8px;
+	margin-right:5px;
+	}
+
 #bg_top{
 	position:relative;
 	background-color:#fff;
@@ -147,7 +159,7 @@ body
 
 #box_top_bar_2{
 	float:right;
-	margin-top:40px;
+	margin-top:29px;
 	}
 
 .field_form_amigo{
